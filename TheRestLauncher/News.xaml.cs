@@ -12,16 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using TheRest;
-using TheRestLauncher;
 
-namespace TheRestLauncher;
+namespace TheRestLauncher
 {
-    public partial class MainWindow : Window
-{
-    public MainWindow()
+    /// <summary>
+    /// Логика взаимодействия для News.xaml
+    /// </summary>
+    public partial class News : Page
     {
-        InitializeComponent();
+        public News()
+        {
+            InitializeComponent();
+        }
     }
-}
 }
