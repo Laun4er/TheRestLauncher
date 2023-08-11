@@ -15,9 +15,10 @@
         <Border Width="205" Height="1080" HorizontalAlignment="Left" VerticalAlignment="Center" Background="#222227"/>
         <Image Source="Logo.png" Name="TheRestLogo" Width="140" Height="50" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30, 13" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
         <Button x:Name="Start" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="40" Background="Transparent" Foreground="Transparent" BorderThickness="0">
+        
             <Image Source="ButtonPlay.png" Name="StartM" Width="246" Height="57"  RenderOptions.BitmapScalingMode="NearestNeighbor"/>
         </Button>
-        <Button Width="205" Height="60" Background="#363840" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,106" BorderThickness="0" Content="     Главная" Foreground="White" FontSize="18" FontWeight="Bold" >
+        <Button x:Name="News" Width="205" Height="60" Background="#222227" HorizontalAlignment="left" VerticalAlignment="top" Margin="0, 180" Content="     Новости" Foreground="White" FontSize="18" FontWeight="Bold">
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Border
@@ -39,13 +40,13 @@
                                 <VisualState Name="MouseOver">
                                     <Storyboard>
                                         <ColorAnimation Storyboard.TargetName="BorderColor"
-                                    Storyboard.TargetProperty="Color" To="Black" />
+                                    Storyboard.TargetProperty="Color" To="#8B9CDF" />
                                     </Storyboard>
                                 </VisualState>
                                 <VisualState Name="Normal">
                                     <Storyboard>
                                         <ColorAnimation Storyboard.TargetName="BorderColor"
-                                    Storyboard.TargetProperty="Color" To="#363840" />
+                                    Storyboard.TargetProperty="Color" To="#222227" />
                                     </Storyboard>
                                 </VisualState>
                             </VisualStateGroup>
@@ -54,7 +55,14 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
+        <Image Source="News.png" Name="NEWS" Width="34" Height="34" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30,190">
+
+        </Image>
+        <Rectangle Width="205" Height="60" Fill="#363840" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,106">
+        </Rectangle>
+        <TextBlock Width="205" Height="60" Text="   Главная" FontSize="18" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0, 106" TextAlignment="Center"/>
         <Image Source="Home.png" Name="Home" Width="34" Height="34" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,120" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
+        
         
     </Grid>
 </Window>
