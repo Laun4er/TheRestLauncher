@@ -8,19 +8,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="ButtonHome.png" />
     <None Remove="ButtonPlay.png" />
-    <None Remove="Home.png" />
     <None Remove="Logo.png" />
     <None Remove="News.png" />
+    <None Remove="Resources\Buttons\Mods.png" />
+    <None Remove="Resources\Buttons\Settings.png" />
     <None Remove="TheRestBG.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="ButtonPlay.png" />
-    <Resource Include="Home.png" />
-    <Resource Include="Logo.png" />
-    <Resource Include="News.png" />
-    <Resource Include="TheRestBG.png" />
+    <Resource Include="Resources\Buttons\Mods.png" />
+    <Resource Include="Resources\Buttons\Play.png" />
+    <Resource Include="Resources\Buttons\Home.png" />
+    <Resource Include="Resources\Logo.png" />
+    <Resource Include="Resources\Buttons\News.png" />
+    <Resource Include="Resources\Buttons\Settings.png" />
+    <Resource Include="Resources\TheRestBG.png" />
   </ItemGroup>
 
 </Project>
