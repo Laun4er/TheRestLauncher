@@ -19,7 +19,7 @@
         </Button>
         <Button Width="205" Height="60" Background="#363840" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,106" BorderThickness="0" Content="     Главная" Foreground="White" FontSize="18" FontWeight="Bold"/>
         <Image Source="Home.png" Name="Home" Width="34" Height="34" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,120" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
-        <Button Width="205" Height="60" Background="#222227" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,186" BorderThickness="0" Content="     Новости" Foreground="White" FontSize="18" FontWeight="Bold" Click="GoToPage"/>
+        <Button Width="205" Height="60" Background="#222227" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,186" BorderThickness="0" Content="     Новости" Foreground="White" FontSize="18" FontWeight="Bold" MouseDown="News"/>
         <Image Source="News.png" Name="News" Width="34" Height="34" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,200" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
     </Grid>
 </Window>
