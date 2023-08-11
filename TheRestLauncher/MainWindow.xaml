@@ -23,8 +23,8 @@
         <Border Grid.RowSpan="3" Background="#222227"/>
         <Border Grid.Column="1" Background="#28282E"/>
         <Border Grid.Row="3" Grid.Column="1" Background="#28282E"/>
-        <Image Source="Resources/Logo.png" Name="TheRestLogo" Width="140" Height="50" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30, 13" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
-        <Image Source="Resources/TheRestBG.png" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Name="TheRestBG" RenderOptions.BitmapScalingMode="NearestNeighbor" Stretch="UniformToFill" />
+        <Image Source="Resources/Logo.png" Name="TheRestLogo" Width="140" Height="50" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="33,13,0,0" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
+        <Image Source="Resources/TheRestBG.png" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Name="TheRestBG" RenderOptions.BitmapScalingMode="NearestNeighbor" Stretch="UniformToFill"/>
 
         <StackPanel Grid.Column="0" Grid.Row="1" VerticalAlignment="Top">
 
