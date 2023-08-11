@@ -14,7 +14,7 @@
         <Border Width="1920" Height="75" VerticalAlignment="Bottom" HorizontalAlignment="Center" Background="#28282E"/>
         <Border Width="205" Height="1080" HorizontalAlignment="Left" VerticalAlignment="Center" Background="#222227"/>
         <Image Source="Logo.png" Name="TheRestLogo" Width="140" Height="50" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30, 13" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
-        <Button x:Name="Start" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="40" Background="Transparent" Foreground="Transparent" BorderThickness="0">
+        <Button x:Name="Start" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="700, 40" Background="Transparent" Foreground="Transparent" BorderThickness="0">
             <Image Source="ButtonPlay.png" Name="StartM" Width="246" Height="57"  RenderOptions.BitmapScalingMode="NearestNeighbor"/>
         </Button>
         <Button Width="205" Height="60" Background="#363840" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,106" BorderThickness="0" Content="     Главная" Foreground="White" FontSize="18" FontWeight="Bold"/>
