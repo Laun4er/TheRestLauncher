@@ -7,4 +7,5 @@
         mc:Ignorable="d"
         Title="TheRest Launcher" 
         MinHeight="600" MinWidth="1000" MaxHeight="1080" MaxWidth="1920">
-</Window>
+
+    

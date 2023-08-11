@@ -16,12 +16,3 @@ using TheRest;
 using TheRestLauncher;
 
 namespace TheRestLauncher;
-{
-    public partial class MainWindow : Window
-{
-    public MainWindow()
-    {
-        InitializeComponent();
-    }
-}
-}
