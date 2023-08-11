@@ -28,7 +28,7 @@
 
         <StackPanel Grid.Column="0" Grid.Row="1" VerticalAlignment="Top">
 
-            <ListBox SelectionMode="Single" SelectedIndex="0" Foreground="#E5F1FF" FontSize="18" FontWeight="Bold" Background="Transparent" BorderThickness="0" Width="205" Padding="0,15,0,0">
+            <ListBox SelectionMode="Single" SelectedIndex="0" Foreground="#E5F1FF" FontSize="18" FontWeight="Bold" Background="Transparent" BorderThickness="0" Width="205" Padding="0,30,0,0">
                 <ListBox.ItemContainerStyle>
                     <Style TargetType="{x:Type ListBoxItem}">
                         <Setter Property="Template">
