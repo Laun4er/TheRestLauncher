@@ -23,12 +23,12 @@
         <Border Grid.RowSpan="3" Background="#222227"/>
         <Border Grid.Column="1" Background="#28282E"/>
         <Border Grid.Row="3" Grid.Column="1" Background="#28282E"/>
-        <Image Source="Resources/Logo.png" Name="TheRestLogo" Width="140" Height="50" VerticalAlignment="Center" HorizontalAlignment="Center" RenderOptions.BitmapScalingMode="NearestNeighbor" SnapsToDevicePixels="True"/>
+        <Image Source="Resources/Logo.png" Name="TheRestLogo" Width="140" Height="50" VerticalAlignment="Center" HorizontalAlignment="Center" RenderOptions.BitmapScalingMode="NearestNeighbor" SnapsToDevicePixels="True" UseLayoutRounding="True"/>
         <Image Source="Resources/TheRestBG.png" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Name="TheRestBG" RenderOptions.BitmapScalingMode="NearestNeighbor" Stretch="UniformToFill"/>
 
         <StackPanel Grid.Column="0" Grid.Row="1" VerticalAlignment="Top">
 
-            <ListBox SelectionMode="Single" SelectedIndex="0" Foreground="#E5F1FF" FontSize="18" FontWeight="Bold" Background="Transparent" BorderThickness="0" Width="205" Padding="0,30,0,0">
+            <ListBox SelectionMode="Single" SelectedIndex="0" Foreground="#E5F1FF" FontSize="18" FontWeight="Bold" Background="Transparent" BorderThickness="0" Width="205" Padding="0,30,0,0" local:SelectorBehavior.ShouldSelectItemOnMouseUp="True">
                 <ListBox.ItemContainerStyle>
                     <Style TargetType="{x:Type ListBoxItem}">
                         <Setter Property="Template">
@@ -129,7 +129,7 @@
         </StackPanel>
 
         <StackPanel Grid.Column="1" Grid.Row="2">
-            <Button x:Name="Start" HorizontalAlignment="Center" Padding="0" Margin="0,-18,0,0" Background="{x:Null}" Foreground="Transparent" BorderThickness="0" UseLayoutRounding="True" SnapsToDevicePixels="True" Click="Play">
+            <Button x:Name="Start" HorizontalAlignment="Center" Padding="0" Margin="0,-18,0,0" Background="{x:Null}" Foreground="Transparent" BorderThickness="0" UseLayoutRounding="True" SnapsToDevicePixels="True" Click="PlayM">
                 <Image Source="Resources/Buttons/Play.png" Name="StartM" Width="246" Height="57" RenderOptions.BitmapScalingMode="NearestNeighbor" SnapsToDevicePixels="True" UseLayoutRounding="True"/>
             </Button>
         </StackPanel>
