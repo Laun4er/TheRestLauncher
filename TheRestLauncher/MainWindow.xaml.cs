@@ -26,7 +26,7 @@ namespace TheRest
 
         private void PlayM(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("ХОЧУ ПОБЫСТРЕЕ ЗАКОНЧИТЬ С ЛАУНЧЕРОМ");
+            MessageBox.Show("Скоро тут будет адекватный запуск");
         }
     }
 
