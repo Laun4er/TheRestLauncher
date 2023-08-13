@@ -7,8 +7,15 @@
     xmlns:gif="https://github.com/XamlAnimatedGif/XamlAnimatedGif"
     mc:Ignorable="d"
     Title="TheRest Launcher" 
-    MinHeight="600" MinWidth="1000" Icon="/Resources/Icon.ico">
-
+    MinHeight="600" MinWidth="1000"
+    Icon="/Resources/Icon.ico"
+    WindowStyle="None"
+    MouseLeftButtonDown="Window_MouseLeftButtonDown">
+    
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="0"/>
+    </WindowChrome.WindowChrome>
+    
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="205"/>
@@ -16,7 +23,7 @@
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="75"/>
+            <RowDefinition Height="100"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="60"/>
         </Grid.RowDefinitions>
