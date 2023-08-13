@@ -6,7 +6,7 @@
     xmlns:local="clr-namespace:TheRest"
     mc:Ignorable="d"
     Title="TheRest Launcher" 
-    MinHeight="600" MinWidth="1000">
+    MinHeight="600" MinWidth="1000" Icon="/Resources/Icon.ico">
 
     <Grid>
         <Grid.ColumnDefinitions>

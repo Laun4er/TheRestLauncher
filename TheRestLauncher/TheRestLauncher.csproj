@@ -14,6 +14,8 @@
     <None Remove="News.png" />
     <None Remove="Resources\Buttons\Mods.png" />
     <None Remove="Resources\Buttons\Settings.png" />
+    <None Remove="Resources\Icon.ico" />
+    <None Remove="Resources\LogoColored.png" />
     <None Remove="TheRestBG.png" />
   </ItemGroup>
 
@@ -21,9 +23,11 @@
     <Resource Include="Resources\Buttons\Mods.png" />
     <Resource Include="Resources\Buttons\Play.png" />
     <Resource Include="Resources\Buttons\Home.png" />
+    <Resource Include="Resources\Icon.ico" />
     <Resource Include="Resources\Logo.png" />
     <Resource Include="Resources\Buttons\News.png" />
     <Resource Include="Resources\Buttons\Settings.png" />
+    <Resource Include="Resources\LogoColored.png" />
     <Resource Include="Resources\TheRestBG.png" />
   </ItemGroup>
 
