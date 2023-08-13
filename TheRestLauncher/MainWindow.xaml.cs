@@ -29,8 +29,12 @@ namespace TheRest
         {
             Process.Start("C:\\TheRest\\Minecraft\\launcher\\Play.bat");
         }
+        private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            DragMove();
+        }
     }
-       
+
     public static class SelectorBehavior
     {
         #region bool ShouldSelectItemOnMouseUp
