@@ -13,6 +13,7 @@
     <None Remove="Logo.png" />
     <None Remove="News.png" />
     <None Remove="Resources\Buttons\Mods.png" />
+    <None Remove="Resources\Buttons\PlayHover.gif" />
     <None Remove="Resources\Buttons\Settings.png" />
     <None Remove="Resources\Icon.ico" />
     <None Remove="Resources\LogoColored.png" />
@@ -20,9 +21,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="XamlAnimatedGif" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="Resources\Buttons\Mods.png" />
     <Resource Include="Resources\Buttons\Play.png" />
     <Resource Include="Resources\Buttons\Home.png" />
+    <Resource Include="Resources\Buttons\PlayHover.gif" />
     <Resource Include="Resources\Icon.ico" />
     <Resource Include="Resources\Logo.png" />
     <Resource Include="Resources\Buttons\News.png" />
