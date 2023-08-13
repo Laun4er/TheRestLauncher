@@ -9,11 +9,12 @@
     Title="TheRest Launcher" 
     MinHeight="600" MinWidth="1000"
     Icon="/Resources/Icon.ico"
-    WindowStyle="None"
-    AllowsTransparency="True">
-    
+    MouseLeftButtonDown="Window_MouseLeftButtonDown"
+    AllowsTransparency="True"
+    WindowStyle="None">
+
     <WindowChrome.WindowChrome>
-        <WindowChrome CornerRadius="0"/>
+        <WindowChrome CaptionHeight="0"/>
     </WindowChrome.WindowChrome>
 
     <Grid>
@@ -23,7 +24,7 @@
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="75"/>
+            <RowDefinition Height="100"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="60"/>
         </Grid.RowDefinitions>
@@ -34,6 +35,20 @@
         <Image Source="Resources/Logo.png" Name="TheRestLogo" Width="140" Height="50" VerticalAlignment="Center" HorizontalAlignment="Center" RenderOptions.BitmapScalingMode="NearestNeighbor" SnapsToDevicePixels="True" UseLayoutRounding="True"/>
         <Image Source="Resources/TheRestBG.png" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Name="TheRestBG" RenderOptions.BitmapScalingMode="NearestNeighbor" Stretch="UniformToFill"/>
 
+        <StackPanel Grid.Column="1" Grid.Row="0" VerticalAlignment="Top">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" RenderOptions.BitmapScalingMode="NearestNeighbor" SnapsToDevicePixels="True" UseLayoutRounding="True">
+                <Button Width="40" Height="30" Background="Transparent" BorderThickness="0">
+                    <Image Source="/Resources/Buttons/Window/minimize.png" Width="14"/>
+                </Button>
+                <Button Width="40" Height="30" Background="Transparent" BorderThickness="0">
+                    <Image Source="/Resources/Buttons/Window/maximize.png" Height="14"/>
+                </Button>
+                <Button Width="40" Height="30" Background="Transparent" BorderThickness="0">
+                    <Image Source="/Resources/Buttons/Window/close.png" Height="14"/>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+        
         <StackPanel Grid.Column="0" Grid.Row="1" VerticalAlignment="Top">
 
             <ListBox SelectionMode="Single" SelectedIndex="0" Foreground="#E5F1FF" FontSize="18" FontWeight="Bold" Background="Transparent" BorderThickness="0" Width="205" Padding="0,30,0,0" local:SelectorBehavior.ShouldSelectItemOnMouseUp="True">
