@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,10 +27,10 @@ namespace TheRest
 
         private void PlayM(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Скоро тут будет адекватный запуск");
+            Process.Start("C:\\TheRest\\Minecraft\\launcher\\Play.bat");
         }
     }
-
+       
     public static class SelectorBehavior
     {
         #region bool ShouldSelectItemOnMouseUp
