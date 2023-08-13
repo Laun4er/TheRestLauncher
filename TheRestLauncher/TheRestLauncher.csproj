@@ -15,6 +15,12 @@
     <None Remove="Resources\Buttons\Mods.png" />
     <None Remove="Resources\Buttons\PlayHover.gif" />
     <None Remove="Resources\Buttons\Settings.png" />
+    <None Remove="Resources\Buttons\Window\close.png" />
+    <None Remove="Resources\Buttons\Window\close_hover.png" />
+    <None Remove="Resources\Buttons\Window\maximize.png" />
+    <None Remove="Resources\Buttons\Window\maximize_hover.png" />
+    <None Remove="Resources\Buttons\Window\minimize.png" />
+    <None Remove="Resources\Buttons\Window\minimize_hover.png" />
     <None Remove="Resources\Icon.ico" />
     <None Remove="Resources\LogoColored.png" />
     <None Remove="TheRestBG.png" />
@@ -29,6 +35,12 @@
     <Resource Include="Resources\Buttons\Play.png" />
     <Resource Include="Resources\Buttons\Home.png" />
     <Resource Include="Resources\Buttons\PlayHover.gif" />
+    <Resource Include="Resources\Buttons\Window\close.png" />
+    <Resource Include="Resources\Buttons\Window\close_hover.png" />
+    <Resource Include="Resources\Buttons\Window\maximize.png" />
+    <Resource Include="Resources\Buttons\Window\maximize_hover.png" />
+    <Resource Include="Resources\Buttons\Window\minimize.png" />
+    <Resource Include="Resources\Buttons\Window\minimize_hover.png" />
     <Resource Include="Resources\Icon.ico" />
     <Resource Include="Resources\Logo.png" />
     <Resource Include="Resources\Buttons\News.png" />
