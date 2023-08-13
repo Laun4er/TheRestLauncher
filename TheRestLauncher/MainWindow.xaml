@@ -10,12 +10,12 @@
     MinHeight="600" MinWidth="1000"
     Icon="/Resources/Icon.ico"
     WindowStyle="None"
-    MouseLeftButtonDown="Window_MouseLeftButtonDown">
+    AllowsTransparency="True">
     
     <WindowChrome.WindowChrome>
-        <WindowChrome CaptionHeight="0"/>
+        <WindowChrome CornerRadius="0"/>
     </WindowChrome.WindowChrome>
-    
+
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="205"/>
@@ -23,7 +23,7 @@
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="100"/>
+            <RowDefinition Height="75"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="60"/>
         </Grid.RowDefinitions>
