@@ -26,6 +26,23 @@
                 </DataTrigger>
             </Style.Triggers>
         </Style>
+
+        <Style TargetType="Button" x:Key="WindowButton">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="Border" Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="Border" Property="Background" Value="#363840"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
     </Window.Resources>
 
     <Grid Style="{StaticResource WindowMainPanelStyle}">
@@ -49,13 +66,13 @@
 
         <StackPanel Grid.Column="1" Grid.Row="0" VerticalAlignment="Top">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" RenderOptions.BitmapScalingMode="NearestNeighbor" SnapsToDevicePixels="True" UseLayoutRounding="True">
-                <Button Click="MinimizeButton"  Width="40" Height="30" Background="Transparent" BorderThickness="0">
+                <Button Click="MinimizeButton"  Width="40" Height="30" Background="Transparent" BorderThickness="0" Style="{StaticResource WindowButton}">
                     <Image Source="/Resources/Buttons/Window/minimize.png" Width="14"/>
                 </Button>
-                <Button Click="MaximizeButton" Width="40" Height="30" Background="Transparent" BorderThickness="0">
+                <Button Click="MaximizeButton" Width="40" Height="30" Background="Transparent" BorderThickness="0" Style="{StaticResource WindowButton}">
                     <Image Source="/Resources/Buttons/Window/maximize.png" Height="14"/>
                 </Button>
-                <Button Click="CloseButton" Width="40" Height="30" Background="Transparent" BorderThickness="0">
+                <Button Click="CloseButton" Width="40" Height="30" Background="Transparent" BorderThickness="0" Style="{StaticResource WindowButton}">
                     <Image Source="/Resources/Buttons/Window/close.png" Height="14"/>
                 </Button>
             </StackPanel>
