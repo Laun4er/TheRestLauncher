@@ -181,6 +181,9 @@
                 </Button.Template>
             </Button>
         </StackPanel>
+        <Button x:Name="Update" Content="Обновление" Click="GoUpdate">
+            
+        </Button>
         
     </Grid>
 </Window>
