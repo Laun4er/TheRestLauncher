@@ -13,6 +13,7 @@
     <None Remove="Logo.png" />
     <None Remove="News.png" />
     <None Remove="Resources\Buttons\Mods.png" />
+    <None Remove="Resources\Buttons\PlayClick.gif" />
     <None Remove="Resources\Buttons\PlayHover.gif" />
     <None Remove="Resources\Buttons\Settings.png" />
     <None Remove="Resources\Buttons\Window\close.png" />
@@ -34,6 +35,7 @@
     <Resource Include="Resources\Buttons\Mods.png" />
     <Resource Include="Resources\Buttons\Play.png" />
     <Resource Include="Resources\Buttons\Home.png" />
+    <Resource Include="Resources\Buttons\PlayClick.gif" />
     <Resource Include="Resources\Buttons\PlayHover.gif" />
     <Resource Include="Resources\Buttons\Window\close.png" />
     <Resource Include="Resources\Buttons\Window\close_hover.png" />
