@@ -187,11 +187,18 @@
                         <StackPanel>
                             <Image Name="start" Visibility="Visible" Source="Resources/Buttons/Play.png" Width="246" Height="57" RenderOptions.BitmapScalingMode="NearestNeighbor" SnapsToDevicePixels="True" UseLayoutRounding="True" Cursor="Hand"/>
                             <Image Name="start_hover" Visibility="Collapsed" gif:AnimationBehavior.SourceUri="Resources/Buttons/PlayHover.gif" Width="246" Height="57" RenderOptions.BitmapScalingMode="NearestNeighbor" SnapsToDevicePixels="True" UseLayoutRounding="True" Cursor="Hand"/>
+                            <Image Name="start_click" Visibility="Collapsed" gif:AnimationBehavior.SourceUri="Resources/Buttons/PlayClick.gif" Width="246" Height="57" RenderOptions.BitmapScalingMode="NearestNeighbor" SnapsToDevicePixels="True" UseLayoutRounding="True" Cursor="Hand"/>
                         </StackPanel>
                         <ControlTemplate.Triggers>
                             <Trigger Property="IsMouseOver" Value="true">
                                 <Setter TargetName="start_hover" Property="Visibility" Value="Visible"/>
-                                <Setter TargetName="start" Property="Visibility" Value="Collapsed" />
+                                <Setter TargetName="start" Property="Visibility" Value="Collapsed"/>
+                                <Setter TargetName="start_click" Property="Visibility" Value="Collapsed"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="true">
+                                <Setter TargetName="start_hover" Property="Visibility" Value="Collapsed"/>
+                                <Setter TargetName="start" Property="Visibility" Value="Collapsed"/>
+                                <Setter TargetName="start_click" Property="Visibility" Value="Visible"/>
                             </Trigger>
                         </ControlTemplate.Triggers>
                     </ControlTemplate>
