@@ -10,14 +10,26 @@
     MinHeight="600" MinWidth="1000"
     Icon="/Resources/Icon.ico"
     MouseLeftButtonDown="Window_MouseLeftButtonDown"
-    AllowsTransparency="True"
-    WindowStyle="None">
+    Background="#28282E">
+
 
     <WindowChrome.WindowChrome>
-        <WindowChrome CaptionHeight="0"/>
+        <WindowChrome CaptionHeight="0" GlassFrameThickness="0,0,0,1"/>
     </WindowChrome.WindowChrome>
+    
+    <Window.Resources>
+        <Style TargetType="{x:Type Panel}" x:Key="WindowMainPanelStyle">
+            <Setter Property="Margin" Value="0"/>
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Path=WindowState}" Value="Maximized">
+                    <Setter Property="Margin" Value="8"/>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
 
-    <Grid>
+    <Grid Style="{StaticResource WindowMainPanelStyle}">
+
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="205"/>
             <ColumnDefinition Width="*"/>
@@ -37,13 +49,13 @@
 
         <StackPanel Grid.Column="1" Grid.Row="0" VerticalAlignment="Top">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" RenderOptions.BitmapScalingMode="NearestNeighbor" SnapsToDevicePixels="True" UseLayoutRounding="True">
-                <Button Width="40" Height="30" Background="Transparent" BorderThickness="0">
+                <Button Click="MinimizeButton"  Width="40" Height="30" Background="Transparent" BorderThickness="0">
                     <Image Source="/Resources/Buttons/Window/minimize.png" Width="14"/>
                 </Button>
-                <Button Width="40" Height="30" Background="Transparent" BorderThickness="0">
+                <Button Click="MaximizeButton" Width="40" Height="30" Background="Transparent" BorderThickness="0">
                     <Image Source="/Resources/Buttons/Window/maximize.png" Height="14"/>
                 </Button>
-                <Button Width="40" Height="30" Background="Transparent" BorderThickness="0">
+                <Button Click="CloseButton" Width="40" Height="30" Background="Transparent" BorderThickness="0">
                     <Image Source="/Resources/Buttons/Window/close.png" Height="14"/>
                 </Button>
             </StackPanel>

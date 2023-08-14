@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -10,10 +11,12 @@ using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
+using System.Windows.Interop;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 using TheRest;
 
 namespace TheRest
@@ -22,6 +25,7 @@ namespace TheRest
     {
         public MainWindow()
         {
+
             InitializeComponent();
         }
 
@@ -33,8 +37,35 @@ namespace TheRest
         {
             DragMove();
         }
-    }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MinimizeButton(object sender, RoutedEventArgs e)
+        {
+            this.WindowState = WindowState.Minimized;
+        }
+
+        private void MaximizeButton(object sender, RoutedEventArgs e)
+        {
+            switch (this.WindowState)
+            {
+                case WindowState.Maximized:
+                    this.WindowState = WindowState.Normal;
+                    break;
+                case WindowState.Normal:
+                    this.WindowState = WindowState.Maximized;
+                    break;
+            }
+        }
+
+        private void CloseButton(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+    }
     public static class SelectorBehavior
     {
         #region bool ShouldSelectItemOnMouseUp
