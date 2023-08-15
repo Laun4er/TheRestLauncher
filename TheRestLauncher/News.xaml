@@ -8,8 +8,10 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="News"
       Background="Aqua">
+    
+
 
     <Grid>
-        
+        <TextBlock Text="Я покрасил, чтобы видел, как идет перемещение" Foreground="Black" FontSize="20" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
     </Grid>
 </Page>
