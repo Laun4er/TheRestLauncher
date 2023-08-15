@@ -17,6 +17,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
+using System.ServiceProcess;
 using TheRest;
 
 namespace TheRest
@@ -65,6 +66,7 @@ namespace TheRest
         {
             this.Close();
         }
+
     }
     public static class SelectorBehavior
     {
