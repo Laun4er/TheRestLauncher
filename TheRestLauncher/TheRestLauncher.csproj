@@ -51,4 +51,8 @@
     <Resource Include="Resources\TheRestBG.png" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Modesxaml\" />
+  </ItemGroup>
+
 </Project>

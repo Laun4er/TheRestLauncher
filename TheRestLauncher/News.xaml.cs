@@ -15,9 +15,7 @@ using System.Windows.Shapes;
 
 namespace TheRestLauncher
 {
-    /// <summary>
-    /// Логика взаимодействия для News.xaml
-    /// </summary>
+
     public partial class News : Page
     {
         public News()
