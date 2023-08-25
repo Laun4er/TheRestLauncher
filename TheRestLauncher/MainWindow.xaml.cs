@@ -31,7 +31,7 @@ namespace TheRest
 
         private void PlayM(object sender, RoutedEventArgs e)
         {
-            Process.Start("C:\\TheRest\\Minecraft\\launcher\\Play.bat");
+            MessageBox.Show("Скажи батнику пошёл нахуй");
         }
         private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
