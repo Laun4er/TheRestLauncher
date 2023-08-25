@@ -19,6 +19,7 @@ using System.Windows.Shapes;
 using System.Windows.Threading;
 using System.ServiceProcess;
 using TheRest;
+using TheRestLauncher;
 
 namespace TheRest
 {
@@ -67,6 +68,10 @@ namespace TheRest
             this.Close();
         }
 
+        private void GoNews_Click(object sender, RoutedEventArgs e)
+        {
+            News.Content = new News();
+        }
     }
     public static class SelectorBehavior
     {

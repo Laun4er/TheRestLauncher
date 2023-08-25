@@ -9,11 +9,7 @@
       Title="News">
 
     <Grid>
-        <Border Background="white"></Border>
-        <TextBlock Text="Проверка" FontSize="20" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center">
-            <Hyperlink NavigateUri="TheRestLauncher" Name="Home">
-                
-            </Hyperlink>
-        </TextBlock>
+        <Rectangle Fill="#222227"/>
+        <TextBlock Text="Новости" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="40"/>
     </Grid>
 </Page>

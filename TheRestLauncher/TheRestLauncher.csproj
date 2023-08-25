@@ -11,6 +11,7 @@
     <None Remove="ButtonHome.png" />
     <None Remove="ButtonPlay.png" />
     <None Remove="Logo.png" />
+    <None Remove="MainWindow.xaml.cs~RFc5ce2e0.TMP" />
     <None Remove="News.png" />
     <None Remove="Resources\Buttons\Mods.png" />
     <None Remove="Resources\Buttons\PlayClick.gif" />
