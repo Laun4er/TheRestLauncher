@@ -79,7 +79,7 @@ namespace TheRest
             if (isInitialSelection)
             {
                 isInitialSelection = false;
-                return; // Exit the event handler to avoid further processing
+                return;
             }
 
             var lbl = (((sender as ListBox).SelectedItem as ListBoxItem).Name);
