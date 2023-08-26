@@ -20,6 +20,7 @@ using System.Windows.Threading;
 using System.ServiceProcess;
 using TheRest;
 using TheRestLauncher;
+using System.Diagnostics.Metrics;
 
 namespace TheRest
 {
@@ -70,7 +71,22 @@ namespace TheRest
 
         private void GoNews_Click(object sender, RoutedEventArgs e)
         {
-            News.Content = new News();
+        }
+
+        private bool isInitialSelection = true;
+        private void PageChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (isInitialSelection)
+            {
+                isInitialSelection = false;
+                return; // Exit the event handler to avoid further processing
+            }
+
+            var lbl = (((sender as ListBox).SelectedItem as ListBoxItem).Name);
+            if (lbl.ToString() == "News")
+            {
+                NewsPage.Content = new News();
+            }
         }
     }
     public static class SelectorBehavior
