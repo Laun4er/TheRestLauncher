@@ -9,7 +9,7 @@
       Title="Settings">
 
     <Grid>
-        <Border Background="#222227">
+        <Border Background="#363840">
             <TextBlock Text="Настройки" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="40"/>
         </Border>
     </Grid>

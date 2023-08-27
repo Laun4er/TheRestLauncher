@@ -9,7 +9,7 @@
       Title="Mods">
 
     <Grid>
-        <Border Background="#222227">
+        <Border Background="#363840">
             <TextBlock Text="Моды" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="40"/>
         </Border>
     </Grid>
