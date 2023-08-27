@@ -62,7 +62,6 @@
         <Border Grid.Column="1" Background="#28282E"/>
         <Border Grid.Row="3" Grid.Column="1" Background="#28282E"/>
         <Image Source="Resources/Logo.png" Name="TheRestLogo" Width="140" Height="50" VerticalAlignment="Center" HorizontalAlignment="Center" RenderOptions.BitmapScalingMode="NearestNeighbor" SnapsToDevicePixels="True" UseLayoutRounding="True"/>
-        <Image Source="Resources/TheRestBG.png" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Name="TheRestBG" RenderOptions.BitmapScalingMode="NearestNeighbor" Stretch="UniformToFill"/>
 
         <StackPanel Grid.Column="1" Grid.Row="0" VerticalAlignment="Top">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" RenderOptions.BitmapScalingMode="NearestNeighbor" SnapsToDevicePixels="True" UseLayoutRounding="True">
@@ -180,30 +179,5 @@
             </ListBox>
         </StackPanel>
         <Frame x:Name="PageFrame" Grid.Row="1" Grid.Column="1" Grid.RowSpan="2" NavigationUIVisibility="Hidden"/>
-        <StackPanel Grid.Column="1" Grid.Row="2">
-            <Button x:Name="Start" HorizontalAlignment="Center" Padding="0" Margin="0,-18,0,0" Background="{x:Null}" Foreground="Transparent" BorderThickness="0" UseLayoutRounding="True" SnapsToDevicePixels="True" Click="PlayM">
-                <Button.Template>
-                    <ControlTemplate TargetType="Button">
-                        <StackPanel>
-                            <Image Name="start" Visibility="Visible" Source="Resources/Buttons/Play.png" Width="246" Height="57" RenderOptions.BitmapScalingMode="NearestNeighbor" SnapsToDevicePixels="True" UseLayoutRounding="True" Cursor="Hand"/>
-                            <Image Name="start_hover" Visibility="Collapsed" gif:AnimationBehavior.SourceUri="Resources/Buttons/PlayHover.gif" Width="246" Height="57" RenderOptions.BitmapScalingMode="NearestNeighbor" SnapsToDevicePixels="True" UseLayoutRounding="True" Cursor="Hand"/>
-                            <Image Name="start_click" Visibility="Collapsed" gif:AnimationBehavior.SourceUri="Resources/Buttons/PlayClick.gif" Width="246" Height="57" RenderOptions.BitmapScalingMode="NearestNeighbor" SnapsToDevicePixels="True" UseLayoutRounding="True" Cursor="Hand"/>
-                        </StackPanel>
-                        <ControlTemplate.Triggers>
-                            <Trigger Property="IsMouseOver" Value="true">
-                                <Setter TargetName="start_hover" Property="Visibility" Value="Visible"/>
-                                <Setter TargetName="start" Property="Visibility" Value="Collapsed"/>
-                                <Setter TargetName="start_click" Property="Visibility" Value="Collapsed"/>
-                            </Trigger>
-                            <Trigger Property="IsPressed" Value="true">
-                                <Setter TargetName="start_hover" Property="Visibility" Value="Collapsed"/>
-                                <Setter TargetName="start" Property="Visibility" Value="Collapsed"/>
-                                <Setter TargetName="start_click" Property="Visibility" Value="Visible"/>
-                            </Trigger>
-                        </ControlTemplate.Triggers>
-                    </ControlTemplate>
-                </Button.Template>
-            </Button>
-        </StackPanel>
     </Grid>
 </Window>

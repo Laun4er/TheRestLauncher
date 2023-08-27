@@ -24,5 +24,9 @@ namespace TheRestLauncher.Pages
         {
             InitializeComponent();
         }
+        private void PlayM(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Скажи батнику пошёл нахуй");
+        }
     }
 }

@@ -30,12 +30,9 @@ namespace TheRest
         public MainWindow()
         {
             InitializeComponent();
+            PageFrame.Content = new Main();
         }
 
-        private void PlayM(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("Скажи батнику пошёл нахуй");
-        }
         private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             DragMove();
@@ -84,23 +81,21 @@ namespace TheRest
             }
 
             var lbl = (((sender as ListBox).SelectedItem as ListBoxItem).Name);
-            if (lbl.ToString() == "News")
-            {
-                PageFrame.Content = new News();
-            }
-
-            if (lbl.ToString() == "Mods")
-            {
-                PageFrame.Content = new Mods();
-            }
             if (lbl.ToString() == "Main")
             {
                 PageFrame.Content = new Main();
             }
+            if (lbl.ToString() == "News")
+            {
+                PageFrame.Content = new News();
+            }
+            if (lbl.ToString() == "Mods")
+            {
+                PageFrame.Content = new Mods();
+            }
             if (lbl.ToString() == "Settings")
             {
                 PageFrame.Content = new Settings();
-                
             }
         }
     }
