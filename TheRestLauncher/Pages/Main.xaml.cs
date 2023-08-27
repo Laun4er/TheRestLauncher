@@ -15,9 +15,6 @@ using System.Windows.Shapes;
 
 namespace TheRestLauncher.Pages
 {
-    /// <summary>
-    /// Логика взаимодействия для Main.xaml
-    /// </summary>
     public partial class Main : Page
     {
         public Main()
