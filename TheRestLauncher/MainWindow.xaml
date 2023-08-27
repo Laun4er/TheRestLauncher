@@ -201,7 +201,7 @@
 
         <StackPanel Grid.Column="0" Grid.Row="1" VerticalAlignment="Top">
 
-            <ListBox SelectionMode="Single" SelectedIndex="0" Foreground="#E5F1FF" FontSize="18" FontWeight="Bold" Background="Transparent" BorderThickness="0" Width="205" local:SelectorBehavior.ShouldSelectItemOnMouseUp="True" SelectionChanged="PageChanged" Padding="0,30,0,0">
+            <ListBox x:Name="ListBox1" SelectionMode="Single" SelectedIndex="0" Foreground="#E5F1FF" FontSize="18" FontWeight="Bold" Background="Transparent" BorderThickness="0" Width="205" local:SelectorBehavior.ShouldSelectItemOnMouseUp="True" SelectionChanged="PageChanged" Padding="0,30,0,0">
                 <ListBoxItem Margin="0,0,0,15" x:Name="Main">
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center" Height="60">
                         <Image Source="Resources/Buttons/Home.png"  Width="38" Height="38" Margin="15,0,0,0" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
@@ -220,14 +220,18 @@
                         <TextBlock Text="Моды" VerticalAlignment="Center" Margin="25,0"/>
                     </StackPanel>
                 </ListBoxItem>
-                <ListBoxItem Margin="0,0,0,15" x:Name="Settings">
-                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center" Height="60">
-                        <Image Source="Resources/Buttons/Settings.png" Width="38" Height="38" Margin="15,0,0,0" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
-                        <TextBlock Text="Настройки" VerticalAlignment="Center" Margin="25,0"/>
-                    </StackPanel>
-                </ListBoxItem>
             </ListBox>
         </StackPanel>
+
+        <ListBox x:Name="ListBox2" Grid.Row="2" SelectionMode="Single" Foreground="#E5F1FF" FontSize="18" FontWeight="Bold" Background="Transparent" BorderThickness="0" Width="205" local:SelectorBehavior.ShouldSelectItemOnMouseUp="True" SelectionChanged="PageChanged" Padding="0">
+            <ListBoxItem Margin="0,0,0,15" x:Name="Settings">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center" Height="60">
+                    <Image Source="Resources/Buttons/Settings.png" Width="38" Height="38" Margin="15,0,0,0" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
+                    <TextBlock Text="Настройки" VerticalAlignment="Center" Margin="25,0"/>
+                </StackPanel>
+            </ListBoxItem>
+        </ListBox>
+
         <Frame x:Name="PageFrame" Grid.Row="1" Grid.Column="1" Grid.RowSpan="2" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Window>

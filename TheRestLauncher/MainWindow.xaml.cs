@@ -80,22 +80,22 @@ namespace TheRest
                 return;
             }
 
-            var lbl = (((sender as ListBox).SelectedItem as ListBoxItem).Name);
-            if (lbl.ToString() == "Main")
+            if (sender is ListBox listBox)
             {
-                PageFrame.Content = new Main();
-            }
-            if (lbl.ToString() == "News")
-            {
-                PageFrame.Content = new News();
-            }
-            if (lbl.ToString() == "Mods")
-            {
-                PageFrame.Content = new Mods();
-            }
-            if (lbl.ToString() == "Settings")
-            {
-                PageFrame.Content = new Settings();
+                if (listBox.SelectedItem is ListBoxItem selectedListBoxItem)
+                {
+                    switch (listBox.Name)
+                    {
+                        case "ListBox1":
+                            ListBox2.SelectedIndex = -1;
+                            break;
+                        case "ListBox2":
+                            ListBox1.SelectedIndex = -1;
+                            break;
+                    }
+                    Type PageType = Type.GetType($"TheRestLauncher.Pages.{selectedListBoxItem.Name}");
+                    PageFrame.Content = Activator.CreateInstance(PageType);
+                }
             }
         }
     }
