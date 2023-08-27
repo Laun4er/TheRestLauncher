@@ -100,6 +100,7 @@ namespace TheRest
             if (lbl.ToString() == "Settings")
             {
                 SettingsPage.Content = new Settings();
+                
             }
         }
     }
