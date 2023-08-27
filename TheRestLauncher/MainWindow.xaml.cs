@@ -86,20 +86,20 @@ namespace TheRest
             var lbl = (((sender as ListBox).SelectedItem as ListBoxItem).Name);
             if (lbl.ToString() == "News")
             {
-                NewsPage.Content = new News();
+                PageFrame.Content = new News();
             }
 
             if (lbl.ToString() == "Mods")
             {
-                ModsPage.Content = new Mods();
+                PageFrame.Content = new Mods();
             }
             if (lbl.ToString() == "Main")
             {
-                MainPage.Content = new Main();
+                PageFrame.Content = new Main();
             }
             if (lbl.ToString() == "Settings")
             {
-                SettingsPage.Content = new Settings();
+                PageFrame.Content = new Settings();
                 
             }
         }
