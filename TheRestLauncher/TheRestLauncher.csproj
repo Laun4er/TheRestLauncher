@@ -60,7 +60,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Pages\Recources\" />
+    <Folder Include="Pages\Resources\" />
   </ItemGroup>
 
 </Project>
