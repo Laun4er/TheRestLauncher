@@ -21,6 +21,7 @@ using System.ServiceProcess;
 using TheRest;
 using TheRestLauncher;
 using System.Diagnostics.Metrics;
+using TheRestLauncher.Pages;
 
 namespace TheRest
 {
@@ -86,6 +87,19 @@ namespace TheRest
             if (lbl.ToString() == "News")
             {
                 NewsPage.Content = new News();
+            }
+
+            if (lbl.ToString() == "Mods")
+            {
+                ModsPage.Content = new Mods();
+            }
+            if (lbl.ToString() == "Main")
+            {
+                MainPage.Content = new Main();
+            }
+            if (lbl.ToString() == "Settings")
+            {
+                SettingsPage.Content = new Settings();
             }
         }
     }

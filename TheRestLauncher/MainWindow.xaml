@@ -180,6 +180,9 @@
             </ListBox>
         </StackPanel>
         <Frame x:Name="NewsPage" Grid.Column="1" Margin="0,0,0,60" Grid.Row="1" Grid.RowSpan="2" NavigationUIVisibility="Hidden"/>
+        <Frame x:Name="ModsPage" Grid.Row="1" Margin="0,0,0,60" Grid.Column="1" Grid.RowSpan="2" NavigationUIVisibility="Hidden"/>
+        <Frame x:Name="MainPage" Grid.Row="1" Margin="0,0,0,60" Grid.Column="1" Grid.RowSpan="2" NavigationUIVisibility="Hidden"/>
+        <Frame x:Name="SettingsPage" Grid.Row="1" Margin="0,0,0,60" Grid.Column="1" Grid.RowSpan="2" NavigationUIVisibility="Hidden"/>
         <StackPanel Grid.Column="1" Grid.Row="2">
             <Button x:Name="Start" HorizontalAlignment="Center" Padding="0" Margin="0,-18,0,0" Background="{x:Null}" Foreground="Transparent" BorderThickness="0" UseLayoutRounding="True" SnapsToDevicePixels="True" Click="PlayM">
                 <Button.Template>
