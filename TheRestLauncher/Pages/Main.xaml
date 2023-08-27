@@ -9,6 +9,6 @@
       Title="Main">
 
     <Grid>
-        <Image Source="Resoerces/TheRestBG.png"/>
+        <Image Source="Resources/TheRestBG.png"/>
     </Grid>
 </Page>
