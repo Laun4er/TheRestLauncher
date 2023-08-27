@@ -20,6 +20,7 @@
     <None Remove="Logo.png" />
     <None Remove="MainWindow.xaml.cs~RFc5ce2e0.TMP" />
     <None Remove="News.png" />
+    <None Remove="Pages\Resources\TheRestBG.png" />
     <None Remove="Resources\Buttons\Mods.png" />
     <None Remove="Resources\Buttons\PlayClick.gif" />
     <None Remove="Resources\Buttons\PlayHover.gif" />
@@ -40,11 +41,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Pages\Resources\TheRestBG.png" />
     <Resource Include="Resources\Buttons\Mods.png" />
-    <Resource Include="Resources\Buttons\Play.png" />
+    <Resource Include="Pages\Resources\Buttons\Play.png" />
     <Resource Include="Resources\Buttons\Home.png" />
-    <Resource Include="Resources\Buttons\PlayClick.gif" />
-    <Resource Include="Resources\Buttons\PlayHover.gif" />
+    <Resource Include="Pages\Resources\Buttons\PlayClick.gif" />
+    <Resource Include="Pages\Resources\Buttons\PlayHover.gif" />
     <Resource Include="Resources\Buttons\Window\close.png" />
     <Resource Include="Resources\Buttons\Window\close_hover.png" />
     <Resource Include="Resources\Buttons\Window\maximize.png" />
@@ -56,11 +58,6 @@
     <Resource Include="Resources\Buttons\News.png" />
     <Resource Include="Resources\Buttons\Settings.png" />
     <Resource Include="Resources\LogoColored.png" />
-    <Resource Include="Resources\TheRestBG.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Pages\Resources\" />
   </ItemGroup>
 
 </Project>
