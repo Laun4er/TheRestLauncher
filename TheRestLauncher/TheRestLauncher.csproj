@@ -8,6 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Modesxaml\**" />
+    <EmbeddedResource Remove="Modesxaml\**" />
+    <None Remove="Modesxaml\**" />
+    <Page Remove="Modesxaml\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="ButtonHome.png" />
     <None Remove="ButtonPlay.png" />
     <None Remove="Logo.png" />
@@ -53,7 +60,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Modesxaml\" />
+    <Folder Include="Pages\Recources\" />
   </ItemGroup>
 
 </Project>
