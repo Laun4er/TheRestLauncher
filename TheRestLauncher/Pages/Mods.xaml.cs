@@ -15,9 +15,6 @@ using System.Windows.Shapes;
 
 namespace TheRestLauncher.Pages
 {
-    /// <summary>
-    /// Логика взаимодействия для Mods.xaml
-    /// </summary>
     public partial class Mods : Page
     {
         public Mods()
