@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Diagnostics;
 
 namespace TheRestLauncher.Pages
 {
@@ -23,7 +24,7 @@ namespace TheRestLauncher.Pages
         }
         private void PlayM(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Скажи батнику пошёл нахуй");
+            Process.Start("C:\\XboxGames\\Minecraft Launcher\\Content\\Minecraft.exe");
         }
     }
 }

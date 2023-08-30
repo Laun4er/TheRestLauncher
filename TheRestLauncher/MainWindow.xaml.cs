@@ -67,10 +67,6 @@ namespace TheRest
             this.Close();
         }
 
-        private void GoNews_Click(object sender, RoutedEventArgs e)
-        {
-        }
-
         private bool isInitialSelection = true;
         private void PageChanged(object sender, SelectionChangedEventArgs e)
         {
