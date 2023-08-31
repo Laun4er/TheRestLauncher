@@ -21,5 +21,10 @@ namespace TheRestLauncher.Pages
         {
             InitializeComponent();
         }
+
+        private void StackPanel_DragEnter()
+        {
+
+        }
     }
 }

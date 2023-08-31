@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Diagnostics;
+using System.Xml.Linq;
+using System.IO;
 
 namespace TheRestLauncher.Pages
 {
@@ -24,7 +26,20 @@ namespace TheRestLauncher.Pages
         }
         private void PlayM(object sender, RoutedEventArgs e)
         {
-            Process.Start("C:\\XboxGames\\Minecraft Launcher\\Content\\Minecraft.exe");
+            string name = Nickname.Text;
+
+            string batFilePath = @"C:\TheRest\Minecraft\launcher\PlayM.bat";
+
+
+            string content = File.ReadAllText(batFilePath);
+
+
+            content = content.Replace("{name}", name);
+
+
+            File.WriteAllText(batFilePath, content);
+
+            Process.Start("C:\\TheRest\\Minecraft\\launcher\\PlayM.bat");
         }
     }
 }
