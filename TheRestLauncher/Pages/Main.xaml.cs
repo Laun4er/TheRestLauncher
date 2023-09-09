@@ -26,7 +26,7 @@ namespace TheRestLauncher.Pages
         }
         private void PlayM(object sender, RoutedEventArgs e)
         {
-            string name = Nickname.Text;
+            string name = NickName.Text;
 
             string batFilePath = @"C:\TheRest\Minecraft\launcher\PlayM.bat";
 

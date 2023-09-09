@@ -42,5 +42,7 @@
                 </Button.Template>
             </Button>
         </StackPanel>
+        <TextBlock Text="Сначала введите свой ник" Foreground="White" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="40"/>
+        <TextBox Name="NickName" Height="15" Width="120" VerticalAlignment="Bottom" Margin="20"/>
     </Grid>
 </Page>
