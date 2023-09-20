@@ -6,11 +6,9 @@
       xmlns:local="clr-namespace:TheRestLauncher.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Settings">
+      Title="Settings" Background="#363840">
 
     <Grid>
-        <Border Background="#363840">
-            <TextBlock Text="Настройки" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="40"/>
-        </Border>
+        <TextBlock Text="Настройки" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
     </Grid>
 </Page>

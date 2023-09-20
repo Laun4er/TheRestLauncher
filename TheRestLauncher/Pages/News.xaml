@@ -6,9 +6,31 @@
       xmlns:local="clr-namespace:TheRestLauncher.Pages"
       mc:Ignorable="d"
       d:DesignHeight="600" d:DesignWidth="1000"
-      Title="News">
+      Title="News" Background="#363840">
 
     <Grid>
-        <WebBrowser Source="https://www.google.ru/"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="375*"/>
+            <ColumnDefinition Width="20*"/>
+        </Grid.ColumnDefinitions>
+        
+            <StackPanel Grid.Row="1" Grid.Column="1" VerticalAlignment="Top" Margin="0,20">
+            <Border Background="#222227" Height="500" CornerRadius="10">
+                <TextBlock Foreground="White" TextWrapping="Wrap" Margin="20,20">
+                    <Run Text="TheRestLauncher" FontSize="30"/>
+                    <Run Text ="       ЗБТ 1.1" FontSize="15"/>
+                    <LineBreak/>
+                    <Run Text="• Новости с обновлениями лаунчера переместились во вкладку НОВОСТИ" FontSize="20"/>
+                    <LineBreak/>
+                    <Run Text="• Добавлена информация о версии в главное окно" FontSize="20"/>
+                    <LineBreak/>
+                    <Run Text="• Добавлена библиотека для отображения вашего ника в профиле" FontSize="20"/>
+                    <LineBreak/>
+                    <Run Text="• Смена фонов в разделах лаунчера" FontSize="20"/>
+                </TextBlock>
+            </Border>
+            
+        </StackPanel>
     </Grid>
 </Page>

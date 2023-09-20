@@ -147,6 +147,8 @@
             <RowDefinition Height="60"/>
         </Grid.RowDefinitions>
 
+        <RichTextBox Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right" TextBlock.FontSize="15"/>
+
         <Border Grid.RowSpan="3" Background="#222227"/>
         <Border Grid.Column="1" Background="#28282E"/>
         <Border Grid.Row="3" Grid.Column="1" Background="#28282E"/>

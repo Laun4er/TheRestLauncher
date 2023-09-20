@@ -22,6 +22,7 @@ using TheRest;
 using TheRestLauncher;
 using System.Diagnostics.Metrics;
 using TheRestLauncher.Pages;
+using System.IO;
 
 namespace TheRest
 {
@@ -31,6 +32,7 @@ namespace TheRest
         {
             InitializeComponent();
             PageFrame.Content = new Main();
+            
         }
 
         private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
