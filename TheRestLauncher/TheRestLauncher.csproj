@@ -2,16 +2,20 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net7.0-windows10.0.22621.0</TargetFramework>
+    <TargetFramework>net7.0-windows7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
   <ItemGroup>
     <Compile Remove="Modesxaml\**" />
+    <Compile Remove="Pages\Docks\**" />
     <EmbeddedResource Remove="Modesxaml\**" />
+    <EmbeddedResource Remove="Pages\Docks\**" />
     <None Remove="Modesxaml\**" />
+    <None Remove="Pages\Docks\**" />
     <Page Remove="Modesxaml\**" />
+    <Page Remove="Pages\Docks\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,6 +24,7 @@
     <None Remove="Logo.png" />
     <None Remove="MainWindow.xaml.cs~RFc5ce2e0.TMP" />
     <None Remove="News.png" />
+    <None Remove="Pages\Resources\Mods\icons\TheRest Developers icon.png" />
     <None Remove="Pages\Resources\TheRestBG.png" />
     <None Remove="Resources\Buttons\Mods.png" />
     <None Remove="Resources\Buttons\PlayClick.gif" />
@@ -41,6 +46,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Pages\Resources\Mods\icons\TheRest Developers icon.png" />
     <Resource Include="Pages\Resources\TheRestBG.png" />
     <Resource Include="Resources\Buttons\Mods.png" />
     <Resource Include="Pages\Resources\Buttons\Play.png" />

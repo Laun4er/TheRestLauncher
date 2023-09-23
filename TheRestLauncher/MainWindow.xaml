@@ -152,6 +152,7 @@
         <Border Grid.RowSpan="3" Background="#222227"/>
         <Border Grid.Column="1" Background="#28282E"/>
         <Border Grid.Row="3" Grid.Column="1" Background="#28282E"/>
+        
         <Image Source="Resources/Logo.png" Name="TheRestLogo" Width="140" Height="50" VerticalAlignment="Center" HorizontalAlignment="Center" RenderOptions.BitmapScalingMode="NearestNeighbor" SnapsToDevicePixels="True" UseLayoutRounding="True"/>
         <Image Source="Resources/LogoColored.png" Name="TheRestLogoColored" Opacity="0" Width="140" Height="50" VerticalAlignment="Center" HorizontalAlignment="Center" RenderOptions.BitmapScalingMode="NearestNeighbor" SnapsToDevicePixels="True" UseLayoutRounding="True">
             <Image.Style>

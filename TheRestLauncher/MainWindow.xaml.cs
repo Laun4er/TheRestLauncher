@@ -40,11 +40,6 @@ namespace TheRest
             DragMove();
         }
 
-        private void GoUpdate(object sender, RoutedEventArgs e)
-        {
-            Process.Start("C:\\TheRest\\Minecraft\\Updater\\Updater.exe");
-            Close();
-        }
 
         private void MinimizeButton(object sender, RoutedEventArgs e)
         {
