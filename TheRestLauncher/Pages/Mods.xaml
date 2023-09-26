@@ -7,30 +7,9 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Mods">
-
-    <Grid Background="#363840">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="36*"/>
-            <ColumnDefinition Width="733*"/>
-            <ColumnDefinition Width="31*"/>
-        </Grid.ColumnDefinitions>
-
-        <ScrollBar Visibility="Hidden"/>
-        <StackPanel Grid.Row="1" Grid.Column="1" Margin="0,20">
-            <Border Height="90" Background="#222227" CornerRadius="10" VerticalAlignment="Center">
-                <DockPanel>
-                    <Border CornerRadius="10" Width="60" Height="60" Margin="10">
-                        <Border.Background>
-                            <ImageBrush Stretch="Fill" ImageSource="\Pages\Resources\Mods\icons\TheRest Developers icon.png" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
-                        </Border.Background>
-                    </Border>
-
-                    <TextBlock Text="ЗБТ сборка" Foreground="White" VerticalAlignment="Center" Margin="10" FontSize="15" FontWeight="Bold"/>
-                    <TextBlock Text="SEASON 1" Foreground="White" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    <Button x:Name="Update" Content="Обновить" HorizontalAlignment="Right" VerticalAlignment="Center" Width="100" Height="40" Margin="10" Click="Update_Click"/>
-                </DockPanel>
-            </Border>
-
-        </StackPanel>
+    <Grid>
+        <TabControl>
+            
+        </TabControl>
     </Grid>
 </Page>

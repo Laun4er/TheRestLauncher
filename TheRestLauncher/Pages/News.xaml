@@ -9,36 +9,37 @@
       Title="News" Background="#363840">
 
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="37*"/>
-            <RowDefinition Height="563*"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="20*"/>
-            <ColumnDefinition Width="375*"/>
-            <ColumnDefinition Width="20*"/>
-        </Grid.ColumnDefinitions>
 
 
 
-
-        <StackPanel Grid.Row="1" VerticalAlignment="Top" Margin="48,2,48,0" Grid.ColumnSpan="3" Height="500">
-            <Border Background="#222227" Height="500" CornerRadius="10">
-                <TextBlock Foreground="White" TextWrapping="Wrap" Margin="20,20">
-                    <Run Text="TheRestLauncher" FontSize="30"/>
-                    <Run Text ="       ЗБТ 2" FontSize="15"/>
-                    <LineBreak/>
-                    <LineBreak/>
-                    <Run FontSize="15" FontWeight="Bold"> 1. В разделе "Моды" была добавлена кнопка с переустановкой основных модов </Run>
-                    <LineBreak/>
-                    <Run FontSize ="15" FontWeight="Bold"> 2. В настройках лаунчера добавлен новый раздел с обновлением</Run>
-                    <LineBreak/>
-                    <Run FontSize="15" FontWeight="Bold"> 3. Оптимизация кода</Run>
-                    <LineBreak/>
-                    <Run FontSize="15" FontWeight="Bold"> 4. Добавлена смена своего ника</Run>
-                </TextBlock>
-            </Border>
-
-        </StackPanel>
+        <TabControl Grid.ColumnSpan="3" Background="#363840" BorderThickness="0">
+            <TabItem Header="Новости лаунчера">
+                <Border Background="#222227" Height="500" CornerRadius="10">
+                    <TextBlock Foreground="White" TextWrapping="Wrap" Margin="20,20">
+        <Run Text="TheRestLauncher" FontSize="30"/>
+        <Run Text ="       ЗБТ 2" FontSize="15"/>
+        <LineBreak/>
+        <LineBreak/>
+        <Run FontSize="15" FontWeight="Bold"> 1. В разделе "Моды" была добавлена кнопка с переустановкой основных модов(которая не работает) </Run>
+        <LineBreak/>
+        <Run FontSize ="15" FontWeight="Bold"> 2. В настройках лаунчера добавлен новый раздел с обновлением</Run>
+        <LineBreak/>
+        <Run FontSize="15" FontWeight="Bold"> 3. Оптимизация кода</Run>
+        <LineBreak/>
+        <Run FontSize="15" FontWeight="Bold"> 4. Добавлены категории в разделах лаунчера</Run>
+                    </TextBlock>
+                </Border>
+            </TabItem>
+            <TabItem Header="Новости сервера">
+                <Border Background="#222227" Height="500" CornerRadius="10">
+                    <TextBlock Foreground="White" Margin="20,20">
+                        <Run FontSize="20"> TheRest SEASON 1</Run>
+                        <LineBreak/>
+                        <LineBreak/>
+                        <Run FontSize="15"> Скоро открытие</Run>
+                    </TextBlock>
+                </Border>
+            </TabItem>
+        </TabControl>
     </Grid>
 </Page>

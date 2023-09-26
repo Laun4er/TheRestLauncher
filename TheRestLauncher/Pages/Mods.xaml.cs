@@ -16,6 +16,8 @@ using System.Diagnostics;
 using System.IO;
 using System.Net;
 using System.IO.Compression;
+using TheRestLauncher.Pages;
+using System.Windows.Controls.Primitives;
 
 namespace TheRestLauncher.Pages
 {
@@ -31,24 +33,9 @@ namespace TheRestLauncher.Pages
 
         }
 
-        private void Update_Click(object sender, RoutedEventArgs e)
+        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            string DeleteMods = "";
-            string CteateTemp = "";
-            string Extract = "";
-            string DownloadMods = "";
-            string Temp = "";
-            string DeleteTemp = "";
-
-            WebClient client = new WebClient();
-
-            Directory.Delete(DeleteMods, true);
-            Directory.CreateDirectory(CteateTemp);
-            client.DownloadFile(DownloadMods, Temp + "Mods.zip");
-            ZipFile.ExtractToDirectory(Temp, Extract);
-            Directory.Delete(DeleteTemp, true);
-            MessageBox.Show("Успешно переустановлено", "Переустановка сборки");
-            
+        
         }
     }
 }
