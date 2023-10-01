@@ -15,7 +15,8 @@ using System.Windows.Shapes;
 using System.Diagnostics;
 using System.Windows.Controls.Primitives;
 using System.IO;
-
+using Microsoft.Win32;
+using System.Net;
 
 namespace TheRestLauncher.Pages
 {
@@ -55,7 +56,8 @@ namespace TheRestLauncher.Pages
 
         private void GoM_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Скоро", "Открытие папки майнккрафт");
+            MessageBox.Show("Невозможно открыть папку", "Открытие папки с майнкрафтом");
+
         }
     }
 }

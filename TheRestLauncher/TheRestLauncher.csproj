@@ -24,6 +24,7 @@
     <None Remove="Logo.png" />
     <None Remove="MainWindow.xaml.cs~RFc5ce2e0.TMP" />
     <None Remove="News.png" />
+    <None Remove="Pages\Resources\Mods\icons\Sodium.png" />
     <None Remove="Pages\Resources\Mods\icons\TheRest Developers icon.png" />
     <None Remove="Pages\Resources\TheRestBG.png" />
     <None Remove="Resources\Buttons\Mods.png" />
@@ -46,6 +47,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Pages\Resources\Mods\icons\Sodium.png" />
     <Resource Include="Pages\Resources\Mods\icons\TheRest Developers icon.png" />
     <Resource Include="Pages\Resources\TheRestBG.png" />
     <Resource Include="Resources\Buttons\Mods.png" />

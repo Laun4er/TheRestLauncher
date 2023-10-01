@@ -20,13 +20,18 @@
         <Run Text ="       ЗБТ 2" FontSize="15"/>
         <LineBreak/>
         <LineBreak/>
-        <Run FontSize="15" FontWeight="Bold"> 1. В разделе "Моды" была добавлена кнопка с переустановкой основных модов(которая не работает) </Run>
+        <Run FontSize="15" FontWeight="Bold"> 1. В разделе "Настройки" была добавлена кнопка с переустановкой основных модов(которая не работает) </Run>
         <LineBreak/>
         <Run FontSize ="15" FontWeight="Bold"> 2. В настройках лаунчера добавлен новый раздел с обновлением</Run>
         <LineBreak/>
         <Run FontSize="15" FontWeight="Bold"> 3. Оптимизация кода</Run>
         <LineBreak/>
         <Run FontSize="15" FontWeight="Bold"> 4. Добавлены категории в разделах лаунчера</Run>
+                        <LineBreak/>
+                        <Run FontSize="15" FontWeight="Bold">5. Изменены файлы запуска лаунчера</Run>
+                        <LineBreak/>
+                        <Run FontSize="15" FontWeight="Bold"> 6. Обновлён апдейтер(обязательно установить обновление!!!)</Run>
+                        <LineBreak/>
                     </TextBlock>
                 </Border>
             </TabItem>

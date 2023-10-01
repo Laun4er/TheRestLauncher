@@ -6,10 +6,39 @@
       xmlns:local="clr-namespace:TheRestLauncher.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Mods">
+      Title="Mods" 
+      Background="#363840">
     <Grid>
-        <TabControl>
-            
+        <TabControl Background="#363840">
+            <TabItem Name="Main" Header="Основные" VerticalAlignment="Top">
+                <StackPanel VerticalAlignment="Top">
+                    <Border Background="#222227" CornerRadius="10" Height="60">
+                        <DockPanel>
+                            <Border Width="40" Height="40" HorizontalAlignment="Left" Margin="10" CornerRadius="10">
+                                <Border.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="\Pages\Resources\Mods\icons\TheRest Developers icon.png" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
+                                </Border.Background>
+                            </Border>
+                            <TextBlock Text="ЗБТ Сборка TheRest" Foreground="White" FontSize="20" FontWeight="Bold"/>
+                        </DockPanel>
+                    </Border>
+                    <Border Background="#222227" CornerRadius="10" Height="60" Margin="0,10">
+                        <DockPanel>
+                            <Border Width="40" Height="40" HorizontalAlignment="Left" Margin="10" CornerRadius="10">
+                                <Border.Background>
+                                    <ImageBrush Stretch="Fill" ImageSource="\Pages\Resources\Mods\icons\Sodium.png" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
+                                </Border.Background>
+                            </Border>
+                            <TextBlock Text="Sodium" Foreground="White" FontSize="20" FontWeight="Bold"/>
+                        </DockPanel>
+                    </Border>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Дополнительные" Name="Extra">
+                <Border Background="#222227" Height="500" CornerRadius="10">
+                    <TextBlock Text="Вот когда будет готова таблица, тогда сделаю дополнительные моды)" Foreground="White" FontSize="20" FontWeight="Bold"/>
+                </Border>
+            </TabItem>
         </TabControl>
     </Grid>
 </Page>
