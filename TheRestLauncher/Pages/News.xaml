@@ -46,7 +46,7 @@
                     </Setter>
                 </Style>
             </TabControl.Resources>
-            <TabItem Header="Новости лаунчера" Foreground="White">
+            <TabItem Header="Новости лаунчера" Foreground="#E5F1FF">
                 <StackPanel VerticalAlignment="Top" Margin="10">
                     <DockPanel>
                         <Border Background="#222227" Height="100" CornerRadius="10">
@@ -55,7 +55,7 @@
                     </DockPanel>
                 </StackPanel>
             </TabItem>
-            <TabItem Header="Новости сервера" Foreground="White">
+            <TabItem Header="Новости сервера" Foreground="#E5F1FF">
                 <StackPanel VerticalAlignment="Top" Margin="10">
                     <DockPanel>
                         <Border Background="#222227" Height="50" CornerRadius="10">
@@ -64,7 +64,7 @@
                     </DockPanel>
                 </StackPanel>
             </TabItem>
-            <TabItem Header="Новости игроков" Foreground="White">
+            <TabItem Header="Новости игроков" Foreground="#E5F1FF">
                 <StackPanel VerticalAlignment="Top" Margin="10">
                     <DockPanel>
                         <Border Background="#222227" Height="50" CornerRadius="10">

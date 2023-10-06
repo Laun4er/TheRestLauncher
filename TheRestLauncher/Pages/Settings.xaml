@@ -46,7 +46,7 @@
                     </Setter>
                 </Style>
             </TabControl.Resources>
-            <TabItem Header="Лаунчер" Foreground="White">
+            <TabItem Header="Лаунчер" Foreground="#E5F1FF">
                 <StackPanel VerticalAlignment="Top" Margin="10">
                     <DockPanel>
                         <Border Background="#222227" Height="50" CornerRadius="10">
@@ -55,7 +55,7 @@
                     </DockPanel>
                 </StackPanel>
             </TabItem>
-            <TabItem Header="Клиент" Foreground="White">
+            <TabItem Header="Клиент" Foreground="#E5F1FF">
                 <StackPanel VerticalAlignment="Top" Margin="10">
                     <DockPanel>
                         <Border Background="#222227" Height="50" CornerRadius="10">
@@ -64,7 +64,7 @@
                     </DockPanel>
                 </StackPanel>
             </TabItem>
-            <TabItem Header="Прочее" Foreground="White">
+            <TabItem Header="Прочее" Foreground="#E5F1FF">
                 <StackPanel VerticalAlignment="Top" Margin="10">
                     <DockPanel>
                         <Border Background="#222227" Height="50" CornerRadius="10">
