@@ -5,69 +5,40 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:TheRestLauncher.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="600" d:DesignWidth="1000"
       Title="Settings" Background="#363840">
 
     <Grid>
-        <TabControl Background="Transparent" BorderBrush="Transparent">
+        <TabControl>
             <TabControl.Resources>
-                <Style TargetType="TabItem">
-                    <Setter Property="BorderThickness" Value="0" />
-                    <Setter Property="Template">
-                        <Setter.Value>
-                            <ControlTemplate TargetType="TabItem">
-                                <Grid>
-                                    <Border x:Name="Border" BorderBrush="#5CA4E7" BorderThickness="0,0,0,2" Background="Transparent">
-                                        <ContentPresenter x:Name="ContentSite"
-                                          VerticalAlignment="Center"
-                                          HorizontalAlignment="Center"
-                                          ContentSource="Header"
-                                          Margin="10,2"/>
-
-                                    </Border>
-                                </Grid>
-                                <ControlTemplate.Triggers>
-                                    <Trigger Property="IsSelected" Value="True">
-                                        <Setter TargetName="Border" Property="BorderThickness" Value="0,0,0,5" />
-                                        <Setter TargetName="Border" Property="BorderBrush" Value="#5CA4E7" />
-                                    </Trigger>
-                                    <Trigger Property="IsSelected" Value="False">
-                                        <Setter TargetName="Border" Property="BorderThickness" Value="0" />
-                                    </Trigger>
-                                    <Trigger Property="IsMouseCaptured" Value="True">
-                                        <Setter TargetName="Border" Property="BorderBrush" Value="#5CA4E7" />
-                                    </Trigger>
-                                    <Trigger Property="IsSelected" Value="True">
-                                        <Setter Property="TextBlock.FontWeight" Value="Bold"/>
-                                    </Trigger>
-                                </ControlTemplate.Triggers>
-                            </ControlTemplate>
-                        </Setter.Value>
-                    </Setter>
-                </Style>
+                <ResourceDictionary>
+                    <ResourceDictionary.MergedDictionaries>
+                        <ResourceDictionary Source="Resources/Styles/TabControl.xaml"/>
+                    </ResourceDictionary.MergedDictionaries>
+                </ResourceDictionary>
             </TabControl.Resources>
-            <TabItem Header="Лаунчер" Foreground="#E5F1FF">
+            <TabItem Header="Лаунчер">
                 <StackPanel VerticalAlignment="Top" Margin="10">
                     <DockPanel>
-                        <Border Background="#222227" Height="50" CornerRadius="10">
+                        <Border Height="50">
 
                         </Border>
                     </DockPanel>
                 </StackPanel>
             </TabItem>
-            <TabItem Header="Клиент" Foreground="#E5F1FF">
+            <TabItem Header="Клиент">
                 <StackPanel VerticalAlignment="Top" Margin="10">
                     <DockPanel>
-                        <Border Background="#222227" Height="50" CornerRadius="10">
+                        <Border Height="50">
 
                         </Border>
                     </DockPanel>
                 </StackPanel>
             </TabItem>
-            <TabItem Header="Прочее" Foreground="#E5F1FF">
+            <TabItem Header="Прочее">
                 <StackPanel VerticalAlignment="Top" Margin="10">
                     <DockPanel>
-                        <Border Background="#222227" Height="50" CornerRadius="10">
+                        <Border Height="50">
 
                         </Border>
                     </DockPanel>
