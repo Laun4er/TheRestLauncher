@@ -18,6 +18,7 @@ using System.Net;
 using System.IO.Compression;
 using TheRestLauncher.Pages;
 using System.Windows.Controls.Primitives;
+using System.Windows.Media.Animation;
 
 namespace TheRestLauncher.Pages
 {
@@ -27,15 +28,6 @@ namespace TheRestLauncher.Pages
         {
             InitializeComponent();
         }
-
-        private void StackPanel_DragEnter()
-        {
-
-        }
-
-        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-        
-        }
     }
 }
+

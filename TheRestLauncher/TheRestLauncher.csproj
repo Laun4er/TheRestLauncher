@@ -27,6 +27,8 @@
     <None Remove="Pages\Resources\Mods\icons\Sodium.png" />
     <None Remove="Pages\Resources\Mods\icons\TheRest Developers icon.png" />
     <None Remove="Pages\Resources\TheRestBG.png" />
+    <None Remove="Resources\Buttons\Delete.png" />
+    <None Remove="Resources\Buttons\Download.png" />
     <None Remove="Resources\Buttons\Mods.png" />
     <None Remove="Resources\Buttons\PlayClick.gif" />
     <None Remove="Resources\Buttons\PlayHover.gif" />
@@ -43,6 +45,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Resources\Buttons\Delete.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="XamlAnimatedGif" Version="2.2.0" />
   </ItemGroup>
 
@@ -50,6 +56,7 @@
     <Resource Include="Pages\Resources\Mods\icons\Sodium.png" />
     <Resource Include="Pages\Resources\Mods\icons\TheRest Developers icon.png" />
     <Resource Include="Pages\Resources\TheRestBG.png" />
+    <Resource Include="Resources\Buttons\Download.png" />
     <Resource Include="Resources\Buttons\Mods.png" />
     <Resource Include="Pages\Resources\Buttons\Play.png" />
     <Resource Include="Resources\Buttons\Home.png" />
