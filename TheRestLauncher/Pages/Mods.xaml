@@ -27,6 +27,15 @@
                     </DockPanel>
                 </StackPanel>
             </TabItem>
+            <TabItem Header="Оптимизация">
+                <StackPanel VerticalAlignment="Top" Margin="10, 10, 10, -2">
+                    <DockPanel>
+                        <Border Height="50">
+
+                        </Border>
+                    </DockPanel>
+                </StackPanel>
+            </TabItem>
             <TabItem Header="Дополнительные">
                 <StackPanel VerticalAlignment="Top" Margin="10, 10, 10, -2">
                     <DockPanel>
