@@ -18,7 +18,7 @@
                 </ResourceDictionary>
             </TabControl.Resources>
             <TabItem Header="Лаунчер">
-                <StackPanel VerticalAlignment="Top" Margin="10">
+                <StackPanel>
                     <DockPanel>
                         <Border Height="50">
 
@@ -27,7 +27,7 @@
                 </StackPanel>
             </TabItem>
             <TabItem Header="Клиент">
-                <StackPanel VerticalAlignment="Top" Margin="10">
+                <StackPanel>
                     <DockPanel>
                         <Border Height="50">
 
@@ -36,7 +36,7 @@
                 </StackPanel>
             </TabItem>
             <TabItem Header="Прочее">
-                <StackPanel VerticalAlignment="Top" Margin="10">
+                <StackPanel>
                     <DockPanel>
                         <Border Height="50">
 

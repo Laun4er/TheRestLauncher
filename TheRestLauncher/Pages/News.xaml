@@ -18,7 +18,7 @@
                 </ResourceDictionary>
             </TabControl.Resources>
             <TabItem Header="Новости лаунчера">
-                <StackPanel VerticalAlignment="Top" Margin="10">
+                <StackPanel>
                     <DockPanel>
                         <Border Height="50">
 
@@ -27,7 +27,7 @@
                 </StackPanel>
             </TabItem>
             <TabItem Header="Новости сервера">
-                <StackPanel VerticalAlignment="Top" Margin="10">
+                <StackPanel>
                     <DockPanel>
                         <Border Height="50">
 
@@ -36,7 +36,7 @@
                 </StackPanel>
             </TabItem>
             <TabItem Header="Новости игроков">
-                <StackPanel VerticalAlignment="Top" Margin="10">
+                <StackPanel>
                     <DockPanel>
                         <Border Height="50">
 

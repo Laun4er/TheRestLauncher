@@ -43,4 +43,8 @@
         <Setter Property="Background" Value="#222227"/>
         <Setter Property="CornerRadius" Value="10"/>
     </Style>
+    <Style TargetType="StackPanel">
+        <Setter Property="VerticalAlignment" Value="Top"/>
+        <Setter Property="Margin" Value="30"/>
+    </Style>
 </ResourceDictionary>
