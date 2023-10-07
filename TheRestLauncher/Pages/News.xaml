@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:TheRestLauncher.Pages"
       mc:Ignorable="d"
       d:DesignHeight="600" d:DesignWidth="1000"
-      Title="News" Background="#363840">
+      Title="News" Background="#28282E">
 
     <Grid>
         <TabControl>
