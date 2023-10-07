@@ -7,7 +7,7 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Mods" 
-      Background="#28282E">
+      Background="#363840">
 
     <Grid>
         <TabControl>
@@ -28,7 +28,7 @@
                 </StackPanel>
             </TabItem>
             <TabItem Header="Дополнительные">
-                <StackPanel VerticalAlignment="Top" Margin="10">
+                <StackPanel VerticalAlignment="Top" Margin="10, 10, 10, -2">
                     <DockPanel>
                         <Border Height="50">
 
