@@ -7,9 +7,16 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Mods" 
-      Background="#363840">
+      Background="#28282E">
+
     <Grid>
-        <TabControl Background="Transparent" BorderBrush="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="47*"/>
+        </Grid.RowDefinitions>
+
+        <Rectangle Grid.Row="1" Fill="#363840"/>
+        <TabControl Background="Transparent" BorderBrush="Transparent" Grid.RowSpan="2">
             <TabControl.Resources>
                 <Style TargetType="TabItem">
                     <Setter Property="BorderThickness" Value="0" />
@@ -47,10 +54,10 @@
                 </Style>
             </TabControl.Resources>
             <TabItem Header="Основные" Foreground="#E5F1FF">
-                <StackPanel VerticalAlignment="Top" Margin="10">
+                <StackPanel VerticalAlignment="Top" Margin="10,40">
                     <DockPanel>
                         <Border Background="#222227" Height="50" CornerRadius="10">
-                            
+
                         </Border>
                     </DockPanel>
                 </StackPanel>

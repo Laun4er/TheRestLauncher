@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:TheRestLauncher.Pages"
       mc:Ignorable="d"
       d:DesignHeight="600" d:DesignWidth="1000"
-      Title="News" Background="#363840">
+      Title="News" Background="#28282E">
 
     <Grid>
         <TabControl Background="Transparent" BorderBrush="Transparent">
@@ -49,7 +49,7 @@
             <TabItem Header="Новости лаунчера" Foreground="#E5F1FF">
                 <StackPanel VerticalAlignment="Top" Margin="10">
                     <DockPanel>
-                        <Border Background="#222227" Height="100" CornerRadius="10">
+                        <Border Background="#363840" Height="100" CornerRadius="10">
 
                         </Border>
                     </DockPanel>

@@ -155,7 +155,7 @@
             <TextBlock Text="TheRest SEASON 1" Foreground="#E5F1FF" FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,0"/>
         </Border>
         <Border Grid.Row="3" Grid.Column="1" Background="#28282E"/>
-        
+
         <Image Source="Resources/Logo.png" Name="TheRestLogo" Width="140" Height="50" VerticalAlignment="Center" HorizontalAlignment="Center" RenderOptions.BitmapScalingMode="NearestNeighbor" SnapsToDevicePixels="True" UseLayoutRounding="True"/>
         <Image Source="Resources/LogoColored.png" Name="TheRestLogoColored" Opacity="0" Width="140" Height="50" VerticalAlignment="Center" HorizontalAlignment="Center" RenderOptions.BitmapScalingMode="NearestNeighbor" SnapsToDevicePixels="True" UseLayoutRounding="True">
             <Image.Style>
@@ -238,6 +238,6 @@
             </ListBoxItem>
         </ListBox>
 
-        <Frame x:Name="PageFrame" Grid.Row="1" Grid.Column="1" Grid.RowSpan="2" NavigationUIVisibility="Hidden"/>
+        <Frame x:Name="PageFrame" Grid.Column="1" Grid.RowSpan="3" NavigationUIVisibility="Hidden" Margin="0,78,0,0"/>
     </Grid>
 </Window>
