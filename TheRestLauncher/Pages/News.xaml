@@ -20,8 +20,16 @@
             <TabItem Header="Новости лаунчера">
                 <StackPanel>
                     <DockPanel>
-                        <Border Height="50">
-
+                        <Border Height="200">
+                            <TextBlock>
+                                <Run Text="Обновление ЗБТ 3.1 от 16.10.2023" FontSize="20"/>
+                                <LineBreak/>
+                                <Run Text="1. Полностью обновлён апдейтер"/>
+                                <LineBreak/>
+                                <Run Text="2. Добавлена система нахождения ошибок и самовосстановление их"/>
+                                <LineBreak/>
+                                <Run Text="3. Добавлена кнопка, которая сбросит все моды по умолчанию"/>
+                            </TextBlock>
                         </Border>
                     </DockPanel>
                 </StackPanel>

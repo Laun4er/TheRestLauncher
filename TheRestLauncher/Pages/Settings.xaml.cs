@@ -29,5 +29,17 @@ namespace TheRestLauncher.Pages
         {
             InitializeComponent();
         }
+
+
+
+        private void DonateDev_Click(object sender, RoutedEventArgs e)
+        {
+            Process.Start(new ProcessStartInfo("https://www.donationalerts.com/r/launcher1888") { UseShellExecute = true });
+        }
+
+        private void DonateServer_Click(object sender, RoutedEventArgs e)
+        {
+            Process.Start(new ProcessStartInfo("https://www.donationalerts.com/r/zvezdokot") { UseShellExecute = true });
+        }
     }
 }

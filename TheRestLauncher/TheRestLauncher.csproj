@@ -10,12 +10,16 @@
   <ItemGroup>
     <Compile Remove="Modesxaml\**" />
     <Compile Remove="Pages\Docks\**" />
+    <Compile Remove="Pages\Resources\Mods\**" />
     <EmbeddedResource Remove="Modesxaml\**" />
     <EmbeddedResource Remove="Pages\Docks\**" />
+    <EmbeddedResource Remove="Pages\Resources\Mods\**" />
     <None Remove="Modesxaml\**" />
     <None Remove="Pages\Docks\**" />
+    <None Remove="Pages\Resources\Mods\**" />
     <Page Remove="Modesxaml\**" />
     <Page Remove="Pages\Docks\**" />
+    <Page Remove="Pages\Resources\Mods\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -24,8 +28,6 @@
     <None Remove="Logo.png" />
     <None Remove="MainWindow.xaml.cs~RFc5ce2e0.TMP" />
     <None Remove="News.png" />
-    <None Remove="Pages\Resources\Mods\icons\Sodium.png" />
-    <None Remove="Pages\Resources\Mods\icons\TheRest Developers icon.png" />
     <None Remove="Pages\Resources\TheRestBG.png" />
     <None Remove="Resources\Buttons\Delete.png" />
     <None Remove="Resources\Buttons\Download.png" />
@@ -53,8 +55,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Pages\Resources\Mods\icons\Sodium.png" />
-    <Resource Include="Pages\Resources\Mods\icons\TheRest Developers icon.png" />
     <Resource Include="Pages\Resources\TheRestBG.png" />
     <Resource Include="Resources\Buttons\Download.png" />
     <Resource Include="Resources\Buttons\Mods.png" />

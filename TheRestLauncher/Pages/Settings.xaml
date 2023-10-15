@@ -9,6 +9,8 @@
       Title="Settings" Background="#363840">
 
     <Grid>
+        <ProgressBar  Height="40" VerticalAlignment="Bottom" Margin="15,10"
+                     Background="#222227" Foreground="#2F71AD" Name="ProgressBar" BorderThickness="0"/> <!--Короче, тут прогресс бар, значением Value ставишь его в определённое значение (от 0 до 100) или прописываешь "Isidertenimate = "true" и будет типо неопределённой загрузки"-->
         <TabControl>
             <TabControl.Resources>
                 <ResourceDictionary>
@@ -18,6 +20,7 @@
                 </ResourceDictionary>
             </TabControl.Resources>
             <TabItem Header="Лаунчер">
+                
                 <StackPanel>
                     <DockPanel>
                         <Border Height="50">
@@ -38,8 +41,67 @@
             <TabItem Header="Прочее">
                 <StackPanel>
                     <DockPanel>
-                        <Border Height="50">
-
+                        <Border>
+                            <DockPanel>
+                                <StackPanel>
+                                    <TextBlock Text="Версия лаунчера: ЗБТ 3.1"/>
+                                    <TextBlock Text="Версия Minecraft: Fabric 1.20.1"/>
+                                    <TextBlock Text="Текущий сезон: SEASON 1"/>
+                                    <TextBlock Text="Разработчики: Laun4er; Karvane"/>
+                                </StackPanel>
+                                <StackPanel>
+                                    <Button Content="Поддержка разработчика" Margin="10"
+                                            Width="250" Height="40"
+                                            HorizontalAlignment="Right"
+                                            Name="DonateDev" Foreground="White"
+                                            Click="DonateDev_Click">
+                                        <Button.Style>
+                                            <Style TargetType="{x:Type Button}">
+                                                <Setter Property="Background" Value="#363840"/>
+                                                <Setter Property="Template">
+                                                    <Setter.Value>
+                                                        <ControlTemplate TargetType="{x:Type Button}">
+                                                            <Border Background="{TemplateBinding Background}" CornerRadius="5">
+                                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                            </Border>
+                                                        </ControlTemplate>
+                                                    </Setter.Value>
+                                                </Setter>
+                                                <Style.Triggers>
+                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                        <Setter Property="Background" Value="#6161FF"/>
+                                                    </Trigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </Button.Style>
+                                    </Button>
+                                    <Button Content="Поддержка сервера" Margin="10"
+                                            Width="250" Height="40"
+                                            HorizontalAlignment="Right"
+                                            Name="DonateServer" Foreground="White"
+                                            Click="DonateServer_Click">
+                                        <Button.Style>
+                                            <Style TargetType="{x:Type Button}">
+                                                <Setter Property="Background" Value="#363840"/>
+                                                <Setter Property="Template">
+                                                    <Setter.Value>
+                                                        <ControlTemplate TargetType="{x:Type Button}">
+                                                            <Border Background="{TemplateBinding Background}" CornerRadius="5">
+                                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                            </Border>
+                                                        </ControlTemplate>
+                                                    </Setter.Value>
+                                                </Setter>
+                                                <Style.Triggers>
+                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                        <Setter Property="Background" Value="#6161FF"/>
+                                                    </Trigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </Button.Style>
+                                    </Button>
+                                </StackPanel>
+                            </DockPanel>
                         </Border>
                     </DockPanel>
                 </StackPanel>
