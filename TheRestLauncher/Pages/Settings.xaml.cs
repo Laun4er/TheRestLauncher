@@ -49,7 +49,7 @@ namespace TheRestLauncher.Pages
 
         private void TikTok_Click(object sender, RoutedEventArgs e)
         {
-            Process.Start(new ProcessStartInfo("https://vt.tiktok.com/ZS8pvnUev/") { UseShellExecute = true });
+            Process.Start(new ProcessStartInfo("https://www.tiktok.com/@therestmc") { UseShellExecute = true });
         }
 
         private void VK_Click(object sender, RoutedEventArgs e)
