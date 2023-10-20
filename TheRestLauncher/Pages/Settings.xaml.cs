@@ -41,5 +41,20 @@ namespace TheRestLauncher.Pages
         {
             Process.Start(new ProcessStartInfo("https://www.donationalerts.com/r/zvezdokot") { UseShellExecute = true });
         }
+
+        private void YouTube_Click(object sender, RoutedEventArgs e)
+        {
+            Process.Start(new ProcessStartInfo("https://www.youtube.com/channel/UCsB5ly0G_P14UpBzGHYxNcQ") { UseShellExecute = true });
+        }
+
+        private void TikTok_Click(object sender, RoutedEventArgs e)
+        {
+            Process.Start(new ProcessStartInfo("https://vt.tiktok.com/ZS8pvnUev/") { UseShellExecute = true });
+        }
+
+        private void VK_Click(object sender, RoutedEventArgs e)
+        {
+            Process.Start(new ProcessStartInfo("https://vk.com/therestmc") { UseShellExecute = true });
+        }
     }
 }

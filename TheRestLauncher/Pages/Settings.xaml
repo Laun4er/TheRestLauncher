@@ -10,7 +10,7 @@
 
     <Grid>
         <ProgressBar  Height="40" VerticalAlignment="Bottom" Margin="15,10"
-                     Background="#222227" Foreground="#2F71AD" Name="ProgressBar" BorderThickness="0"/> <!--Короче, тут прогресс бар, значением Value ставишь его в определённое значение (от 0 до 100) или прописываешь "Isidertenimate = "true" и будет типо неопределённой загрузки"-->
+                     Background="#222227" Foreground="#2F71AD" Name="ProgressBar" BorderThickness="0"/>
         <TabControl>
             <TabControl.Resources>
                 <ResourceDictionary>
@@ -48,6 +48,17 @@
                                     <TextBlock Text="Версия Minecraft: Fabric 1.20.1"/>
                                     <TextBlock Text="Текущий сезон: SEASON 1"/>
                                     <TextBlock Text="Разработчики: Laun4er; Karvane"/>
+                                    <DockPanel>
+                                        <Button Width="40" Height="40" HorizontalAlignment="Left" Margin="10" Name="VK" BorderThickness="0" Background="Transparent" Cursor="Hand" Click="VK_Click">
+                                            <Image Source="/Resources/Buttons/VK.png" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
+                                        </Button>
+                                        <Button Width="40" Height="40" HorizontalAlignment="Left" Margin="10" Name="TikTok" BorderThickness="0" Background="Transparent" Cursor="Hand" Click="TikTok_Click">
+                                            <Image Source="/Resources/Buttons/TikTok.png" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
+                                        </Button>
+                                        <Button Width="40" Height="40" HorizontalAlignment="Left" Margin="10" Name="YouTube" BorderThickness="0" Background="Transparent" Cursor="Hand" Click="YouTube_Click">
+                                            <Image Source="/Resources/Buttons/Youtube.png" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
+                                        </Button>
+                                    </DockPanel>
                                 </StackPanel>
                                 <StackPanel>
                                     <Button Content="Поддержка разработчика" Margin="10"
