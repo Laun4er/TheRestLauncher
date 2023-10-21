@@ -32,6 +32,7 @@ namespace TheRest
         {
             InitializeComponent();
             PageFrame.Content = new Main();
+            User.Text = File.ReadAllText("C:\\TheRest\\User\\Data\\User.txt");
             
         }
 
@@ -90,6 +91,11 @@ namespace TheRest
                     PageFrame.Content = Activator.CreateInstance(PageType);
                 }
             }
+        }
+
+        private void ChangeNick_Click(object sender, RoutedEventArgs e)
+        {
+            Process.Start("/UserName.xaml");
         }
     }
     public static class SelectorBehavior

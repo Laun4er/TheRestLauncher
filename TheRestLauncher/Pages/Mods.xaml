@@ -21,9 +21,7 @@
             <TabItem Header="Основные">
                 <StackPanel>
                     <DockPanel>
-                        <Border Height="50">
-
-                        </Border>
+                        
                     </DockPanel>
                 </StackPanel>
             </TabItem>
