@@ -23,6 +23,9 @@ using TheRestLauncher;
 using System.Diagnostics.Metrics;
 using TheRestLauncher.Pages;
 using System.IO;
+using System.Net;
+using System.Diagnostics.Eventing.Reader;
+using System.IO.Compression;
 
 namespace TheRest
 {
@@ -31,10 +34,45 @@ namespace TheRest
         public MainWindow()
         {
             InitializeComponent();
+            CheckFiles();
             PageFrame.Content = new Main();
             User.Text = File.ReadAllText("C:\\TheRest\\User\\Data\\User.txt");
-            
+
         }
+        private void CheckFiles()
+        {
+            //стринги
+            string mods = "C:\\TheRest\\Minecraft\\game\\mods";
+
+            if (Directory.Exists(mods)) //Если не найдена папка с модами, то скачивается новая папка
+            {
+
+            }
+            else 
+            {
+                nomods();
+            }
+        }
+
+        private void nomods ()
+        {
+            WebClient client = new WebClient();
+
+            string URL = "https://drive.google.com/uc?export=download&confirm=no_antivirus&id=1QiAInjQaL5OiHrkVWlhWPCTtVswGYBFz";
+            string CreateTemp = "C:\\TheRest\\Temp";
+            string SavePath = "C:\\TheRest\\Temp\\";
+            string Extract = "C:\\TheRest\\Minecraft\\game\\";
+            string forExtract = "C:\\TheRest\\Temp\\mods.zip";
+            string DeleteTemp = "C:\\TheRest\\Temp";
+
+            Directory.CreateDirectory(CreateTemp);
+            client.DownloadFile(URL, SavePath + "mods.zip");
+            ZipFile.ExtractToDirectory(forExtract, Extract);
+            Directory.Delete(DeleteTemp, true);
+
+        }
+
+
 
         private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
