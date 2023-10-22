@@ -57,14 +57,32 @@ namespace TheRestLauncher.Pages
 
         private void Worker_DoWork (object sender, DoWorkEventArgs e)
         {
-            for (int i = 0; i <= 100; i++)
+            for (int i = 0; i <= 10; i++)
             {
                 Directory.Delete(DeleteMods, true);
-                Directory.CreateDirectory(CreateTemp);
-                client.DownloadFile(DownloadMods, SavePath + "mods.zip");
-                ZipFile.ExtractToDirectory(forExtract, Extract);
-                Directory.Delete(DeleteTemp, true);
 
+                worker.ReportProgress(i);
+
+            }
+            for (int i = 10; i <= 20; i++)
+            {
+                Directory.CreateDirectory(CreateTemp);
+                worker.ReportProgress(i);
+            }
+            for (int i=20; i <= 60; i++)
+            {
+                client.DownloadFile(DownloadMods, SavePath + "mods.zip");
+                worker.ReportProgress (i);
+            }
+            for (int i=60; i <=90; i++)
+            {
+                ZipFile.ExtractToDirectory(forExtract, Extract);
+                worker.ReportProgress(i);
+            }
+            for (int i=90;  i <=100; i++)
+            {
+                Directory.Delete(DeleteTemp, true);
+                worker.ReportProgress(i);
             }
         }
 
