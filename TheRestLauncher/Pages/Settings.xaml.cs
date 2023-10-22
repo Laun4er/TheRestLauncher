@@ -35,10 +35,8 @@ namespace TheRestLauncher.Pages
         public Settings()
         {
             InitializeComponent();
-
-
-
         }       
+
 
         // Кнопки
         private void DonateDev_Click(object sender, RoutedEventArgs e)
