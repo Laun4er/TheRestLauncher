@@ -95,7 +95,7 @@ namespace TheRest
 
         private void ChangeNick_Click(object sender, RoutedEventArgs e)
         {
-            Process.Start("/UserName.xaml");
+            MessageBox.Show("Не удалось сменить ник"); //Смена ника
         }
     }
     public static class SelectorBehavior
