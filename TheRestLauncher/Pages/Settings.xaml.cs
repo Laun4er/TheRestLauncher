@@ -1,26 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
+using System.Diagnostics;
+using System.IO;
+using System.IO.Compression;
+using System.Net;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using System.Diagnostics;
-using System.Windows.Controls.Primitives;
-using System.IO;
-using Microsoft.Win32;
-using System.Net;
-using System.ComponentModel;
-using System.IO.Compression;
-using System.Threading;
-using System.Windows.Threading;
 
 namespace TheRestLauncher.Pages
 {
@@ -31,9 +15,12 @@ namespace TheRestLauncher.Pages
     {
 
         private BackgroundWorker worker;
+        
+        WebClient client = new WebClient();
 
         public Settings()
         {
+
             InitializeComponent();
         }       
 
@@ -66,8 +53,52 @@ namespace TheRestLauncher.Pages
 
         private void Restore_Click(object sender, RoutedEventArgs e)
         {
+            string DeleteMods = "C:\\TheRest\\game\\Minecraft\\mods";
+            string CreateTemp = "C:\\TheRest\\Temp\\";
+
+            Directory.Delete(DeleteMods, true);
+            Directory.CreateDirectory(CreateTemp);
+
+            worker.DoWork += DownloadDoWork;
+            worker.ProgressChanged += Worker_ProgressChanged;
+            worker.RunWorkerCompleted += Worker_RunWorkerCompleted;
+            worker.WorkerReportsProgress = true;
             worker.RunWorkerAsync();
         }
+        private void DownloadDoWork(object sender, DoWorkEventArgs e)
+        {
+            
+            
+            for(int i = 0; i < 100 ; i++)
+            {
+
+               
+                string URL = "https://drive.google.com/uc?export=download&confirm=no_antivirus&id=1QiAInjQaL5OiHrkVWlhWPCTtVswGYBFz";
+                string Temp = "C:\\TheRest\\Temp";
+                string Extract = "C:\\TheRest\\game\\Minecraft\\";
+                string forExtract = "C:\\TheRest\\Temp\\mods.zip";
+
+                client.DownloadFile(URL, Temp + "mods.zip");
+                ZipFile.ExtractToDirectory(forExtract, Extract);
+
+
+                int progressPercentage = (int)((i + 1) / (double)1 * 100);
+
+                (sender as BackgroundWorker).ReportProgress(progressPercentage);
+            }
+        }
+        private void Worker_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        {
+            progressBar.Value = e.ProgressPercentage;
+        }
+        private void Worker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            string DeleteTemp = "C:\\TheRest\\Temp";
+            Directory.Delete(DeleteTemp, true);
+            MessageBox.Show("Моды были сброшены по умолчанию", "Сброс модов");
+        }
+
     }
+    
 
 }
