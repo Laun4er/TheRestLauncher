@@ -36,61 +36,9 @@ namespace TheRestLauncher.Pages
         {
             InitializeComponent();
 
-            worker = new BackgroundWorker(); //Прогресс Бар
-            worker.WorkerReportsProgress = true;
-            worker.DoWork += Worker_DoWork;
-            worker.ProgressChanged += Worker_ProgressChanged;
 
-        }
 
-        WebClient client = new WebClient();
-
-        //Стринги
-
-        string DeleteMods = "C:\\TheRest\\game\\Minecraft\\mods";
-        string CreateTemp = "C:\\TheRest\\Temp\\";
-        string SavePath = "C:\\TheRest\\Temp\\";
-        string Extract = "C:\\TheRest\\game\\Minecraft\\";
-        string DownloadMods = "https://drive.google.com/uc?export=download&confirm=no_antivirus&id=1QiAInjQaL5OiHrkVWlhWPCTtVswGYBFz";
-        string DeleteTemp = "C:\\TheRest\\Temp";
-        string forExtract = "C:\\TheRest\\Temp\\mods.zip";
-
-        private void Worker_DoWork (object sender, DoWorkEventArgs e)
-        {
-            for (int i = 0; i <= 10; i++)
-            {
-                Directory.Delete(DeleteMods, true);
-
-                worker.ReportProgress(i);
-
-            }
-            for (int i = 10; i <= 20; i++)
-            {
-                Directory.CreateDirectory(CreateTemp);
-                worker.ReportProgress(i);
-            }
-            for (int i=20; i <= 60; i++)
-            {
-                client.DownloadFile(DownloadMods, SavePath + "mods.zip");
-                worker.ReportProgress (i);
-            }
-            for (int i=60; i <=90; i++)
-            {
-                ZipFile.ExtractToDirectory(forExtract, Extract);
-                worker.ReportProgress(i);
-            }
-            for (int i=90;  i <=100; i++)
-            {
-                Directory.Delete(DeleteTemp, true);
-                worker.ReportProgress(i);
-            }
-        }
-
-        private void Worker_ProgressChanged(object sender, ProgressChangedEventArgs e)
-        {
-            ProgressBar.Value = e.ProgressPercentage;
-        }
-
+        }       
 
         // Кнопки
         private void DonateDev_Click(object sender, RoutedEventArgs e)
