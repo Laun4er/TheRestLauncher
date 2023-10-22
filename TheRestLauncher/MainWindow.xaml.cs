@@ -43,6 +43,7 @@ namespace TheRest
         {
             //стринги
             string mods = "C:\\TheRest\\Minecraft\\game\\mods";
+            string jre = "C:\\TheRest\\Minecraft\\jre";
 
             if (Directory.Exists(mods)) //Если не найдена папка с модами, то скачивается новая папка
             {
@@ -52,6 +53,21 @@ namespace TheRest
             {
                 nomods();
             }
+            
+            if(Directory.Exists(jre))
+            {
+
+            }
+            else
+            {
+                nojre();
+            }
+
+        }
+
+        private void nojre()
+        {
+        
         }
 
         private void nomods ()

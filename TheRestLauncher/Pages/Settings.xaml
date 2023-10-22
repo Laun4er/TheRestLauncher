@@ -65,10 +65,11 @@
                         <Border>
                             <DockPanel>
                                 <StackPanel>
-                                    <TextBlock Text="Версия лаунчера: ЗБТ 3.1"/>
+                                    <TextBlock Text="Версия лаунчера: ОБТ 1"/>
                                     <TextBlock Text="Версия Minecraft: Fabric 1.20.1"/>
                                     <TextBlock Text="Текущий сезон: SEASON 1"/>
                                     <TextBlock Text="Разработчики: Laun4er; Karvane"/>
+                                    <TextBlock Text="Дата обновления: 1.11.2023"/>
                                     <DockPanel>
                                         <Button Width="40" Height="40" HorizontalAlignment="Left" Margin="10" Name="VK" BorderThickness="0" Background="Transparent" Cursor="Hand" Click="VK_Click">
                                             <Image Source="/Resources/Buttons/VK.png" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
