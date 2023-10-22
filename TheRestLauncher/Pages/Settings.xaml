@@ -32,8 +32,28 @@
             <TabItem Header="Клиент">
                 <StackPanel>
                     <DockPanel>
-                        <Border Height="50">
-
+                        <Border>
+                            <Button Content="Восстановить моды по умолчанию" Height="50" Width="400" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10" Foreground="White" Name="Restore" Click="Restore_Click">
+                                <Button.Style>
+                                    <Style TargetType="{x:Type Button}">
+                                        <Setter Property="Background" Value="#363840"/>
+                                        <Setter Property="Template">
+                                            <Setter.Value>
+                                                <ControlTemplate TargetType="{x:Type Button}">
+                                                    <Border Background="{TemplateBinding Background}" CornerRadius="5">
+                                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                    </Border>
+                                                </ControlTemplate>
+                                            </Setter.Value>
+                                        </Setter>
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Background" Value="#6161FF"/>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Button.Style>
+                            </Button>
                         </Border>
                     </DockPanel>
                 </StackPanel>

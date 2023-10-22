@@ -17,6 +17,10 @@ using System.Windows.Controls.Primitives;
 using System.IO;
 using Microsoft.Win32;
 using System.Net;
+using System.ComponentModel;
+using System.IO.Compression;
+using System.Threading;
+using System.Windows.Threading;
 
 namespace TheRestLauncher.Pages
 {
@@ -25,13 +29,52 @@ namespace TheRestLauncher.Pages
     /// </summary>
     public partial class Settings : Page
     {
+
+        private BackgroundWorker worker;
+
         public Settings()
         {
             InitializeComponent();
+
+            worker = new BackgroundWorker(); //Прогресс Бар
+            worker.WorkerReportsProgress = true;
+            worker.DoWork += Worker_DoWork;
+            worker.ProgressChanged += Worker_ProgressChanged;
+
+        }
+
+        WebClient client = new WebClient();
+
+        //Стринги
+
+        string DeleteMods = "C:\\TheRest\\game\\Minecraft\\mods";
+        string CreateTemp = "C:\\TheRest\\Temp\\";
+        string SavePath = "C:\\TheRest\\Temp\\";
+        string Extract = "C:\\TheRest\\game\\Minecraft\\";
+        string DownloadMods = "https://drive.google.com/uc?export=download&confirm=no_antivirus&id=1QiAInjQaL5OiHrkVWlhWPCTtVswGYBFz";
+        string DeleteTemp = "C:\\TheRest\\Temp";
+        string forExtract = "C:\\TheRest\\Temp\\mods.zip";
+
+        private void Worker_DoWork (object sender, DoWorkEventArgs e)
+        {
+            for (int i = 0; i <= 100; i++)
+            {
+                Directory.Delete(DeleteMods, true);
+                Directory.CreateDirectory(CreateTemp);
+                client.DownloadFile(DownloadMods, SavePath + "mods.zip");
+                ZipFile.ExtractToDirectory(forExtract, Extract);
+                Directory.Delete(DeleteTemp, true);
+
+            }
+        }
+
+        private void Worker_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        {
+            ProgressBar.Value = e.ProgressPercentage;
         }
 
 
-
+        // Кнопки
         private void DonateDev_Click(object sender, RoutedEventArgs e)
         {
             Process.Start(new ProcessStartInfo("https://www.donationalerts.com/r/launcher1888") { UseShellExecute = true });
@@ -56,5 +99,11 @@ namespace TheRestLauncher.Pages
         {
             Process.Start(new ProcessStartInfo("https://vk.com/therestmc") { UseShellExecute = true });
         }
+
+        private void Restore_Click(object sender, RoutedEventArgs e)
+        {
+            worker.RunWorkerAsync();
+        }
     }
+
 }
