@@ -47,39 +47,35 @@ namespace TheRest
             {
                 SeaSon.Text = "С днём рождения, Karvane!";
             }
-            else
-            {
-                SeaSon.Text = "TheRest: SEASON 1";    
-            }
 
             if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 12, 17))
             {
                 SeaSon.Text = "С днём рождения, Laun4er!";
-            }
-            else
-            {
-                SeaSon.Text = "TheRest: SEASON 1";
             }
 
             if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 4, 1))
             {
                 SeaSon.Text = "С днём рождения, Izumrudik01!";
             }
-            else
-            {
-                SeaSon.Text = "TheRest: SEASON 1";
-            }
 
             if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 1, 8))
             {
                 SeaSon.Text = "С днём рождения, Zerokko!";
             }
+
+            if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 9, 13))
+            {
+                SeaSon.Text = "С праздником, программисты!";
+            }
+
+            if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 12, 31))
+            {
+                SeaSon.Text = "С Новым Годом!";
+            }
             else
             {
                 SeaSon.Text = "TheRest: SEASON 1";
             }
-
-
 
         }
 
