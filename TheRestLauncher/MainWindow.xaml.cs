@@ -35,10 +35,55 @@ namespace TheRest
         {
             InitializeComponent();
             CheckFiles();
+            HappyBird();
             PageFrame.Content = new Main();
             User.Text = File.ReadAllText("C:\\TheRest\\User\\Data\\User.txt");
 
         }
+
+        private void HappyBird()
+        {
+            if(DateTime.Now.Date == new DateTime(DateTime.Now.Year, 11,5))
+            {
+                SeaSon.Text = "С днём рождения, Karvane!";
+            }
+            else
+            {
+                SeaSon.Text = "TheRest: SEASON 1";    
+            }
+
+            if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 12, 17))
+            {
+                SeaSon.Text = "С днём рождения, Laun4er!";
+            }
+            else
+            {
+                SeaSon.Text = "TheRest: SEASON 1";
+            }
+
+            if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 4, 1))
+            {
+                SeaSon.Text = "С днём рождения, Izumrudik01!";
+            }
+            else
+            {
+                SeaSon.Text = "TheRest: SEASON 1";
+            }
+
+            if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 1, 8))
+            {
+                SeaSon.Text = "С днём рождения, Zerokko!";
+            }
+            else
+            {
+                SeaSon.Text = "TheRest: SEASON 1";
+            }
+
+
+
+        }
+
+
         private void CheckFiles()
         {
             //стринги
@@ -65,12 +110,12 @@ namespace TheRest
 
         }
 
-        private void nojre()
+        private void nojre() //Скачивание джавы, можно ещё прописать открытие отдельного окна
         {
         
         }
 
-        private void nomods ()
+        private void nomods () //Скачивание папки с основными модами, можно также прописать открытие отдельного окна
         {
             WebClient client = new WebClient();
 

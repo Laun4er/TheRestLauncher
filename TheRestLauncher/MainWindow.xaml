@@ -153,11 +153,15 @@
         <Border Grid.Column="1" Background="#28282E">
 
             <StackPanel Grid.Column="1" Margin="10">
-                <TextBlock  TextBlock.FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Right" Background="Transparent" Name="User"/>
-                <TextBlock Text="TheRest SEASON 1" Foreground="#E5F1FF" FontSize="20" FontWeight="Bold"/>
-                <Button Content="Сменить ник" Name="ChangeNick" Click="ChangeNick_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Background="Transparent" BorderThickness="0" Foreground="White" FontSize="15" FontStyle="Oblique" FontStretch="Medium">
-
-                </Button>
+                <DockPanel Height="80">
+                    <TextBlock Name="SeaSon" Foreground="#E5F1FF" VerticalAlignment="Center" FontSize="20" FontWeight="Bold"/>
+                    <StackPanel HorizontalAlignment="Right" Margin="5,15" VerticalAlignment="Bottom">
+                        <TextBlock x:Name="User"/>
+                        <Button Content="Сменить ник" BorderThickness="0" Background="Transparent" Foreground="#E5F1FF" FontStyle="Italic">
+                            
+                        </Button>
+                    </StackPanel>
+                </DockPanel>
             </StackPanel>
         </Border>
         <Border Grid.Row="3" Grid.Column="1" Background="#28282E"/>

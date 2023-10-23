@@ -20,7 +20,7 @@
             <TabItem Header="Новости лаунчера">
                 <StackPanel>
                     <DockPanel>
-                        <Border Height="530">
+                        <Border >
                             <TextBlock Margin="10">
                                 <Run Text="Обновление ОБТ после ЗБТ (1.11.2023)" FontSize="20"/>
                                 <LineBreak/>
@@ -31,6 +31,11 @@
                                 <Run Text="3. Добавлена кнопка, которая сбросит все моды по умолчанию"/>
                                 <LineBreak/>
                                 <Run Text="4. Добавлены кнопки интеграции"/>
+                                <LineBreak/>
+                                <Run Text="5. Добавлена пасхалка"/>
+                                <LineBreak/>
+                                <Run Text="6. Добавлена смена ника"/>
+                                <LineBreak/>
                             </TextBlock>
                         </Border>
                     </DockPanel>
@@ -39,8 +44,19 @@
             <TabItem Header="Новости сервера">
                 <StackPanel>
                     <DockPanel>
-                        <Border Height="50">
-
+                        <Border>
+                            <TextBlock Margin="10">
+                                <Run Text="Открытие энда совсем рядом" FontWeight="Bold" FontStyle="Italic" FontSize="20"/>
+                                <LineBreak/>
+                                <Run Text="Здравствуйте, уважаемые игроки TheRest! Спешим сообщить, что открытие энда сосоится через час!" FontWeight="Normal"/>
+                                <LineBreak/>
+                                <LineBreak/>
+                                <LineBreak/>
+                                <LineBreak/>
+                                <Run Text="Новость от: izumrudik01"/>
+                                <LineBreak/>
+                                <Run Text="Дата: 30.04.2023"/>
+                            </TextBlock>
                         </Border>
                     </DockPanel>
                 </StackPanel>
@@ -48,7 +64,7 @@
             <TabItem Header="Новости игроков">
                 <StackPanel>
                     <DockPanel>
-                        <Border Height="50">
+                        <Border Height="530">
 
                         </Border>
                     </DockPanel>
