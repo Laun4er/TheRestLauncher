@@ -1,31 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
+using System.IO.Compression;
+using System.Net;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Interop;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
-using System.Windows.Shapes;
-using System.Windows.Threading;
-using System.ServiceProcess;
-using TheRest;
 using TheRestLauncher;
-using System.Diagnostics.Metrics;
 using TheRestLauncher.Pages;
-using System.IO;
-using System.Net;
-using System.Diagnostics.Eventing.Reader;
-using System.IO.Compression;
+
 
 namespace TheRest
 {
@@ -43,41 +28,43 @@ namespace TheRest
 
         private void HappyBird()
         {
-            if(DateTime.Now.Date == new DateTime(DateTime.Now.Year, 11,5))
+            if(DateTime.Now.Date == new DateTime(DateTime.Now.Year, 11,5)) 
             {
                 SeaSon.Text = "С днём рождения, Karvane!";
-            }
+            }//Karvane
 
             if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 12, 17))
             {
                 SeaSon.Text = "С днём рождения, Laun4er!";
-            }
+            }//Laun4er
 
             if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 4, 1))
             {
                 SeaSon.Text = "С днём рождения, Izumrudik01!";
-            }
+            }//izumrudik01
 
             if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 1, 8))
             {
                 SeaSon.Text = "С днём рождения, Zerokko!";
-            }
+            }//Zerokko
 
             if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 9, 13))
             {
                 SeaSon.Text = "С праздником, программисты!";
-            }
+            }//Программисты
 
             if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 12, 31))
             {
                 SeaSon.Text = "С Новым Годом!";
-            }
+            }//НГ
+
+
             else
             {
                 SeaSon.Text = "TheRest: SEASON 1";
-            }
+            }//Сюда вписывать нумерацию сезона
 
-        }
+        } //Пасхалка с днями рождения
 
 
         private void CheckFiles()
@@ -190,7 +177,9 @@ namespace TheRest
 
         private void ChangeNick_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Не удалось сменить ник"); //Смена ника
+            NickName nickName = new NickName();
+            nickName.Show();
+            
         }
     }
     public static class SelectorBehavior

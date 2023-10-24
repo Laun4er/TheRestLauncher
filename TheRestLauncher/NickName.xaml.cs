@@ -10,17 +10,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace TheRestLauncher
 {
     /// <summary>
-    /// Логика взаимодействия для UserName.xaml
+    /// Логика взаимодействия для NickName.xaml
     /// </summary>
-    public partial class UserName : Page
+    public partial class NickName : Window
     {
-        public UserName()
+        public NickName()
         {
             InitializeComponent();
         }

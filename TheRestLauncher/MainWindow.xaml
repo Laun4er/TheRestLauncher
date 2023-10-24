@@ -156,9 +156,27 @@
                 <DockPanel Height="80">
                     <TextBlock Name="SeaSon" Foreground="#E5F1FF" VerticalAlignment="Center" FontSize="20" FontWeight="Bold"/>
                     <StackPanel HorizontalAlignment="Right" Margin="5,15" VerticalAlignment="Bottom">
-                        <TextBlock x:Name="User"/>
-                        <Button Content="Сменить ник" BorderThickness="0" Background="Transparent" Foreground="#E5F1FF" FontStyle="Italic">
-                            
+                        <TextBlock x:Name="User" FontSize="14" HorizontalAlignment="Right" Foreground="#E5F1FF"/>
+                        <Button Content="Сменить ник" BorderThickness="0" Foreground="#E5F1FF" FontSize="15" FontStyle="Italic" Name="ChangeNick" Click="ChangeNick_Click">
+                            <Button.Style>
+                                <Style TargetType="{x:Type Button}">
+                                    <Setter Property="Background" Value="Transparent"/>
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="{x:Type Button}">
+                                                <Border Background="{TemplateBinding Background}" CornerRadius="5">
+                                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                </Border>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Background" Value="#363840"/>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Button.Style>
                         </Button>
                     </StackPanel>
                 </DockPanel>
