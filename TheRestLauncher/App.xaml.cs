@@ -16,10 +16,5 @@ namespace TheRestLauncher
     /// </summary>
     public partial class App : Application
     {
-        private void Application_Startup(object sender, StartupEventArgs e)
-        {
-            SplashScreen splashScreen = new SplashScreen();
-            splashScreen.Show();
-        }
     }
 }
