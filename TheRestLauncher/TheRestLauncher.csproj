@@ -93,8 +93,8 @@
     <Resource Include="Resources\Buttons\News.png" />
     <Resource Include="Resources\Buttons\Settings.png" />
     <Resource Include="Resources\LogoColored.png" />
-    <Resource Include="Resources\LogoStartup.png" />
     <Resource Include="Resources\LogoStartupColored.png" />
+    <Resource Include="Resources\LogoStartup.png" />
   </ItemGroup>
 
 </Project>
