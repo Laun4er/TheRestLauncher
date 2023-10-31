@@ -12,7 +12,6 @@
         AllowsTransparency="True"
         WindowStartupLocation="CenterScreen"
         Background="Transparent">
-
     <Window.Resources>
         <Storyboard x:Key="ColorTransition">
             <DoubleAnimation Storyboard.TargetName="ColoredLogo" Storyboard.TargetProperty="Opacity" To="1" Duration="0:0:0.5" Completed="OpenMainWindow">
@@ -42,8 +41,8 @@
             </DoubleAnimation>
         </Storyboard>
     </Window.Resources>
-    
-    <Grid>
+    <Grid RenderOptions.BitmapScalingMode="NearestNeighbor" RenderOptions.EdgeMode="Aliased" SnapsToDevicePixels="True" UseLayoutRounding="True">
+
         <Image Height="350" VerticalAlignment="Center" HorizontalAlignment="Center" Source="../Resources/LogoStartup.png" x:Name="Logo" Opacity="0">
             <Image.Effect>
                 <BlurEffect Radius="20" x:Name="Blur"/>

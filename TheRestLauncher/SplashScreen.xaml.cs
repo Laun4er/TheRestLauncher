@@ -17,9 +17,13 @@ using TheRest;
 
 namespace TheRestLauncher
 {
+    /// <summary>
+    /// Interaction logic for SplashScreen.xaml
+    /// </summary>
     public partial class SplashScreen : Window
     {
         DispatcherTimer timer = new DispatcherTimer();
+
         public SplashScreen()
         {
             InitializeComponent();
@@ -27,6 +31,7 @@ namespace TheRestLauncher
             timer.Interval = new TimeSpan(0, 0, 2);
             timer.Start();
         }
+
         private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             DragMove();

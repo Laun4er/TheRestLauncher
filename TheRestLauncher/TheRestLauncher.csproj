@@ -54,6 +54,8 @@
     <None Remove="Resources\Buttons\Youtube.png" />
     <None Remove="Resources\Icon.ico" />
     <None Remove="Resources\LogoColored.png" />
+    <None Remove="Resources\LogoStartup.png" />
+    <None Remove="Resources\LogoStartupColored.png" />
     <None Remove="TheRestBG.png" />
   </ItemGroup>
 
@@ -91,6 +93,8 @@
     <Resource Include="Resources\Buttons\News.png" />
     <Resource Include="Resources\Buttons\Settings.png" />
     <Resource Include="Resources\LogoColored.png" />
+    <Resource Include="Resources\LogoStartup.png" />
+    <Resource Include="Resources\LogoStartupColored.png" />
   </ItemGroup>
 
 </Project>
