@@ -2,6 +2,7 @@
 using System.IO;
 using System.IO.Compression;
 using System.Net;
+using System.Reflection.Metadata.Ecma335;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
@@ -10,7 +11,6 @@ using System.Windows.Media;
 using System.Windows.Navigation;
 using TheRestLauncher;
 using TheRestLauncher.Pages;
-
 
 namespace TheRest
 {
@@ -177,8 +177,6 @@ namespace TheRest
 
         private void ChangeNick_Click(object sender, RoutedEventArgs e)
         {
-            NickName nickName = new NickName();
-            nickName.Show();
             
         }
     }

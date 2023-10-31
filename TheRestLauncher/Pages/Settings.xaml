@@ -139,6 +139,13 @@
                     </DockPanel>
                 </StackPanel>
             </TabItem>
+            <TabItem Header="Аккаунт">
+                
+                
+                
+                <Frame x:Name="SettingsPage" NavigationUIVisibility="Hidden"/>
+            </TabItem>
         </TabControl>
+        
     </Grid>
 </Page>
