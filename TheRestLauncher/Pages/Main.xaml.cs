@@ -26,10 +26,17 @@ namespace TheRestLauncher.Pages
         }
         private void PlayM(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Я ещё не сделал смену ника, поэтому у вас ник будет Test. Кстати, не обращайте внимание на батник)", "Внимание");
-            Process.Start("C:\\TheRest\\User\\Data\\PlayM.bat");
-            
-            
+
+
+            string StartM = "C:\\TheRest\\Launcher\\StartM.bat";
+
+            Process myProcess = new Process();
+            myProcess.StartInfo.UseShellExecute = false;
+            myProcess.StartInfo.FileName = StartM;
+            myProcess.StartInfo.CreateNoWindow = true;
+            myProcess.Start();
+
+
         }
     }
 }

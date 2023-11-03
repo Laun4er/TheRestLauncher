@@ -9,7 +9,7 @@
     Title="TheRest Launcher" 
     MinHeight="600" MinWidth="1000"
     Icon="/Resources/Icon.ico"
-    MouseLeftButtonDown="Window_MouseLeftButtonDown"
+    
     Background="#28282E">
 
 
@@ -148,7 +148,7 @@
         </Grid.RowDefinitions>
 
         <Border Grid.RowSpan="3" Background="#222227"/>
-        <Border Grid.Column="1" Background="#28282E"/>
+        <Border Grid.Column="1" Background="#28282E" MouseLeftButtonDown="Window_MouseLeftButtonDown"/>
         <Border Grid.Row="3" Grid.Column="1" Background="#28282E"/>
 
         <TextBlock Grid.Column="1" Name="SeaSon" Margin="45,25,0,0" Foreground="#E5F1FF" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
