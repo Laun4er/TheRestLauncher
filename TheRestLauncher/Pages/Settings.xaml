@@ -20,6 +20,12 @@
                     </ResourceDictionary.MergedDictionaries>
                 </ResourceDictionary>
             </TabControl.Resources>
+            <TabItem Header="Аккаунт">
+
+
+
+
+            </TabItem>
             <TabItem Header="Лаунчер">
                 
                 <StackPanel>
@@ -139,12 +145,7 @@
                     </DockPanel>
                 </StackPanel>
             </TabItem>
-            <TabItem Header="Аккаунт">
-                
-                
-                
-                <Frame x:Name="SettingsPage" NavigationUIVisibility="Hidden"/>
-            </TabItem>
+
         </TabControl>
         
     </Grid>

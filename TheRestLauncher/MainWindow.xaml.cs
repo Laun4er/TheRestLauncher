@@ -177,7 +177,9 @@ namespace TheRest
 
         private void ChangeNick_Click(object sender, RoutedEventArgs e)
         {
+            PageFrame.Navigate(new Uri("/Pages/Settings.xaml", UriKind.Relative));
             
+
         }
     }
     public static class SelectorBehavior
