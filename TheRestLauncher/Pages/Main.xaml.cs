@@ -26,8 +26,31 @@ namespace TheRestLauncher.Pages
         }
         private void PlayM(object sender, RoutedEventArgs e)
         {
+            if(Start != null)
+            {
+                Start.Visibility = Visibility.Hidden;
+                StartM.Visibility = Visibility.Visible;
+            }            
+        }
 
+        private void CheckVersion()
+        {
 
+        }
+
+        private void CheckMinecraft()
+        {
+
+        }
+
+        private void CheckingFiles()
+        {
+                     
+
+        }
+
+        private void Play()
+        {
             string StartM = "C:\\TheRest\\Launcher\\StartM.bat";
 
             Process myProcess = new Process();
@@ -35,8 +58,6 @@ namespace TheRestLauncher.Pages
             myProcess.StartInfo.FileName = StartM;
             myProcess.StartInfo.CreateNoWindow = true;
             myProcess.Start();
-
-
         }
     }
 }
