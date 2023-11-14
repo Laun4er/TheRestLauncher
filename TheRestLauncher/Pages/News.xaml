@@ -22,7 +22,7 @@
                     <DockPanel>
                         <Border >
                             <TextBlock Margin="10">
-                                <Run Text="Обновление ОБТ после ЗБТ (1.11.2023)" FontSize="20"/>
+                                <Run Text="Обновление ОБТ после ЗБТ ((число))" FontSize="20"/>
                                 <LineBreak/>
                                 <Run Text="1. Полностью обновлён апдейтер"/>
                                 <LineBreak/>
@@ -36,6 +36,9 @@
                                 <LineBreak/>
                                 <Run Text="6. Добавлена смена ника"/>
                                 <LineBreak/>
+                                <Run Text="7. Исправлен запуск майнкрафт(Теперь не вылезает окно с командной строкой)"/>
+                                <LineBreak/>
+                                <Run Text="8. Добавлена анимация запуска лаунчера"/>
                             </TextBlock>
                         </Border>
                     </DockPanel>

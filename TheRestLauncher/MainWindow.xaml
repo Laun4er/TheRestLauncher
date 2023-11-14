@@ -228,9 +228,9 @@
 
         <ListBox x:Name="ListBox2" Grid.Row="2" SelectionMode="Single" Foreground="#E5F1FF" FontSize="18" FontWeight="Bold" Background="Transparent" BorderThickness="0" Width="205" local:SelectorBehavior.ShouldSelectItemOnMouseUp="True" SelectionChanged="PageChanged" Padding="0">
             <ListBoxItem Margin="0,0,0,15" x:Name="Settings">
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center" Height="60">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center" Height="60" ScrollViewer.VerticalScrollBarVisibility="Disabled" >
                     <Image Source="Resources/Buttons/Settings.png" Width="38" Height="38" Margin="15,0,0,0" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
-                    <TextBlock Text="Настройки" VerticalAlignment="Center" Margin="25,0"/>
+                    <TextBlock Text="Настройки" VerticalAlignment="Center" Margin="22,0"/>
                 </StackPanel>
             </ListBoxItem>
         </ListBox>
