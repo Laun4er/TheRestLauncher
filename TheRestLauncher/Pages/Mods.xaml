@@ -43,6 +43,9 @@
                     </DockPanel>
                 </StackPanel>
             </TabItem>
+            <TabItem Header="Библиотеки">
+                
+            </TabItem>
         </TabControl>
     </Grid>
 </Page>

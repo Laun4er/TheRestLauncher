@@ -31,37 +31,46 @@ namespace TheRest
             {
                 SeaSon.Text = "С днём рождения, Karvane!";
             }//Karvane
+            else
+            {
+                SeaSon.Text = "TheRest: SEASON 1";
+            }
 
             if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 12, 17))
             {
                 SeaSon.Text = "С днём рождения, Laun4er!";
             }//Laun4er
+            else
+            {
+                SeaSon.Text = "TheRest: SEASON 1";
+            }
 
             if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 4, 1))
             {
                 SeaSon.Text = "С днём рождения, Izumrudik01!";
             }//izumrudik01
+            else
+            {
+                SeaSon.Text = "TheRest: SEASON 1";
+            }
 
             if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 1, 8))
             {
                 SeaSon.Text = "С днём рождения, Zerokko!";
             }//Zerokko
-
-            if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 9, 13))
+            else
             {
-                SeaSon.Text = "С праздником, программисты!";
-            }//Программисты
-
+                SeaSon.Text = "TheRest: SEASON 1";
+            }
             if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 12, 31))
             {
                 SeaSon.Text = "С Новым Годом!";
             }//НГ
 
-
             else
             {
                 SeaSon.Text = "TheRest: SEASON 1";
-            }//Сюда вписывать нумерацию сезона
+            }
 
         } //Пасхалка с днями рождения
 
