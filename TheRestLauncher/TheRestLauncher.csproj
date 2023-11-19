@@ -100,7 +100,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="mods\Basic icons\" />
     <Folder Include="mods\Extra icons\" />
     <Folder Include="mods\Optimization icons\" />
     <Folder Include="mods\Libreries icons\" />
