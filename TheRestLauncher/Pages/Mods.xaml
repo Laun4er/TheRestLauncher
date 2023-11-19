@@ -19,10 +19,33 @@
                 </ResourceDictionary>
             </TabControl.Resources>
             <TabItem Header="Основные">
-                <StackPanel>
-                    <DockPanel>
-                        
-                    </DockPanel>
+                <StackPanel VerticalAlignment="Top" Orientation="Vertical">
+                    <Border x:Name="AlternateCurret">
+                        <Grid Margin="10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Image Source="/mods/basic icons/Alternate Current.png" Width="50" Height="50" VerticalAlignment="Top" Margin="0,3">
+                                <Image.Clip>
+                                    <RectangleGeometry Rect="0,0 50,50" RadiusX="10" RadiusY="10" />
+                                </Image.Clip>
+                            </Image>
+                            <StackPanel Grid.Column="1" Margin="10,0,0,0" HorizontalAlignment="Left" Width="576">
+                                <TextBlock TextWrapping="Wrap" VerticalAlignment="Top">
+                                <Run Text="Alternate Current" FontWeight="Bold" FontSize="15"/>
+                                <LineBreak/>
+                                <Run Text="Уменьшает лаги от редстоуновской пыли. Необходим для игры на сервере TheRest" FontSize="12"/>
+                                </TextBlock>
+                            </StackPanel>
+                            <TextBlock Text="1.7.0" FontSize="15" Grid.Column="2" VerticalAlignment="Top" Margin="20,20"/>
+                        </Grid>
+                    </Border>
+                    
                 </StackPanel>
             </TabItem>
             <TabItem Header="Оптимизация">
@@ -44,7 +67,7 @@
                 </StackPanel>
             </TabItem>
             <TabItem Header="Библиотеки">
-                
+
             </TabItem>
         </TabControl>
     </Grid>

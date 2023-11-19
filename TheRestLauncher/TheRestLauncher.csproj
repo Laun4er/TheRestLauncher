@@ -35,6 +35,27 @@
     <None Remove="ButtonPlay.png" />
     <None Remove="Logo.png" />
     <None Remove="MainWindow.xaml.cs~RFc5ce2e0.TMP" />
+    <None Remove="mods\Basic icons\Alternate Current.png" />
+    <None Remove="mods\Basic icons\Create.png" />
+    <None Remove="mods\Basic icons\Fabric API.png" />
+    <None Remove="mods\Basic icons\Farmer%27s Delight.png" />
+    <None Remove="mods\Basic icons\Friend&amp;Foes.png" />
+    <None Remove="mods\Basic icons\NoChatReport.png" />
+    <None Remove="mods\Basic icons\Philips Ruins.png" />
+    <None Remove="mods\Basic icons\Plasmo Voice.png" />
+    <None Remove="mods\Basic icons\Terralith.png" />
+    <None Remove="mods\Basic icons\YUNG%27s API.png" />
+    <None Remove="mods\Basic icons\YUNG%27s Better Desert Temple.png" />
+    <None Remove="mods\Basic icons\YUNG%27s Better Doungeons.png" />
+    <None Remove="mods\Basic icons\YUNG%27s Better End Island.png" />
+    <None Remove="mods\Basic icons\YUNG%27s Better Jungle Temple.png" />
+    <None Remove="mods\Basic icons\YUNG%27s Better Mineshafts.png" />
+    <None Remove="mods\Basic icons\YUNG%27s Better Nether Fortresses.png" />
+    <None Remove="mods\Basic icons\YUNG%27S Better Stronghold.png" />
+    <None Remove="mods\Basic icons\YUNG%27s Better Witch Huts.png" />
+    <None Remove="mods\Basic icons\YUNG%27s Bridges.png" />
+    <None Remove="mods\Basic icons\YUNG%27s Extras.png" />
+    <None Remove="mods\Basic icons\YUNG.s Better Ocean Monument.png" />
     <None Remove="News.png" />
     <None Remove="Pages\Resources\TheRestBG.png" />
     <None Remove="Resources\Buttons\Delete.png" />
@@ -65,6 +86,27 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="mods\Basic icons\Alternate Current.png" />
+    <Resource Include="mods\Basic icons\Create.png" />
+    <Resource Include="mods\Basic icons\Fabric API.png" />
+    <Resource Include="mods\Basic icons\Farmer's Delight.png" />
+    <Resource Include="mods\Basic icons\Friend&amp;Foes.png" />
+    <Resource Include="mods\Basic icons\NoChatReport.png" />
+    <Resource Include="mods\Basic icons\Philips Ruins.png" />
+    <Resource Include="mods\Basic icons\Plasmo Voice.png" />
+    <Resource Include="mods\Basic icons\Terralith.png" />
+    <Resource Include="mods\Basic icons\YUNG's API.png" />
+    <Resource Include="mods\Basic icons\YUNG's Better Desert Temple.png" />
+    <Resource Include="mods\Basic icons\YUNG's Better Doungeons.png" />
+    <Resource Include="mods\Basic icons\YUNG's Better End Island.png" />
+    <Resource Include="mods\Basic icons\YUNG's Better Jungle Temple.png" />
+    <Resource Include="mods\Basic icons\YUNG's Better Mineshafts.png" />
+    <Resource Include="mods\Basic icons\YUNG's Better Nether Fortresses.png" />
+    <Resource Include="mods\Basic icons\YUNG'S Better Stronghold.png" />
+    <Resource Include="mods\Basic icons\YUNG's Better Witch Huts.png" />
+    <Resource Include="mods\Basic icons\YUNG's Bridges.png" />
+    <Resource Include="mods\Basic icons\YUNG's Extras.png" />
+    <Resource Include="mods\Basic icons\YUNG.s Better Ocean Monument.png" />
     <Resource Include="Resources\Buttons\Delete.png" />
   </ItemGroup>
 

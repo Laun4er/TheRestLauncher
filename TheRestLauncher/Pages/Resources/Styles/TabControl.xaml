@@ -47,4 +47,7 @@
         <Setter Property="VerticalAlignment" Value="Top"/>
         <Setter Property="Margin" Value="30"/>
     </Style>
+    <Style TargetType="TextBlock">
+        <Setter Property="Foreground" Value="#E5F1FF"/>
+    </Style>
 </ResourceDictionary>
