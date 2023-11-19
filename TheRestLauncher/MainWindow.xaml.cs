@@ -19,7 +19,6 @@ namespace TheRest
         public MainWindow()
         {
             InitializeComponent();
-            CheckFiles();
             HappyBird();
             PageFrame.Content = new Main();
             User.Text = File.ReadAllText("C:\\TheRest\\User\\Data\\User.txt");
@@ -67,55 +66,7 @@ namespace TheRest
         } //Пасхалка с днями рождения
 
 
-        private void CheckFiles()
-        {
-            //стринги
-            string mods = "C:\\TheRest\\Minecraft\\game\\mods";
-            string jre = "C:\\TheRest\\Minecraft\\jre";
-
-            if (Directory.Exists(mods)) //Если не найдена папка с модами, то скачивается новая папка
-            {
-
-            }
-            else 
-            {
-                nomods();
-            }
-            
-            if(Directory.Exists(jre))
-            {
-
-            }
-            else
-            {
-                nojre();
-            }
-
-        }
-
-        private void nojre() //Скачивание джавы, можно ещё прописать открытие отдельного окна
-        {
-        
-        }
-
-        private void nomods () //Скачивание папки с основными модами, можно также прописать открытие отдельного окна
-        {
-            WebClient client = new WebClient();
-
-            string URL = "https://drive.google.com/uc?export=download&confirm=no_antivirus&id=1QiAInjQaL5OiHrkVWlhWPCTtVswGYBFz";
-            string CreateTemp = "C:\\TheRest\\Temp";
-            string SavePath = "C:\\TheRest\\Temp\\";
-            string Extract = "C:\\TheRest\\Minecraft\\game\\";
-            string forExtract = "C:\\TheRest\\Temp\\mods.zip";
-            string DeleteTemp = "C:\\TheRest\\Temp";
-
-            Directory.CreateDirectory(CreateTemp);
-            client.DownloadFile(URL, SavePath + "mods.zip");
-            ZipFile.ExtractToDirectory(forExtract, Extract);
-            Directory.Delete(DeleteTemp, true);
-
-        }
-
+       
 
 
         private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)

@@ -57,6 +57,7 @@
     <None Remove="Resources\LogoStartup.png" />
     <None Remove="Resources\LogoStartupColored.png" />
     <None Remove="TheRestBG.png" />
+    <None Remove="Whats New.txt" />
   </ItemGroup>
 
   <ItemGroup>
@@ -95,6 +96,7 @@
     <Resource Include="Resources\LogoColored.png" />
     <Resource Include="Resources\LogoStartupColored.png" />
     <Resource Include="Resources\LogoStartup.png" />
+    <Resource Include="Resources\Whats_New.txt" />
   </ItemGroup>
 
 </Project>

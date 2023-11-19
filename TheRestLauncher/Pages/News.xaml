@@ -20,25 +20,10 @@
             <TabItem Header="Новости лаунчера">
                 <StackPanel>
                     <DockPanel>
-                        <Border >
-                            <TextBlock Margin="10">
-                                <Run Text="Обновление ОБТ после ЗБТ ((число))" FontSize="20"/>
+                        <Border>
+                            <TextBlock Text="Обновление TheRest Launcher(Число)" Margin="10">
                                 <LineBreak/>
-                                <Run Text="1. Полностью обновлён апдейтер"/>
-                                <LineBreak/>
-                                <Run Text="2. Добавлена система нахождения ошибок и самовосстановление их"/>
-                                <LineBreak/>
-                                <Run Text="3. Добавлена кнопка, которая сбросит все моды по умолчанию"/>
-                                <LineBreak/>
-                                <Run Text="4. Добавлены кнопки интеграции"/>
-                                <LineBreak/>
-                                <Run Text="5. Добавлена пасхалка"/>
-                                <LineBreak/>
-                                <Run Text="6. Добавлена смена ника"/>
-                                <LineBreak/>
-                                <Run Text="7. Исправлен запуск майнкрафт(Теперь не вылезает окно с командной строкой)"/>
-                                <LineBreak/>
-                                <Run Text="8. Добавлена анимация запуска лаунчера"/>
+                                <Run Name="WN"/>
                             </TextBlock>
                         </Border>
                     </DockPanel>
