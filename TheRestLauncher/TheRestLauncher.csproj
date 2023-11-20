@@ -138,7 +138,6 @@
     <Resource Include="Resources\LogoColored.png" />
     <Resource Include="Resources\LogoStartupColored.png" />
     <Resource Include="Resources\LogoStartup.png" />
-    <Resource Include="Resources\Whats_New.txt" />
   </ItemGroup>
 
   <ItemGroup>

@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net;
+using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -22,15 +24,18 @@ namespace TheRestLauncher.Pages
         public News()
         {
             InitializeComponent();
-            What_New();
+            Whats_New();
         }
 
-        public void What_New()
+       public async void Whats_New()
         {
-            string txt = "/Resources/Whats_New.txt";
-            string Read = File.ReadAllText(txt);
+            string text = "C:\\TheRest\\User\\Data\\Whats_New";
+            string Read = File.ReadAllText(text);
 
             WN.Text = Read;
+            
         }
+
+
     }
 }
