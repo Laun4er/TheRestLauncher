@@ -27,9 +27,9 @@ namespace TheRestLauncher.Pages
             Whats_New();
         }
 
-       public async void Whats_New()
+       public void Whats_New()
         {
-            string text = "C:\\TheRest\\User\\Data\\Whats_New";
+            string text = "C:\\TheRest\\Launcher\\Whats_New";
             string Read = File.ReadAllText(text);
 
             WN.Text = Read;

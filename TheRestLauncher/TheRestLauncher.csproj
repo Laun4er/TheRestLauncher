@@ -39,7 +39,7 @@
     <None Remove="mods\Basic icons\Create.png" />
     <None Remove="mods\Basic icons\Fabric API.png" />
     <None Remove="mods\Basic icons\Farmer%27s Delight.png" />
-    <None Remove="mods\Basic icons\Friend&amp;Foes.png" />
+    <None Remove="mods\Basic icons\Friend_Foes.png" />
     <None Remove="mods\Basic icons\NoChatReport.png" />
     <None Remove="mods\Basic icons\Philips Ruins.png" />
     <None Remove="mods\Basic icons\Plasmo Voice.png" />
@@ -90,7 +90,7 @@
     <Resource Include="mods\Basic icons\Create.png" />
     <Resource Include="mods\Basic icons\Fabric API.png" />
     <Resource Include="mods\Basic icons\Farmer's Delight.png" />
-    <Resource Include="mods\Basic icons\Friend&amp;Foes.png" />
+    <Resource Include="mods\Basic icons\Friend_Foes.png" />
     <Resource Include="mods\Basic icons\NoChatReport.png" />
     <Resource Include="mods\Basic icons\Philips Ruins.png" />
     <Resource Include="mods\Basic icons\Plasmo Voice.png" />

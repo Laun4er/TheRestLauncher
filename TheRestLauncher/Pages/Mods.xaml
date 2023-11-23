@@ -19,6 +19,7 @@
                 </ResourceDictionary>
             </TabControl.Resources>
             <TabItem Header="Основные">
+                <ScrollViewer VerticalScrollBarVisibility="Hidden">
                 <StackPanel VerticalAlignment="Top" Orientation="Vertical">
                     <Border x:Name="AlternateCurret">
                         <Grid Margin="10">
@@ -45,7 +46,7 @@
                             <TextBlock Text="1.7.0" FontSize="15" Grid.Column="2" VerticalAlignment="Top" Margin="20,20"/>
                         </Grid>
                     </Border>
-                    <Border x:Name="Create" Margin="0,10" Height="80">
+                    <Border x:Name="Create" Margin="0,10">
                            <Grid Margin="10">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="Auto"/>
@@ -70,7 +71,7 @@
                             <TextBlock Text="0.5.1" FontSize="15" Grid.Column="2" VerticalAlignment="Top" Margin="20,20"/>
                         </Grid>
                     </Border>
-                    <Border x:Name="FabricAPI" Height="80">
+                    <Border x:Name="FabricAPI">
                         <Grid Margin="10">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="Auto"/>
@@ -95,32 +96,428 @@
                             <TextBlock Text="0.89.3" FontSize="15" Grid.Column="2" VerticalAlignment="Top" Margin="20,20"/>
                         </Grid>
                     </Border>
-                    <Border x:Name="Farmers_Delight" Height="80" Margin="0,10">
-                        <Grid Margin="10">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto"/>
-                                <ColumnDefinition/>
-                                <ColumnDefinition Width="Auto"/>
-                                <ColumnDefinition Width="Auto"/>
-                            </Grid.ColumnDefinitions>
+                    <Border x:Name="Farmers_Delight"  Margin="0,10">
+                            <Grid Margin="10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
 
 
-                            <Image Source="/mods/basic icons/Farmer's Delight.png" Width="50" Height="50" VerticalAlignment="Top" Margin="0,3">
-                                <Image.Clip>
-                                    <RectangleGeometry Rect="0,0 50,50" RadiusX="10" RadiusY="10"/>
-                                </Image.Clip>
-                            </Image>
-                            <StackPanel Grid.Column="1" Margin="10,0,0,0" HorizontalAlignment="Left">
-                                <TextBlock TextWrapping="Wrap" VerticalAlignment="Top">
-<Run Text="Farmer's Delight" FontWeight="Bold" FontSize="15"/>
+                                <Image Source="/mods/basic icons/Farmer's Delight.png" Width="50" Height="50" VerticalAlignment="Top" Margin="0,3">
+                                    <Image.Clip>
+                                        <RectangleGeometry Rect="0,0 50,50" RadiusX="10" RadiusY="10"/>
+                                    </Image.Clip>
+                                </Image>
+                                <StackPanel Grid.Column="1" Margin="10,0,0,0" HorizontalAlignment="Left">
+                                    <TextBlock TextWrapping="Wrap" VerticalAlignment="Top">
+                                <Run Text="Farmer's Delight" FontWeight="Bold" FontSize="15"/>
+                                <LineBreak/>
+                                <Run Text="Цель данного мода - это улучшение механики приготовления пищи и расширения фермерства! Также мод добавляет небольшое количество нового контента и расширить взаимодействие игрока." FontSize="12"/>
+                                    </TextBlock>
+                                </StackPanel>
+                                <TextBlock Text="0.4.2" FontSize="15" Grid.Column="2"   VerticalAlignment="Top" Margin="20,20"/>
+                            </Grid>
+                        </Border>
+                        <Border>
+                            <Grid Margin="10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Image Source="/mods/basic icons/Friend_Foes.png" Width="50" Height="50" VerticalAlignment="Top" Margin="0,3">
+                                    <Image.Clip>
+                                        <RectangleGeometry Rect="0,0 50,50" RadiusX="10" RadiusY="10"/>
+                                    </Image.Clip>
+                                </Image>
+                                <StackPanel Grid.Column="1" Margin="10,0,0,0" HorizontalAlignment="Left">
+                                    <TextBlock TextWrapping="Wrap" VerticalAlignment="Top">
+<Run Text="Friend and Foes" FontWeight="Bold" FontSize="15"/>
 <LineBreak/>
-<Run Text="Цель данного мода - это улучшение механики приготовления пищи и расширения фермерства! Также мод добавляет небольшое количество нового контента и расширить взаимодействие игрока." FontSize="12"/>
-                                </TextBlock>
-                            </StackPanel>
-                            <TextBlock Text="0.4.2" FontSize="15" Grid.Column="2" VerticalAlignment="Top" Margin="20,20"/>
-                        </Grid>
-                    </Border>
-                </StackPanel>
+<Run Text="Friends and Foes фокусируется на добавлении не прошедших голосование мобов, а также классных, но забытых мобов, например, таких, как Иллюзионист. Кроме того, мод также добавит различные дополнения, например медные кнопки и ульи из разной древесины." FontSize="12"/>
+                                    </TextBlock>
+                                </StackPanel>
+                                <TextBlock Text="1.9.6" FontSize="15" Grid.Column="2" VerticalAlignment="Top" Margin="20,20"/>
+                            </Grid>
+                        </Border>
+                        <Border Margin="0, 10">
+                            <Grid Margin="10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Image Source="/mods/basic icons/NoChatReport.png" Width="50" Height="50" VerticalAlignment="Top" Margin="0,3">
+                                    <Image.Clip>
+                                        <RectangleGeometry Rect="0,0 50,50" RadiusX="10" RadiusY="10"/>
+                                    </Image.Clip>
+                                </Image>
+                                <StackPanel Grid.Column="1" Margin="10,0,0,0" HorizontalAlignment="Left">
+                                    <TextBlock TextWrapping="Wrap" VerticalAlignment="Top">
+<Run Text="NoChatReport" FontWeight="Bold" FontSize="15"/>
+<LineBreak/>
+<Run Text="Убирает возможность получения или подачи репорта" FontSize="12"/>
+                                    </TextBlock>
+                                </StackPanel>
+                                <TextBlock Text="2.3.1" FontSize="15" Grid.Column="2" VerticalAlignment="Top" Margin="20,20"/>
+                            </Grid>
+                        </Border>
+                        <Border>
+                            <Grid Margin="10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Image Source="/mods/basic icons/Philips Ruins.png" Width="50" Height="50" VerticalAlignment="Top" Margin="0,3">
+                                    <Image.Clip>
+                                        <RectangleGeometry Rect="0,0 50,50" RadiusX="10" RadiusY="10"/>
+                                    </Image.Clip>
+                                </Image>
+                                <StackPanel Grid.Column="1" Margin="10,0,0,0" HorizontalAlignment="Left">
+                                    <TextBlock TextWrapping="Wrap" VerticalAlignment="Top">
+<Run Text="Philips Ruins" FontWeight="Bold" FontSize="15"/>
+<LineBreak/>
+<Run Text="После установки мода, в мире вы будете встречать новые структуры — руины. Маленькие подземелья, тренировочные площадки, особняки, небольшие домики или даже гигантские деревья — все эти структуры будут заброшены и смогут придать игре необычный шарм и наполнить мир игры разнообразием данжей." FontSize="12"/>
+                                    </TextBlock>
+                                </StackPanel>
+                                <TextBlock Text="2.3" FontSize="15" Grid.Column="2" VerticalAlignment="Top" Margin="20,20"/>
+                            </Grid>
+                        </Border>
+                        <Border Margin="0, 10">
+                            <Grid Margin="10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Image Source="/mods/basic icons/Plasmo Voice.png" Width="50" Height="50" VerticalAlignment="Top" Margin="0,3">
+                                    <Image.Clip>
+                                        <RectangleGeometry Rect="0,0 50,50" RadiusX="10" RadiusY="10"/>
+                                    </Image.Clip>
+                                </Image>
+                                <StackPanel Grid.Column="1" Margin="10,0,0,0" HorizontalAlignment="Left">
+                                    <TextBlock TextWrapping="Wrap" VerticalAlignment="Top">
+<Run Text="Plasmo Voice" FontWeight="Bold" FontSize="15"/>
+<LineBreak/>
+<Run Text="Добавит Голосовой чат в майнкрафт" FontSize="12"/>
+                                    </TextBlock>
+                                </StackPanel>
+                                <TextBlock Text="2.0.6" FontSize="15" Grid.Column="2" VerticalAlignment="Top" Margin="20,20"/>
+                            </Grid>
+                        </Border>
+                        <Border>
+                            <Grid Margin="10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Image Source="/mods/basic icons/Terralith.png" Width="50" Height="50" VerticalAlignment="Top" Margin="0,3">
+                                    <Image.Clip>
+                                        <RectangleGeometry Rect="0,0 50,50" RadiusX="10" RadiusY="10"/>
+                                    </Image.Clip>
+                                </Image>
+                                <StackPanel Grid.Column="1" Margin="10,0,0,0" HorizontalAlignment="Left">
+                                    <TextBlock TextWrapping="Wrap" VerticalAlignment="Top">
+<Run Text="Terralith" FontWeight="Bold" FontSize="15"/>
+<LineBreak/>
+<Run Text="Мод обновляет всю генерацию мира" FontSize="12"/>
+                                    </TextBlock>
+                                </StackPanel>
+                                <TextBlock Text="2.4.7" FontSize="15" Grid.Column="2" VerticalAlignment="Top" Margin="20,20"/>
+                            </Grid>
+                        </Border>
+                        <Border Margin="0, 10">
+                            <Grid Margin="10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Image Source="/mods/basic icons/YUNG's API.png" Width="50" Height="50" VerticalAlignment="Top" Margin="0,3">
+                                    <Image.Clip>
+                                        <RectangleGeometry Rect="0,0 50,50" RadiusX="10" RadiusY="10"/>
+                                    </Image.Clip>
+                                </Image>
+                                <StackPanel Grid.Column="1" Margin="10,0,0,0" HorizontalAlignment="Left">
+                                    <TextBlock TextWrapping="Wrap" VerticalAlignment="Top">
+<Run Text="YUNG's API" FontWeight="Bold" FontSize="15"/>
+<LineBreak/>
+<Run Text="Библиотека для работы модов YUNG" FontSize="12"/>
+                                    </TextBlock>
+                                </StackPanel>
+                                <TextBlock Text="4.0.2" FontSize="15" Grid.Column="2" VerticalAlignment="Top" Margin="20,20"/>
+                            </Grid>
+                        </Border>
+                        <Border>
+                            <Grid Margin="10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Image Source="/mods/basic icons/YUNG.s Better Ocean Monument.png" Width="50" Height="50" VerticalAlignment="Top" Margin="0,3">
+                                    <Image.Clip>
+                                        <RectangleGeometry Rect="0,0 50,50" RadiusX="10" RadiusY="10"/>
+                                    </Image.Clip>
+                                </Image>
+                                <StackPanel Grid.Column="1" Margin="10,0,0,0" HorizontalAlignment="Left">
+                                    <TextBlock TextWrapping="Wrap" VerticalAlignment="Top">
+<Run Text="YUNG's Better Ocean Monument" FontWeight="Bold" FontSize="15"/>
+<LineBreak/>
+<Run Text="Мод полностью переработает подводный монумент. Он теперь стал более объёмным и более обширным" FontSize="12"/>
+                                    </TextBlock>
+                                </StackPanel>
+                                <TextBlock Text="3.0.3" FontSize="15" Grid.Column="2" VerticalAlignment="Top" Margin="20,20"/>
+                            </Grid>
+                        </Border>
+                        <Border Margin="0, 10">
+                            <Grid Margin="10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Image Source="/mods/basic icons/YUNG's Better Desert Temple.png" Width="50" Height="50" VerticalAlignment="Top" Margin="0,3">
+                                    <Image.Clip>
+                                        <RectangleGeometry Rect="0,0 50,50" RadiusX="10" RadiusY="10"/>
+                                    </Image.Clip>
+                                </Image>
+                                <StackPanel Grid.Column="1" Margin="10,0,0,0" HorizontalAlignment="Left">
+                                    <TextBlock TextWrapping="Wrap" VerticalAlignment="Top">
+<Run Text="YUNG's Better Desert Temple" FontWeight="Bold" FontSize="15"/>
+<LineBreak/>
+<Run Text="Мод полностью перерабатывает пирамиду в пустыни, делая её более сложной" FontSize="12"/>
+                                    </TextBlock>
+                                </StackPanel>
+                                <TextBlock Text="3.0.3" FontSize="15" Grid.Column="2" VerticalAlignment="Top" Margin="20,20"/>
+                            </Grid>
+                        </Border>
+                        <Border>
+                            <Grid Margin="10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Image Source="/mods/basic icons/YUNG's Better Doungeons.png" Width="50" Height="50" VerticalAlignment="Top" Margin="0,3">
+                                    <Image.Clip>
+                                        <RectangleGeometry Rect="0,0 50,50" RadiusX="10" RadiusY="10"/>
+                                    </Image.Clip>
+                                </Image>
+                                <StackPanel Grid.Column="1" Margin="10,0,0,0" HorizontalAlignment="Left">
+                                    <TextBlock TextWrapping="Wrap" VerticalAlignment="Top">
+<Run Text="YUNG's Better Doungeons" FontWeight="Bold" FontSize="15"/>
+<LineBreak/>
+<Run Text="Мод полностью перерабатывает подземные данжи, делая их более логичными" FontSize="12"/>
+                                    </TextBlock>
+                                </StackPanel>
+                                <TextBlock Text="4.0.3" FontSize="15" Grid.Column="2" VerticalAlignment="Top" Margin="20,20"/>
+                            </Grid>
+                        </Border>
+
+                        <Border Margin="0, 10">
+                            <Grid Margin="10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Image Source="/mods/basic icons/YUNG's Better End Island.png" Width="50" Height="50" VerticalAlignment="Top" Margin="0,3">
+                                    <Image.Clip>
+                                        <RectangleGeometry Rect="0,0 50,50" RadiusX="10" RadiusY="10"/>
+                                    </Image.Clip>
+                                </Image>
+                                <StackPanel Grid.Column="1" Margin="10,0,0,0" HorizontalAlignment="Left">
+                                    <TextBlock TextWrapping="Wrap" VerticalAlignment="Top">
+<Run Text="YUNG's Better End Island" FontWeight="Bold" FontSize="15"/>
+<LineBreak/>
+<Run Text="Полностью перерабатывает остров, а также битву с главным боссом игры" FontSize="12"/>
+                                    </TextBlock>
+                                </StackPanel>
+                                <TextBlock Text="2.0.4" FontSize="15" Grid.Column="2" VerticalAlignment="Top" Margin="20,20"/>
+                            </Grid>
+                        </Border>
+                        <Border>
+                            <Grid Margin="10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Image Source="/mods/basic icons/YUNG's Better Jungle Temple.png" Width="50" Height="50" VerticalAlignment="Top" Margin="0,3">
+                                    <Image.Clip>
+                                        <RectangleGeometry Rect="0,0 50,50" RadiusX="10" RadiusY="10"/>
+                                    </Image.Clip>
+                                </Image>
+                                <StackPanel Grid.Column="1" Margin="10,0,0,0" HorizontalAlignment="Left">
+                                    <TextBlock TextWrapping="Wrap" VerticalAlignment="Top">
+<Run Text="YUNG's Better Jungle Temple" FontWeight="Bold" FontSize="15"/>
+<LineBreak/>
+<Run Text="Мод полностью перерабатывает храм в джунглях" FontSize="12"/>
+                                    </TextBlock>
+                                </StackPanel>
+                                <TextBlock Text="2.0.4" FontSize="15" Grid.Column="2" VerticalAlignment="Top" Margin="20,20"/>
+                            </Grid>
+                        </Border>
+
+                        <Border Margin="0, 10">
+                            <Grid Margin="10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Image Source="/mods/basic icons/YUNG's Better Mineshafts.png" Width="50" Height="50" VerticalAlignment="Top" Margin="0,3">
+                                    <Image.Clip>
+                                        <RectangleGeometry Rect="0,0 50,50" RadiusX="10" RadiusY="10"/>
+                                    </Image.Clip>
+                                </Image>
+                                <StackPanel Grid.Column="1" Margin="10,0,0,0" HorizontalAlignment="Left">
+                                    <TextBlock TextWrapping="Wrap" VerticalAlignment="Top">
+<Run Text="YUNG's Better Mineshafts" FontWeight="Bold" FontSize="15"/>
+<LineBreak/>
+<Run Text="Мод полностью переработает заброшенные шахты!" FontSize="12"/>
+                                    </TextBlock>
+                                </StackPanel>
+                                <TextBlock Text="4.0.4" FontSize="15" Grid.Column="2" VerticalAlignment="Top" Margin="20,20"/>
+                            </Grid>
+                        </Border>
+                        <Border>
+                            <Grid Margin="10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Image Source="/mods/basic icons/YUNG's Better Nether Fortresses.png" Width="50" Height="50" VerticalAlignment="Top" Margin="0,3">
+                                    <Image.Clip>
+                                        <RectangleGeometry Rect="0,0 50,50" RadiusX="10" RadiusY="10"/>
+                                    </Image.Clip>
+                                </Image>
+                                <StackPanel Grid.Column="1" Margin="10,0,0,0" HorizontalAlignment="Left">
+                                    <TextBlock TextWrapping="Wrap" VerticalAlignment="Top">
+<Run Text="YUNG's Better Nether Fortresses" FontWeight="Bold" FontSize="15"/>
+<LineBreak/>
+<Run Text="Мод полностью переработает крепость в нижнем мире!" FontSize="12"/>
+                                    </TextBlock>
+                                </StackPanel>
+                                <TextBlock Text="2.0.5" FontSize="15" Grid.Column="2" VerticalAlignment="Top" Margin="20,20"/>
+                            </Grid>
+                        </Border>
+
+                        <Border Margin="0, 10">
+                            <Grid Margin="10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Image Source="/mods/basic icons/YUNG'S Better Stronghold.png" Width="50" Height="50" VerticalAlignment="Top" Margin="0,3">
+                                    <Image.Clip>
+                                        <RectangleGeometry Rect="0,0 50,50" RadiusX="10" RadiusY="10"/>
+                                    </Image.Clip>
+                                </Image>
+                                <StackPanel Grid.Column="1" Margin="10,0,0,0" HorizontalAlignment="Left">
+                                    <TextBlock TextWrapping="Wrap" VerticalAlignment="Top">
+<Run Text="YUNG'S Better Stronghold" FontWeight="Bold" FontSize="15"/>
+<LineBreak/>
+<Run Text="Мод полностью перерабатывает подземную структуру с порталом." FontSize="12"/>
+                                    </TextBlock>
+                                </StackPanel>
+                                <TextBlock Text="4.0.3" FontSize="15" Grid.Column="2" VerticalAlignment="Top" Margin="20,20"/>
+                            </Grid>
+                        </Border>
+                        <Border>
+                            <Grid Margin="10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Image Source="/mods/basic icons/YUNG's Better Witch Huts.png" Width="50" Height="50" VerticalAlignment="Top" Margin="0,3">
+                                    <Image.Clip>
+                                        <RectangleGeometry Rect="0,0 50,50" RadiusX="10" RadiusY="10"/>
+                                    </Image.Clip>
+                                </Image>
+                                <StackPanel Grid.Column="1" Margin="10,0,0,0" HorizontalAlignment="Left">
+                                    <TextBlock TextWrapping="Wrap" VerticalAlignment="Top">
+<Run Text="YUNG's Better Witch Huts" FontWeight="Bold" FontSize="15"/>
+<LineBreak/>
+<Run Text="Мод перерабатывать хижину ведьмы" FontSize="12"/>
+                                    </TextBlock>
+                                </StackPanel>
+                                <TextBlock Text="3.0.3" FontSize="15" Grid.Column="2" VerticalAlignment="Top" Margin="20,20"/>
+                            </Grid>
+                        </Border>
+
+                        <Border Margin="0, 10">
+                            <Grid Margin="10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Image Source="/mods/basic icons/YUNG's Bridges.png" Width="50" Height="50" VerticalAlignment="Top" Margin="0,3">
+                                    <Image.Clip>
+                                        <RectangleGeometry Rect="0,0 50,50" RadiusX="10" RadiusY="10"/>
+                                    </Image.Clip>
+                                </Image>
+                                <StackPanel Grid.Column="1" Margin="10,0,0,0" HorizontalAlignment="Left">
+                                    <TextBlock TextWrapping="Wrap" VerticalAlignment="Top">
+<Run Text="YUNG's Bridges" FontWeight="Bold" FontSize="15"/>
+<LineBreak/>
+<Run Text="Мод добавляет в мир мосты, которые отлично разбавляют мир майнкрафта. Мосты могут быть как поломанными, как полностью восстановенными и пригодными для использования" FontSize="12"/>
+                                    </TextBlock>
+                                </StackPanel>
+                                <TextBlock Text="4.0.3" FontSize="15" Grid.Column="2" VerticalAlignment="Top" Margin="20,20"/>
+                            </Grid>
+                        </Border>
+                        <Border>
+                            <Grid Margin="10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Image Source="/mods/basic icons/YUNG's Extras.png" Width="50" Height="50" VerticalAlignment="Top" Margin="0,3">
+                                    <Image.Clip>
+                                        <RectangleGeometry Rect="0,0 50,50" RadiusX="10" RadiusY="10"/>
+                                    </Image.Clip>
+                                </Image>
+                                <StackPanel Grid.Column="1" Margin="10,0,0,0" HorizontalAlignment="Left">
+                                    <TextBlock TextWrapping="Wrap" VerticalAlignment="Top">
+<Run Text="YUNG's Extras" FontWeight="Bold" FontSize="15"/>
+<LineBreak/>
+<Run Text="Добавляет некоторые изменения в структурах" FontSize="12"/>
+                                    </TextBlock>
+                                </StackPanel>
+                                <TextBlock Text="4.0.3" FontSize="15" Grid.Column="2" VerticalAlignment="Top" Margin="20,20"/>
+                            </Grid>
+                        </Border>
+                    </StackPanel>
+                </ScrollViewer>
             </TabItem>
             <TabItem Header="Оптимизация">
                 <StackPanel>
