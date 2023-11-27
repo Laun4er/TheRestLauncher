@@ -9,10 +9,14 @@
       Title="Settings" Background="#363840">
 
     <Grid>
-        <ProgressBar  Height="40" VerticalAlignment="Bottom" Margin="15,10"
+        <Grid.RowDefinitions>
+            <RowDefinition Height="89*"/>
+            <RowDefinition Height="11*"/>
+        </Grid.RowDefinitions>
+        <ProgressBar  Height="40" VerticalAlignment="Top" Margin="15,16,15,0"
                      Background="#222227" Foreground="#2F71AD" Name="progressBar" BorderThickness="0"
-                      Minimum="0" Maximum="100"/>
-        <TabControl>
+                      Minimum="0" Maximum="100" Grid.Row="1"/>
+        <TabControl Margin="-2,-46,-2,-2" Grid.RowSpan="2">
             <TabControl.Resources>
                 <ResourceDictionary>
                     <ResourceDictionary.MergedDictionaries>
@@ -21,13 +25,15 @@
                 </ResourceDictionary>
             </TabControl.Resources>
             <TabItem Header="Аккаунт">
+                <Grid Margin="90" Background="#222227">
+                    <TextBlock Text="Смена ника"/>
+                    <TextBox Width="500" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,50" Name="NickName"/>
+                    <Button HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,100" Content="Сменить" Name="ChangeNick" Click="ChangeNick_Click"/>
 
-
-
-
+                </Grid>
             </TabItem>
             <TabItem Header="Лаунчер">
-                
+
                 <StackPanel>
                     <DockPanel>
                         <Border Height="50">
@@ -147,6 +153,6 @@
             </TabItem>
 
         </TabControl>
-        
+
     </Grid>
 </Page>

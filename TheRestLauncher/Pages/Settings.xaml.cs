@@ -63,11 +63,12 @@ namespace TheRestLauncher.Pages
             client.DownloadFile(URL, SavePath + "mods.zip");
             ZipFile.ExtractToDirectory(ZIP, Extract);
             Directory.Delete(DeleteTemp, true);
+        }
 
+        private void ChangeNick_Click(object sender, RoutedEventArgs e)
+        {
 
         }
-        
-
     }
     
 

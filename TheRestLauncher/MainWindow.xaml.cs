@@ -21,7 +21,7 @@ namespace TheRest
             InitializeComponent();
             HappyBird();
             PageFrame.Content = new Main();
-            User.Text = File.ReadAllText("C:\\TheRest\\User\\Data\\User.txt");
+            User.Text = File.ReadAllText("C:\\TheRest\\User\\Data\\User");
 
         }
 

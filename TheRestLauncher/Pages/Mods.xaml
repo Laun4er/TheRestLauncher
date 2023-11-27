@@ -18,7 +18,7 @@
                     </ResourceDictionary.MergedDictionaries>
                 </ResourceDictionary>
             </TabControl.Resources>
-            <TabItem Header="Основные">
+            <TabItem Header="Основные моды на сервере">
                 <ScrollViewer VerticalScrollBarVisibility="Hidden">
                 <StackPanel VerticalAlignment="Top" Orientation="Vertical">
                     <Border x:Name="AlternateCurret">
@@ -519,7 +519,7 @@
                     </StackPanel>
                 </ScrollViewer>
             </TabItem>
-            <TabItem Header="Оптимизация">
+            <TabItem Header="Загруженные моды">
                 <StackPanel>
                     <DockPanel>
                         <Border Height="50">
@@ -528,7 +528,7 @@
                     </DockPanel>
                 </StackPanel>
             </TabItem>
-            <TabItem Header="Дополнительные">
+            <TabItem Header="Ресурс-паки">
                 <StackPanel>
                     <DockPanel>
                         <Border Height="50">
@@ -537,7 +537,7 @@
                     </DockPanel>
                 </StackPanel>
             </TabItem>
-            <TabItem Header="Библиотеки">
+            <TabItem Header="Миры">
 
             </TabItem>
         </TabControl>
