@@ -1,5 +1,4 @@
-﻿using System.ComponentModel;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.IO;
 using System.IO.Compression;
 using System.Net;
@@ -67,7 +66,7 @@ namespace TheRestLauncher.Pages
 
         private void ChangeNick_Click(object sender, RoutedEventArgs e)
         {
-
+            
         }
     }
     

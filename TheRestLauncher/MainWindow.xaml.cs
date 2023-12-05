@@ -1,15 +1,10 @@
 ﻿using System;
 using System.IO;
-using System.IO.Compression;
-using System.Net;
-using System.Reflection.Metadata.Ecma335;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Navigation;
-using TheRestLauncher;
 using TheRestLauncher.Pages;
 
 namespace TheRest
@@ -33,45 +28,36 @@ namespace TheRest
             }//Karvane
             else
             {
-                SeaSon.Text = "TheRest: SEASON 1";
-            }
-
-            if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 12, 17))
-            {
-                SeaSon.Text = "С днём рождения, Laun4er!";
-            }//Laun4er
-            else
-            {
-                SeaSon.Text = "TheRest: SEASON 1";
-            }
-
-            if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 4, 1))
-            {
-                SeaSon.Text = "С днём рождения, Izumrudik01!";
-            }//izumrudik01
-            else
-            {
-                SeaSon.Text = "TheRest: SEASON 1";
-            }
-
-            if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 1, 8))
-            {
-                SeaSon.Text = "С днём рождения, Zerokko!";
-            }//Zerokko
-            else
-            {
-                SeaSon.Text = "TheRest: SEASON 1";
-            }
-            if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 12, 31))
-            {
-                SeaSon.Text = "С Новым Годом!";
-            }//НГ
-
-            else
-            {
-                SeaSon.Text = "TheRest: SEASON 1";
-            }
-
+                if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 12, 17))
+                {
+                    SeaSon.Text = "С днём рождения, Laun4er!";
+                }//Laun4er
+                else
+                {
+                    if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 4, 1))
+                    {
+                        SeaSon.Text = "С днём рождения, Izumrudik01!";
+                    }//izumrudik01
+                    else
+                    {
+                        if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 1, 8))
+                        {
+                            SeaSon.Text = "С днём рождения, Zerokko!";
+                        }//Zerokko
+                        else
+                        {
+                            if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 6, 14))
+                            {
+                                SeaSon.Text = "С днём рождения, Mortyyy!";
+                            }//Mortyyy
+                            else
+                            {
+                                SeaSon.Text = "TheRest: SEASON 1";
+                            }
+                        }
+                    }
+                }
+            } 
         } //Пасхалка с днями рождения
 
 

@@ -520,12 +520,8 @@
                 </ScrollViewer>
             </TabItem>
             <TabItem Header="Загруженные моды">
-                <StackPanel>
-                    <DockPanel>
-                        <Border Height="50">
-
-                        </Border>
-                    </DockPanel>
+                <StackPanel x:Name="Extra">
+                    
                 </StackPanel>
             </TabItem>
             <TabItem Header="Ресурс-паки">

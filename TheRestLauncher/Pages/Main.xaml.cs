@@ -1,25 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using System.Diagnostics;
-using System.Xml.Linq;
 using System.IO;
+using System.Net;
 
 namespace TheRestLauncher.Pages
 {
     public partial class Main : Page
     {
+        private const string ServerVer = "";
+        private const string LocalVer = "";
         public Main()
         {
             InitializeComponent();
@@ -30,22 +21,66 @@ namespace TheRestLauncher.Pages
             {
                 Start.Visibility = Visibility.Hidden;
                 StartM.Visibility = Visibility.Visible;
-            }            
+            }
+            CheckVersion();
         }
 
-        private void CheckVersion()
+        private async void CheckVersion()
         {
+            string LocalVerContent = LoadLocalFile();
+            if (LocalVerContent == null)
+            {
+                MessageBox.Show("Обратитесь к Laun4er за помощью", "Проблема с загрузкой локальной версии", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
 
+
+            string ServerVerContent = LoadServerFile();
+            if (ServerVerContent == null)
+            {
+                MessageBox.Show("Обратитесь к Laun4er за помощью", "Проблема с загрузкой серверного обновления", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            if (LocalVerContent.Equals(ServerVerContent))
+            {
+
+            }
+            else
+            {
+                NewSeason();
+
+            }
+
+        }
+        private string LoadLocalFile()
+        {
+            try
+            {
+                return File.ReadAllText(LocalVer);
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+        }
+        private string LoadServerFile()
+        {
+            try
+            {
+                using (var client = new WebClient())
+                {
+                    return client.DownloadString(ServerVer);
+                }
+            }
+            catch (Exception)
+            {
+                return null;
+            }
         }
 
         private void CheckMinecraft()
         {
-
-        }
-
-        private void CheckingFiles()
-        {
-                     
 
         }
 
@@ -58,6 +93,21 @@ namespace TheRestLauncher.Pages
             myProcess.StartInfo.FileName = StartM;
             myProcess.StartInfo.CreateNoWindow = true;
             myProcess.Start();
+        }
+        
+        public void NewSeason()
+        {
+
+        }
+        
+        public void DownloadMinecraft()
+        {
+
+        }
+
+        public void RestoreFiles()
+        {
+
         }
     }
 }
