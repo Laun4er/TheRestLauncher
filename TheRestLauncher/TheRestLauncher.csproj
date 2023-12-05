@@ -150,8 +150,4 @@
     <Resource Include="Resources\LogoStartup.png" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Core\" />
-  </ItemGroup>
-
 </Project>
