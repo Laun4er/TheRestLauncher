@@ -67,6 +67,8 @@
     <None Remove="mods\Basic icons\YUNG%27s Extras.png" />
     <None Remove="mods\Basic icons\YUNG.s Better Ocean Monument.png" />
     <None Remove="News.png" />
+    <None Remove="Pages\Resources\Buttons\Allow.png" />
+    <None Remove="Pages\Resources\Buttons\Deni.png" />
     <None Remove="Pages\Resources\TheRestBG.png" />
     <None Remove="Resources\Buttons\Delete.png" />
     <None Remove="Resources\Buttons\Download.png" />
@@ -117,6 +119,8 @@
     <Resource Include="mods\Basic icons\YUNG's Bridges.png" />
     <Resource Include="mods\Basic icons\YUNG's Extras.png" />
     <Resource Include="mods\Basic icons\YUNG.s Better Ocean Monument.png" />
+    <Resource Include="Pages\Resources\Buttons\Allow.png" />
+    <Resource Include="Pages\Resources\Buttons\Deni.png" />
     <Resource Include="Resources\Buttons\Delete.png" />
   </ItemGroup>
 

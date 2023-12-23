@@ -48,9 +48,10 @@
             <TabItem Header="Лаунчер">
                 <Border Background="#222227" Margin="20, 30, 20, 90" CornerRadius="30">
                     <Grid>
-                        <Button Width="230"
-                            VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30"
-                            Content=""
+                        <TextBlock Text="Автообновление" Margin="20,12"/>
+                        <Button Width="45"
+                            VerticalAlignment="Top" HorizontalAlignment="Left" Margin="180,10"
+                            Content=" "
                             Name="AllowUpdate" Click="AllowUpdate_Click">
                             <!--Content здесь пустой, потому что нужно же как то выводить сам контент-->
                         </Button>
