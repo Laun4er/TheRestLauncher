@@ -7,6 +7,25 @@
       mc:Ignorable="d" 
       d:DesignHeight="600" d:DesignWidth="1000"
       Title="Settings" Background="#363840">
+    <Page.Resources>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Background" Value="#363840"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Background="{TemplateBinding Background}" CornerRadius="5">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#6161FF"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Page.Resources>
 
     <Grid>
         <Grid.RowDefinitions>
@@ -25,133 +44,25 @@
                 </ResourceDictionary>
             </TabControl.Resources>
             <TabItem Header="Аккаунт">
-                <Grid Margin="90" Background="#222227">
-                    <TextBlock Text="Смена ника"/>
-                    <TextBox Width="500" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,50" Name="NickName"/>
-                    <Button HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,100" Content="Сменить" Name="ChangeNick" Click="ChangeNick_Click"/>
-
-                </Grid>
             </TabItem>
             <TabItem Header="Лаунчер">
-
-                <StackPanel>
-                    <DockPanel>
-                        <Border Height="50">
-
-                        </Border>
-                    </DockPanel>
-                </StackPanel>
+                <Border Background="#222227" Margin="20, 30, 20, 90" CornerRadius="30">
+                    <Grid>
+                        <Button Width="230"
+                            VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30"
+                            Content="Запретить обновления"
+                                Name="AllowUpdate" Click="AllowUpdate_Click">
+                            
+                        </Button>
+                    </Grid>
+                </Border>
             </TabItem>
             <TabItem Header="Клиент">
-                <StackPanel>
-                    <DockPanel>
-                        <Border>
-                            <Button Content="Восстановить моды по умолчанию" Height="50" Width="400" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10" Foreground="White" Name="Restore" Click="Restore_Click">
-                                <Button.Style>
-                                    <Style TargetType="{x:Type Button}">
-                                        <Setter Property="Background" Value="#363840"/>
-                                        <Setter Property="Template">
-                                            <Setter.Value>
-                                                <ControlTemplate TargetType="{x:Type Button}">
-                                                    <Border Background="{TemplateBinding Background}" CornerRadius="5">
-                                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                                    </Border>
-                                                </ControlTemplate>
-                                            </Setter.Value>
-                                        </Setter>
-                                        <Style.Triggers>
-                                            <Trigger Property="IsMouseOver" Value="True">
-                                                <Setter Property="Background" Value="#6161FF"/>
-                                            </Trigger>
-                                        </Style.Triggers>
-                                    </Style>
-                                </Button.Style>
-                            </Button>
-                        </Border>
-                    </DockPanel>
-                </StackPanel>
             </TabItem>
-            <TabItem Header="Прочее">
-                <StackPanel>
-                    <DockPanel>
-                        <Border>
-                            <DockPanel>
-                                <StackPanel>
-                                    <TextBlock Text="Версия лаунчера: ОБТ 1"/>
-                                    <TextBlock Text="Версия Minecraft: Fabric 1.20.1"/>
-                                    <TextBlock Text="Текущий сезон: SEASON 1"/>
-                                    <TextBlock Text="Разработчики: Laun4er; Karvane"/>
-                                    <TextBlock Text="Дата обновления: 1.11.2023"/>
-                                    <DockPanel>
-                                        <Button Width="40" Height="40" HorizontalAlignment="Left" Margin="10" Name="VK" BorderThickness="0" Background="Transparent" Cursor="Hand" Click="VK_Click">
-                                            <Image Source="/Resources/Buttons/VK.png" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
-                                        </Button>
-                                        <Button Width="40" Height="40" HorizontalAlignment="Left" Margin="10" Name="TikTok" BorderThickness="0" Background="Transparent" Cursor="Hand" Click="TikTok_Click">
-                                            <Image Source="/Resources/Buttons/TikTok.png" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
-                                        </Button>
-                                        <Button Width="40" Height="40" HorizontalAlignment="Left" Margin="10" Name="YouTube" BorderThickness="0" Background="Transparent" Cursor="Hand" Click="YouTube_Click">
-                                            <Image Source="/Resources/Buttons/Youtube.png" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
-                                        </Button>
-                                    </DockPanel>
-                                </StackPanel>
-                                <StackPanel>
-                                    <Button Content="Поддержка разработчика" Margin="10"
-                                            Width="250" Height="40"
-                                            HorizontalAlignment="Right"
-                                            Name="DonateDev" Foreground="White"
-                                            Click="DonateDev_Click">
-                                        <Button.Style>
-                                            <Style TargetType="{x:Type Button}">
-                                                <Setter Property="Background" Value="#363840"/>
-                                                <Setter Property="Template">
-                                                    <Setter.Value>
-                                                        <ControlTemplate TargetType="{x:Type Button}">
-                                                            <Border Background="{TemplateBinding Background}" CornerRadius="5">
-                                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                                            </Border>
-                                                        </ControlTemplate>
-                                                    </Setter.Value>
-                                                </Setter>
-                                                <Style.Triggers>
-                                                    <Trigger Property="IsMouseOver" Value="True">
-                                                        <Setter Property="Background" Value="#6161FF"/>
-                                                    </Trigger>
-                                                </Style.Triggers>
-                                            </Style>
-                                        </Button.Style>
-                                    </Button>
-                                    <Button Content="Поддержка сервера" Margin="10"
-                                            Width="250" Height="40"
-                                            HorizontalAlignment="Right"
-                                            Name="DonateServer" Foreground="White"
-                                            Click="DonateServer_Click">
-                                        <Button.Style>
-                                            <Style TargetType="{x:Type Button}">
-                                                <Setter Property="Background" Value="#363840"/>
-                                                <Setter Property="Template">
-                                                    <Setter.Value>
-                                                        <ControlTemplate TargetType="{x:Type Button}">
-                                                            <Border Background="{TemplateBinding Background}" CornerRadius="5">
-                                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                                            </Border>
-                                                        </ControlTemplate>
-                                                    </Setter.Value>
-                                                </Setter>
-                                                <Style.Triggers>
-                                                    <Trigger Property="IsMouseOver" Value="True">
-                                                        <Setter Property="Background" Value="#6161FF"/>
-                                                    </Trigger>
-                                                </Style.Triggers>
-                                            </Style>
-                                        </Button.Style>
-                                    </Button>
-                                </StackPanel>
-                            </DockPanel>
-                        </Border>
-                    </DockPanel>
-                </StackPanel>
+            <TabItem Header="Информация">
             </TabItem>
-
+            <TabItem Header="Ссылки">
+            </TabItem>
         </TabControl>
 
     </Grid>

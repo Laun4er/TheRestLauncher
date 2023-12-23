@@ -21,7 +21,7 @@
                 <StackPanel>
                     <DockPanel>
                         <Border>
-                            <TextBlock Text="Обновление TheRest Launcher(Число)" Margin="10">
+                            <TextBlock Text="Обновление TheRest Launcher(6.12.2023)" Margin="10">
                                 <LineBreak/>
                                 <Run Name="WN"/>
                             </TextBlock>

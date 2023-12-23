@@ -16,6 +16,7 @@ namespace TheRest
             InitializeComponent();
             HappyBird();
             PageFrame.Content = new Main();
+            Profile();
             User.Text = File.ReadAllText("C:\\TheRest\\User\\Data\\User");
 
         }
@@ -46,14 +47,40 @@ namespace TheRest
                         }//Zerokko
                         else
                         {
-                            if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 6, 14))
+                            if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 8, 26))
                             {
-                                SeaSon.Text = "С днём рождения, Mortyyy!";
-                            }//Mortyyy
+                                SeaSon.Text = "С днём рождения, DrN_89!";
+                            }//DrN_89
                             else
                             {
-                                SeaSon.Text = "TheRest: SEASON 1";
+                                if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 9, 18))
+                                {
+                                    SeaSon.Text = "С днём рождения, Ivantuz!";
+                                }//Ivantuz
+                                else
+                                {
+                                    if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 11, 25))
+                                    {
+                                        SeaSon.Text = "С днём рождения, Matvey_bad!";
+                                    }//Matvey_bad
+                                    else
+                                    {
+                                        if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 6, 8))
+                                        {
+                                            SeaSon.Text = "С днём рождения, Myuklaa_ew!";
+                                        }//Muyklaa_ew
+                                        else
+                                        {
+                                            SeaSon.Text = "TheRest: SEASON 1";
+
+                                        }
+
+                                    }
+
+                                }
+
                             }
+
                         }
                     }
                 }
@@ -67,6 +94,19 @@ namespace TheRest
         private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             DragMove();
+        }
+
+        public void Profile()
+        {
+            string file = "C:\\TheRest\\Launcher\\profile.json";
+            if(File.Exists(file))
+            {
+
+            }
+            else
+            {
+
+            }
         }
 
 

@@ -150,4 +150,8 @@
     <Resource Include="Resources\LogoStartup.png" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Pages\Новая папка\" />
+  </ItemGroup>
+
 </Project>
