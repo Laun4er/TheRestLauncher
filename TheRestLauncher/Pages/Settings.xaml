@@ -50,9 +50,9 @@
                     <Grid>
                         <Button Width="230"
                             VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30"
-                            Content="Запретить обновления"
-                                Name="AllowUpdate" Click="AllowUpdate_Click">
-                            
+                            Content=""
+                            Name="AllowUpdate" Click="AllowUpdate_Click">
+                            <!--Content здесь пустой, потому что нужно же как то выводить сам контент-->
                         </Button>
                     </Grid>
                 </Border>
