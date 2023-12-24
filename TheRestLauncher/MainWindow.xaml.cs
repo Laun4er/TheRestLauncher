@@ -40,7 +40,7 @@ namespace TheRest
             }
             if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 8, 26))
             {
-                SeaSon.Text = "С днём рождения, DrN89🎂";
+                SeaSon.Text = "С днём рождения, DrN_89🎂";
                 return;
             }
             if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 9, 18))
