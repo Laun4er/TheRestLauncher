@@ -47,8 +47,8 @@ namespace TheRestLauncher.Pages
         {
             string arg = arguments;
             int lineToReplace = 10;
-            string text1 = "AllowUpdate=true";
-            string text2 = "AllowUpdate=false";
+            string text1 = "AllowUpdate = true";
+            string text2 = "AllowUpdate = false";
 
             string[] line = File.ReadAllLines(arg);
             if (line[lineToReplace - 1] == text1)
@@ -56,7 +56,7 @@ namespace TheRestLauncher.Pages
                 line[lineToReplace - 1] = text2;
                 AllowUpdate.Content = new Image
                 {
-                    Source = new BitmapImage(new Uri("/Pages/Resources/Buttons/Allow.png", UriKind.Relative))
+                    Source = new BitmapImage(new Uri("/Pages/Resources/Buttons/Deni.png", UriKind.Relative))
                 };
             }
             else
@@ -64,7 +64,7 @@ namespace TheRestLauncher.Pages
                 line[lineToReplace - 1] = text1;
                 AllowUpdate.Content = new Image
                 {
-                    Source = new BitmapImage(new Uri("/Pages/Resources/Buttons/Deni.png", UriKind.Relative))
+                    Source = new BitmapImage(new Uri("/Pages/Resources/Buttons/Allow.png", UriKind.Relative))
                 };
             }
             File.WriteAllLines(arg, line);
