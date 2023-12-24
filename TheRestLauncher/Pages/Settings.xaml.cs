@@ -1,18 +1,14 @@
 ﻿using System;
-using System.Diagnostics;
 using System.IO;
-using System.Net;
 using System.Windows.Controls;
 using System.Windows.Media.Imaging;
 
 namespace TheRestLauncher.Pages
 {
-    
+
     public partial class Settings : Page
     {
         private const string arguments = "C:\\TheRest\\Launcher\\TheRest.arg";
-
-        WebClient client = new WebClient();
 
         public Settings()
         {
@@ -25,7 +21,6 @@ namespace TheRestLauncher.Pages
             string arg = arguments;
             int line = 10;
             string A1 = "AllowUpdate = true";
-            string A2 = "AllowUpdate = false";
             string[] rline = File.ReadAllLines(arg);
 
             if (rline[line - 1] == A1)

@@ -98,6 +98,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="mods\Basic icons\Alternate Current.png" />
     <Resource Include="mods\Basic icons\Create.png" />
     <Resource Include="mods\Basic icons\Fabric API.png" />

@@ -73,7 +73,7 @@ namespace TheRest
             DragMove();
         }
 
-        public void Profile()
+        public static void Profile()
         {
             string file = "C:\\TheRest\\Launcher\\profile.json";
             if(File.Exists(file))
@@ -132,7 +132,9 @@ namespace TheRest
                             ListBox1.SelectedIndex = -1;
                             break;
                     }
+#pragma warning disable CS8600 // Преобразование литерала, допускающего значение NULL или возможного значения NULL в тип, не допускающий значение NULL.
                     Type PageType = Type.GetType($"TheRestLauncher.Pages.{selectedListBoxItem.Name}");
+#pragma warning restore CS8600 // Преобразование литерала, допускающего значение NULL или возможного значения NULL в тип, не допускающий значение NULL.
                     PageFrame.Content = Activator.CreateInstance(PageType);
                 }
             }
@@ -203,8 +205,7 @@ namespace TheRest
 
         private static void HandleSelectPreviewMouseDown(object sender, MouseButtonEventArgs e)
         {
-            var originalSource = e.OriginalSource as FrameworkElement;
-            e.Handled = e.ChangedButton == MouseButton.Left && originalSource != null && originalSource.Parent != null;
+            e.Handled = e.ChangedButton == MouseButton.Left && e.OriginalSource is FrameworkElement originalSource && originalSource.Parent != null;
         }
 
         #endregion
