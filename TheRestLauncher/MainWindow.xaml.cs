@@ -23,68 +23,45 @@ namespace TheRest
 
         private void HappyBird()
         {
-            if(DateTime.Now.Date == new DateTime(DateTime.Now.Year, 11,5)) 
+            if(DateTime.Now.Date == new DateTime(DateTime.Now.Year, 11, 5))
             {
-                SeaSon.Text = "С днём рождения, Karvane!";
-            }//Karvane
+                SeaSon.Text = "С днём рождения, Karvane🎂";
+                return;
+            }
+            if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 12, 17))
+            {
+                SeaSon.Text = "С днём рождения, Laun4er🎂";
+                return;
+            }
+            if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 4, 1))
+            {
+                SeaSon.Text = "С днём рождения, izumrudic01🎂";
+                return;
+            }
+            if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 8, 26))
+            {
+                SeaSon.Text = "С днём рождения, DrN89🎂";
+                return;
+            }
+            if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 9, 18))
+            {
+                SeaSon.Text = "С днём рождения, Ivantuz🎂";
+                return;
+            }
+            if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 11, 25))
+            {
+                SeaSon.Text = "С днём рождения, Matvey_Bad🎂";
+                return;
+            }
+            if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 6, 8))
+            {
+                SeaSon.Text = "С днём рождения, Laun4er🎂";
+                return;
+            }
             else
             {
-                if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 12, 17))
-                {
-                    SeaSon.Text = "С днём рождения, Laun4er!";
-                }//Laun4er
-                else
-                {
-                    if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 4, 1))
-                    {
-                        SeaSon.Text = "С днём рождения, Izumrudik01!";
-                    }//izumrudik01
-                    else
-                    {
-                        if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 1, 8))
-                        {
-                            SeaSon.Text = "С днём рождения, Zerokko!";
-                        }//Zerokko
-                        else
-                        {
-                            if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 8, 26))
-                            {
-                                SeaSon.Text = "С днём рождения, DrN_89!";
-                            }//DrN_89
-                            else
-                            {
-                                if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 9, 18))
-                                {
-                                    SeaSon.Text = "С днём рождения, Ivantuz!";
-                                }//Ivantuz
-                                else
-                                {
-                                    if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 11, 25))
-                                    {
-                                        SeaSon.Text = "С днём рождения, Matvey_bad!";
-                                    }//Matvey_bad
-                                    else
-                                    {
-                                        if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 6, 8))
-                                        {
-                                            SeaSon.Text = "С днём рождения, Myuklaa_ew!";
-                                        }//Muyklaa_ew
-                                        else
-                                        {
-                                            SeaSon.Text = "TheRest: SEASON 1";
-
-                                        }
-
-                                    }
-
-                                }
-
-                            }
-
-                        }
-                    }
-                }
-            } 
+                SeaSon.Text = "TheRest: SEASON 1";
+            }
         } //Пасхалка с днями рождения
 
 
