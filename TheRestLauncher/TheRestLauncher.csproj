@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows8.0</TargetFramework>
+    <TargetFramework>net8.0-windows7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>True</UseWPF>
     <ApplicationIcon>Icon.ico</ApplicationIcon>
@@ -14,6 +14,7 @@
     <Product>Launcher</Product>
     <Description>необходимый лаунчер для игры на сервере TheRest</Description>
     <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
+    <Copyright>TheRest</Copyright>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -24,74 +25,6 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DebugType>none</DebugType>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Compile Remove="Modesxaml\**" />
-    <Compile Remove="Pages\Docks\**" />
-    <Compile Remove="Pages\Resources\Mods\**" />
-    <EmbeddedResource Remove="Modesxaml\**" />
-    <EmbeddedResource Remove="Pages\Docks\**" />
-    <EmbeddedResource Remove="Pages\Resources\Mods\**" />
-    <None Remove="Modesxaml\**" />
-    <None Remove="Pages\Docks\**" />
-    <None Remove="Pages\Resources\Mods\**" />
-    <Page Remove="Modesxaml\**" />
-    <Page Remove="Pages\Docks\**" />
-    <Page Remove="Pages\Resources\Mods\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Remove="ButtonHome.png" />
-    <None Remove="ButtonPlay.png" />
-    <None Remove="Logo.png" />
-    <None Remove="MainWindow.xaml.cs~RFc5ce2e0.TMP" />
-    <None Remove="mods\Basic icons\Alternate Current.png" />
-    <None Remove="mods\Basic icons\Create.png" />
-    <None Remove="mods\Basic icons\Fabric API.png" />
-    <None Remove="mods\Basic icons\Farmer%27s Delight.png" />
-    <None Remove="mods\Basic icons\Friend_Foes.png" />
-    <None Remove="mods\Basic icons\NoChatReport.png" />
-    <None Remove="mods\Basic icons\Philips Ruins.png" />
-    <None Remove="mods\Basic icons\Plasmo Voice.png" />
-    <None Remove="mods\Basic icons\Terralith.png" />
-    <None Remove="mods\Basic icons\YUNG%27s API.png" />
-    <None Remove="mods\Basic icons\YUNG%27s Better Desert Temple.png" />
-    <None Remove="mods\Basic icons\YUNG%27s Better Doungeons.png" />
-    <None Remove="mods\Basic icons\YUNG%27s Better End Island.png" />
-    <None Remove="mods\Basic icons\YUNG%27s Better Jungle Temple.png" />
-    <None Remove="mods\Basic icons\YUNG%27s Better Mineshafts.png" />
-    <None Remove="mods\Basic icons\YUNG%27s Better Nether Fortresses.png" />
-    <None Remove="mods\Basic icons\YUNG%27S Better Stronghold.png" />
-    <None Remove="mods\Basic icons\YUNG%27s Better Witch Huts.png" />
-    <None Remove="mods\Basic icons\YUNG%27s Bridges.png" />
-    <None Remove="mods\Basic icons\YUNG%27s Extras.png" />
-    <None Remove="mods\Basic icons\YUNG.s Better Ocean Monument.png" />
-    <None Remove="News.png" />
-    <None Remove="Pages\Resources\Buttons\Allow.png" />
-    <None Remove="Pages\Resources\Buttons\Deni.png" />
-    <None Remove="Pages\Resources\TheRestBG.png" />
-    <None Remove="Resources\Buttons\Delete.png" />
-    <None Remove="Resources\Buttons\Download.png" />
-    <None Remove="Resources\Buttons\Mods.png" />
-    <None Remove="Resources\Buttons\PlayClick.gif" />
-    <None Remove="Resources\Buttons\PlayHover.gif" />
-    <None Remove="Resources\Buttons\Settings.png" />
-    <None Remove="Resources\Buttons\TikTok.png" />
-    <None Remove="Resources\Buttons\VK.png" />
-    <None Remove="Resources\Buttons\Window\close.png" />
-    <None Remove="Resources\Buttons\Window\close_hover.png" />
-    <None Remove="Resources\Buttons\Window\maximize.png" />
-    <None Remove="Resources\Buttons\Window\maximize_hover.png" />
-    <None Remove="Resources\Buttons\Window\minimize.png" />
-    <None Remove="Resources\Buttons\Window\minimize_hover.png" />
-    <None Remove="Resources\Buttons\Youtube.png" />
-    <None Remove="Resources\Icon.ico" />
-    <None Remove="Resources\LogoColored.png" />
-    <None Remove="Resources\LogoStartup.png" />
-    <None Remove="Resources\LogoStartupColored.png" />
-    <None Remove="TheRestBG.png" />
-    <None Remove="Whats New.txt" />
-  </ItemGroup>
 
   <ItemGroup>
     <Content Include="Icon.ico" />

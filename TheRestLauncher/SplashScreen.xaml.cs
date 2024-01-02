@@ -17,9 +17,6 @@ using TheRest;
 
 namespace TheRestLauncher
 {
-    /// <summary>
-    /// Interaction logic for SplashScreen.xaml
-    /// </summary>
     public partial class SplashScreen : Window
     {
         DispatcherTimer timer = new DispatcherTimer();
@@ -56,5 +53,13 @@ namespace TheRestLauncher
         {
             this.Close();
         }
+    }
+    class Problems()
+    {
+
+    }
+    public class Updater()
+    {
+
     }
 }

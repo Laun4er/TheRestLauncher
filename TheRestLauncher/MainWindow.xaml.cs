@@ -17,10 +17,9 @@ namespace TheRest
             HappyBird();
             PageFrame.Content = new Main();
             Profile();
-            User.Text = File.ReadAllText("C:\\TheRest\\User\\Data\\User");
+            
 
         }
-
         private void HappyBird()
         {
             if(DateTime.Now.Date == new DateTime(DateTime.Now.Year, 11, 5))
