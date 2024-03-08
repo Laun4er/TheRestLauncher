@@ -30,23 +30,8 @@
                 </StackPanel>
             </TabItem>
             <TabItem Header="Новости сервера">
-                <StackPanel>
-                    <DockPanel>
-                        <Border>
-                            <TextBlock Margin="10">
-                                <Run Text="Открытие энда совсем рядом" FontWeight="Bold" FontStyle="Italic" FontSize="20"/>
-                                <LineBreak/>
-                                <Run Text="Здравствуйте, уважаемые игроки TheRest! Спешим сообщить, что открытие энда сосоится через час!" FontWeight="Normal"/>
-                                <LineBreak/>
-                                <LineBreak/>
-                                <LineBreak/>
-                                <LineBreak/>
-                                <Run Text="Новость от: izumrudik01"/>
-                                <LineBreak/>
-                                <Run Text="Дата: 30.04.2023"/>
-                            </TextBlock>
-                        </Border>
-                    </DockPanel>
+                <StackPanel x:Name="spMessage">
+                    
                 </StackPanel>
             </TabItem>
             <TabItem Header="Новости игроков">
