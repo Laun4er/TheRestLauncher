@@ -9,7 +9,7 @@
       Title="Settings" Background="#363840">
     <Page.Resources>
         <Style TargetType="{x:Type Button}">
-            <Setter Property="Background" Value="#363840"/>
+            <Setter Property="Background" Value="#222227"/>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type Button}">
@@ -25,16 +25,12 @@
                 </Trigger>
             </Style.Triggers>
         </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="/Font/argentium/Regular.ttf"/>
+        </Style>
     </Page.Resources>
 
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="89*"/>
-            <RowDefinition Height="11*"/>
-        </Grid.RowDefinitions>
-        <ProgressBar  Height="40" VerticalAlignment="Top" Margin="15,16,15,0"
-                     Background="#222227" Foreground="#2F71AD" Name="progressBar" BorderThickness="0"
-                      Minimum="0" Maximum="100" Grid.Row="1"/>
         <TabControl Margin="-2,-46,-2,-2" Grid.RowSpan="2">
             <TabControl.Resources>
                 <ResourceDictionary>
@@ -43,20 +39,31 @@
                     </ResourceDictionary.MergedDictionaries>
                 </ResourceDictionary>
             </TabControl.Resources>
-            <TabItem Header="Аккаунт">
-            </TabItem>
+
             <TabItem Header="Лаунчер">
-                <Border Background="#222227" Margin="20, 30, 20, 90" CornerRadius="30">
-                    <Grid>
-                        <TextBlock Text="Автообновление" Margin="20,12"/>
-                    </Grid>
-                </Border>
+                
             </TabItem>
             <TabItem Header="Клиент">
+                
             </TabItem>
             <TabItem Header="Информация">
+
             </TabItem>
-            <TabItem Header="Ссылки">
+            <TabItem Header="Поддержка">
+                <Grid>
+                    <StackPanel Margin="10">
+                        <Border Name="q1" Height="100" Margin="0,0,0,5"
+                                MouseLeftButtonDown="q1_MouseLeftButtonDown">
+                            <StackPanel>
+                                <TextBlock Text="Как начать играть?" FontSize="28"/>
+                                <TextBlock Text="Чтобы начать играть, вам необходимо предварительно установить Minecraft, и настроить его запуск." FontSize="14"/>
+                            </StackPanel>
+                        </Border>
+                        <Border Name="q2" Height="100" Margin="0,0,0,5">
+                            
+                        </Border>
+                    </StackPanel>
+                </Grid>
             </TabItem>
         </TabControl>
 

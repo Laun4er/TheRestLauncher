@@ -62,7 +62,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Discord.Net" Version="3.13.0" />
     <PackageReference Include="XamlAnimatedGif" Version="2.2.0" />
   </ItemGroup>
 
@@ -90,6 +89,30 @@
     <Resource Include="Resources\LogoColored.png" />
     <Resource Include="Resources\LogoStartupColored.png" />
     <Resource Include="Resources\LogoStartup.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Settings\Launcher.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Launcher.settings</DependentUpon>
+    </Compile>
+    <Compile Update="Settings\StartMinecraft.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>StartMinecraft.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Settings\Launcher.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Launcher.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="Settings\StartMinecraft.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>StartMinecraft.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
 
 </Project>

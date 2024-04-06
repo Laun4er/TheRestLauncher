@@ -148,10 +148,13 @@
         </Grid.RowDefinitions>
 
         <Border Grid.RowSpan="3" Background="#222227"/>
-        <Border Grid.Column="1" Background="#28282E" MouseLeftButtonDown="Window_MouseLeftButtonDown"/>
+        <Border Grid.Column="1" Background="#28282E"/>
         <Border Grid.Row="3" Grid.Column="1" Background="#28282E"/>
 
-        <TextBlock Grid.Column="1" Name="SeaSon" Margin="45,25,0,0" Foreground="#E5F1FF" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <TextBlock Grid.Column="1" 
+                   Name="SeaSon" Margin="45,25,0,0" 
+                   Foreground="#E5F1FF" FontSize="20" FontWeight="Bold" FontFamily="/Font/argentum/Regular"
+                   VerticalAlignment="Top" />
 
         <Image Source="Resources/Logo.png" Name="TheRestLogo" Width="140" Height="50" VerticalAlignment="Center" HorizontalAlignment="Center" RenderOptions.BitmapScalingMode="NearestNeighbor" SnapsToDevicePixels="True" UseLayoutRounding="True"/>
         <Image Source="Resources/LogoColored.png" Name="TheRestLogoColored" Opacity="0" Width="140" Height="50" VerticalAlignment="Center" HorizontalAlignment="Center" RenderOptions.BitmapScalingMode="NearestNeighbor" SnapsToDevicePixels="True" UseLayoutRounding="True">
@@ -208,29 +211,29 @@
                 <ListBoxItem Margin="0,0,0,15" x:Name="Main">
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center" Height="60">
                         <Image Source="Resources/Buttons/Home.png"  Width="38" Height="38" Margin="15,0,0,0" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
-                        <TextBlock Text="Главная" VerticalAlignment="Center" Margin="25,0"/>
+                        <TextBlock Text="Главная" VerticalAlignment="Center" Margin="25,0" FontFamily="/Font/argentum/Regular"/>
                     </StackPanel>
                 </ListBoxItem>
                 <ListBoxItem Margin="0,0,0,15" x:Name="News">
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center" Height="60">
                         <Image Source="Resources/Buttons/News.png"  Width="38" Height="38" Margin="15,0,0,0" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
-                        <TextBlock Text="Новости" VerticalAlignment="Center" Margin="25,0"/>
+                        <TextBlock FontFamily="/Font/argentum/Regular" Text="Новости" VerticalAlignment="Center" Margin="25,0"/>
                     </StackPanel>
                 </ListBoxItem>
                 <ListBoxItem Margin="0,0,0,15" x:Name="Mods">
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center" Height="60">
                         <Image Source="Resources/Buttons/Mods.png"  Width="38" Height="38" Margin="15,0,0,0" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
-                        <TextBlock Text="Моды" VerticalAlignment="Center" Margin="25,0"/>
+                        <TextBlock Text="Моды"  FontFamily="/Font/argentum/Regular" VerticalAlignment="Center" Margin="25,0"/>
                     </StackPanel>
                 </ListBoxItem>
             </ListBox>
         </StackPanel>
-
+ 
         <ListBox x:Name="ListBox2" Grid.Row="2" SelectionMode="Single" Foreground="#E5F1FF" FontSize="18" FontWeight="Bold" Background="Transparent" BorderThickness="0" Width="205" local:SelectorBehavior.ShouldSelectItemOnMouseUp="True" SelectionChanged="PageChanged" Padding="0">
             <ListBoxItem Margin="0,0,0,15" x:Name="Settings">
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center" Height="60" ScrollViewer.VerticalScrollBarVisibility="Disabled" >
                     <Image Source="Resources/Buttons/Settings.png" Width="38" Height="38" Margin="15,0,0,0" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
-                    <TextBlock Text="Настройки" VerticalAlignment="Center" Margin="22,0"/>
+                    <TextBlock Text="Настройки" FontFamily="/Font/argentum/Regular" VerticalAlignment="Center" Margin="22,0"/>
                 </StackPanel>
             </ListBoxItem>
         </ListBox>
@@ -242,7 +245,7 @@
                 <TextBlock x:Name="User" Margin="0,0,10,0" FontSize="18" FontWeight="Bold" HorizontalAlignment="Right" Foreground="#E5F1FF"/>
                 <Rectangle Width="30" Height="30" Fill="#E5F1FF" SnapsToDevicePixels="True" UseLayoutRounding="True"/>
             </StackPanel>
-            <Button Content="Настройки аккаунта" BorderThickness="0" Foreground="#E5F1FF" FontSize="14" Name="ChangeNick" Click="ChangeNick_Click" IsHitTestVisible="True">
+            <Button Content="Настройки аккаунта" FontFamily="/Font/argentum/Regular" BorderThickness="0" Foreground="#E5F1FF" FontSize="14" Name="ChangeNick" Click="ChangeNick_Click" IsHitTestVisible="True">
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
                         <Setter Property="Background" Value="Transparent"/>
@@ -264,5 +267,6 @@
                 </Button.Style>
             </Button>
         </StackPanel>
+        <Border Grid.Column="1" Background="Transparent" MouseLeftButtonDown="Window_MouseLeftButtonDown" Margin="0,0,160,0"/>
     </Grid>
 </Window>

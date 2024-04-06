@@ -17,9 +17,6 @@ namespace TheRest
             InitializeComponent();
             HappyBird();
             PageFrame.Content = new Main();
-            Profile();
-            
-
         }
         private void HappyBird()
         {
@@ -55,7 +52,7 @@ namespace TheRest
             }
             if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 6, 8))
             {
-                SeaSon.Text = "С днём рождения, Laun4er🎂";
+                SeaSon.Text = "С днём рождения, Muyklaaa:3🎂";
                 return;
             }
             else
@@ -64,30 +61,12 @@ namespace TheRest
             }
         } //Пасхалка с днями рождения
 
-
-       
-
-
         private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             DragMove();
         }
 
-        public static void Profile()
-        {
-            string file = "C:\\TheRest\\Launcher\\profile.json";
-            if(File.Exists(file))
-            {
-
-            }
-            else
-            {
-
-            }
-        }
-
-
-        private void MinimizeButton(object sender, RoutedEventArgs e)
+         private void MinimizeButton(object sender, RoutedEventArgs e)
         {
             this.WindowState = WindowState.Minimized;
         }
@@ -132,9 +111,7 @@ namespace TheRest
                             ListBox1.SelectedIndex = -1;
                             break;
                     }
-#pragma warning disable CS8600 // Преобразование литерала, допускающего значение NULL или возможного значения NULL в тип, не допускающий значение NULL.
                     Type PageType = Type.GetType($"TheRestLauncher.Pages.{selectedListBoxItem.Name}");
-#pragma warning restore CS8600 // Преобразование литерала, допускающего значение NULL или возможного значения NULL в тип, не допускающий значение NULL.
                     PageFrame.Content = Activator.CreateInstance(PageType);
                 }
             }
@@ -143,11 +120,6 @@ namespace TheRest
         private void ChangeNick_Click(object sender, RoutedEventArgs e)
         {
             PageFrame.Navigate(new Uri("/Pages/Settings.xaml", UriKind.Relative));
-
-            
-            
-
-
         }
     }
     public static class SelectorBehavior
