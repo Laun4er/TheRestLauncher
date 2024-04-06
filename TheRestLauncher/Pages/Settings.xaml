@@ -52,11 +52,10 @@
             <TabItem Header="Поддержка">
                 <Grid>
                     <StackPanel Margin="10">
-                        <Border Name="q1" Height="100" Margin="0,0,0,5"
-                                MouseLeftButtonDown="q1_MouseLeftButtonDown">
+                        <Border Name="q1" Height="100" Margin="0,0,0,5" MouseLeftButtonDown="q1_MouseLeftButtonDown">
                             <StackPanel>
-                                <TextBlock Text="Как начать играть?" FontSize="28"/>
-                                <TextBlock Text="Чтобы начать играть, вам необходимо предварительно установить Minecraft, и настроить его запуск." FontSize="14"/>
+                                <TextBlock Text="Как начать играть?" FontSize="28" x:Name="TQ1"/>
+                                 <TextBlock Text="Чтобы начать играть, вам необходимо предварительно установить Minecraft, и настроить его запуск." FontSize="20"/>
                             </StackPanel>
                         </Border>
                         <Border Name="q2" Height="100" Margin="0,0,0,5">

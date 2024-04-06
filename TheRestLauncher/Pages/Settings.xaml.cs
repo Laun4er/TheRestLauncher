@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Diagnostics;
-using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media.Animation;
 
 namespace TheRestLauncher.Pages
 {
 
-    public partial class Settings : Page
+    public partial class Settings : Page //Необходимо сделать анимацию текста заголовка
     {
         public Settings()
         {
@@ -16,25 +14,24 @@ namespace TheRestLauncher.Pages
 
         private void q1_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
-            double H = q1.ActualHeight;
 
-            double currentHeight = q1.ActualHeight;
+            double H = q1.ActualHeight;
 
             DoubleAnimation heightAnimation = new DoubleAnimation
             {
-                Duration = TimeSpan.FromSeconds(3),
+                Duration = TimeSpan.FromSeconds(1),
                 EasingFunction = new CubicEase { EasingMode = EasingMode.EaseInOut }
             };
 
-            if (currentHeight == 50)
+            if (H == 100)
             {
-                heightAnimation.From = 50;
+                heightAnimation.From = 100;
                 heightAnimation.To = 200;
             }
-            else if (currentHeight == 200)
+            else if (H == 200)
             {
                 heightAnimation.From = 200;
-                heightAnimation.To = 50;
+                heightAnimation.To = 100;
             }
             else
             {

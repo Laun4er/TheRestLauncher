@@ -267,6 +267,6 @@
                 </Button.Style>
             </Button>
         </StackPanel>
-        <Border Grid.Column="1" Background="Transparent" MouseLeftButtonDown="Window_MouseLeftButtonDown" Margin="0,0,160,0"/>
+        <Border Grid.Column="1" Background="Transparent" MouseLeftButtonDown="Window_MouseLeftButtonDown" Margin="0,0,160,45"/>
     </Grid>
 </Window>
