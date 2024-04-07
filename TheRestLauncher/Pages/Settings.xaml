@@ -7,29 +7,6 @@
       mc:Ignorable="d" 
       d:DesignHeight="600" d:DesignWidth="1000"
       Title="Settings" Background="#363840">
-    <Page.Resources>
-        <Style TargetType="{x:Type Button}">
-            <Setter Property="Background" Value="#222227"/>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="{x:Type Button}">
-                        <Border Background="{TemplateBinding Background}" CornerRadius="5">
-                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </Border>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-            <Style.Triggers>
-                <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Background" Value="#6161FF"/>
-                </Trigger>
-            </Style.Triggers>
-        </Style>
-        <Style TargetType="TextBlock">
-            <Setter Property="FontFamily" Value="/Font/argentium/Regular.ttf"/>
-        </Style>
-    </Page.Resources>
-
     <Grid>
         <TabControl Margin="-2,-46,-2,-2" Grid.RowSpan="2">
             <TabControl.Resources>
@@ -49,7 +26,7 @@
                 
             </TabItem>
             <TabItem Header="Информация">
-
+                
             </TabItem>
             <TabItem Header="Поддержка">
                 <Grid>
@@ -125,7 +102,14 @@
                                     <!--Добавить кнопку для отправки жалобы-->
                                 </StackPanel>
                             </Border>
-                    </StackPanel>
+                            <TextBlock Margin="0,20,0,0" Text="Не нашли нужного вопроса? Попробуйте обратиться к технической поддержке, нажав на кнопки." HorizontalAlignment="Center"/>
+                            <DockPanel Margin="150,20,150,250" HorizontalAlignment="Center">
+                                <Button Width="150" HorizontalAlignment="Left" Content="Поддержка" Margin="0,0,15,0" Style="{StaticResource buttonWithout}" Name="Support" Click="Support_Click"s/>
+                                <Button Width="150" HorizontalAlignment="Center" Content="Предложка" Margin="0,0,15,0" Style="{StaticResource buttonWithout}" Name="Complaint" Click="Complaint_Click"/>
+                                <Button Width="150" HorizontalAlignment="Right" Content="Жалоба" Margin="0,0,15,0" Style="{StaticResource buttonWithout}" Name="Offer" Click="Offer_Click"/>
+                            </DockPanel>
+                        </StackPanel>
+                        
                     </ScrollViewer>
                 </Grid>
             </TabItem>

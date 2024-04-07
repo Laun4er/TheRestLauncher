@@ -13,37 +13,6 @@ namespace TheRestLauncher.Pages
             InitializeComponent();
         }
 
-        private void Border_MouseEnter(object sender, System.Windows.Input.MouseEventArgs e)
-        {
-            double H = Test.ActualHeight;
-
-            DoubleAnimation heightAnimation = new DoubleAnimation
-            {
-                Duration = TimeSpan.FromSeconds(1),
-                EasingFunction = new CubicEase { EasingMode = EasingMode.EaseInOut }
-            };
-            heightAnimation.From = 100;
-            heightAnimation.To = 140;
-            Test.BeginAnimation(Border.HeightProperty, heightAnimation);
-        }
-
-        private void Border_MouseLeave(object sender, System.Windows.Input.MouseEventArgs e)
-        {
-            
-
-
-            double H = Test.ActualHeight;
-
-            DoubleAnimation heightAnimation = new DoubleAnimation
-            {
-                Duration = TimeSpan.FromSeconds(1),
-                EasingFunction = new CubicEase { EasingMode = EasingMode.EaseInOut }
-            };
-            heightAnimation.From = 140;
-            heightAnimation.To = 100;
-            Test.BeginAnimation(Border.HeightProperty, heightAnimation);
-        }
-
         private void q1_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
             double H = q1.ActualHeight;
@@ -341,6 +310,19 @@ namespace TheRestLauncher.Pages
             q11.BeginAnimation(Border.HeightProperty, heightAnimation);
         }
 
-        
+        private void Offer_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+
+        }
+
+        private void Complaint_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+
+        }
+
+        private void Support_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+
+        }
     }
 }
