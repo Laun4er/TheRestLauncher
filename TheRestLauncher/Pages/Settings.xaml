@@ -34,70 +34,70 @@
                         <StackPanel Margin="10">
                             <Border Name="q1" Height="100" Margin="0,0,0,5" MouseLeftButtonDown="q1_MouseLeftButtonDown">
                             <StackPanel>
-                                <TextBlock Text="Как начать играть?" FontSize="28" x:Name="TQ1"/>
+                                <TextBlock Text="Как начать играть?" FontSize="28" Name="TQ1"/>
                                  <TextBlock Text="Чтобы начать играть, вам необходимо предварительно установить Minecraft, и настроить его запуск." FontSize="20"/>
                             </StackPanel>
                         </Border>
                         <Border Name="q2" Height="100" Margin="0,0,0,5" MouseLeftButtonDown="q2_MouseLeftButtonDown">
                             <StackPanel>
-                                    <TextBlock Text="Какая актуальная версия Minecraft?" FontSize="28"/>
+                                    <TextBlock Text="Какая актуальная версия Minecraft?" FontSize="28" Name="TQ2"/>
                                     <TextBlock Text="На данный момент, актуальная версия: Forge Minecraft 1.20.1" FontSize="20"/>
                             </StackPanel>
                         </Border>
                         <Border Name="q3" Height="100" Margin="0,0,0,5" MouseLeftButtonDown="q3_MouseLeftButtonDown">
                             <StackPanel>
-                                    <TextBlock Text="Можно ли сразу подключиться к серверу?" FontSize="28"/>
+                                    <TextBlock Text="Можно ли сразу подключиться к серверу?" FontSize="28" Name="TQ3"/>
                                     <TextBlock Text="Да! Вы сможете настроить это в настройках лаунчера, или же нажав на эту кнопку" FontSize="20"/>
                                     <!--Добавить кнопку для включения\выключения параметра-->
                                 </StackPanel>
                         </Border>
                         <Border Name="q4" Height="100" Margin="0,0,0,5" MouseLeftButtonDown="q4_MouseLeftButtonDown">
                             <StackPanel>
-                                    <TextBlock Text="Какие моды устанавливаются вместе с Minecraft?" FontSize="28"/>
+                                    <TextBlock Text="Какие моды устанавливаются вместе с Minecraft?" FontSize="28" Name="TQ4"/>
                                     <TextBlock Text="Список модов вы сможете узнать в разделе 'Моды' во вкладке 'Модпаки'. Там самый первый модпак - это серверная сборка." FontSize="20"/>
                             </StackPanel>
                         </Border>
                         <Border Name="q5" Height="100" Margin="0,0,0,5" MouseLeftButtonDown="q5_MouseLeftButtonDown">
                             <StackPanel>
-                                    <TextBlock Text="Обязательно ли иметь лицензионную версию Minecraft?" FontSize="28"/>
+                                    <TextBlock Text="Обязательно ли иметь лицензионную версию Minecraft?" FontSize="28" Name="TQ5"/>
                                     <TextBlock Text="Нет. Лаунчер устанавливает пиратскую копию лаунчера." FontSize="20"/>
                             </StackPanel>
                         </Border>
                         <Border Name="q6" Height="100" Margin="0,0,0,5" MouseLeftButtonDown="q6_MouseLeftButtonDown">
                             <StackPanel>
-                                    <TextBlock Text="Можно ли мне предложить идеи по новым функциям в лаунчере?" FontSize="28"/>
+                                    <TextBlock Text="Можно ли мне предложить идеи по новым функциям в лаунчере?" FontSize="28" Name="TQ6"/>
                                     <TextBlock Text="Да. Напишите, пожалуйста, разработчику лаунчера по поводу вашей идеи." FontSize="20"/>
                             </StackPanel>
                         </Border>
                         <Border Name="q7" Height="100" Margin="0,0,0,5" MouseLeftButtonDown="q7_MouseLeftButtonDown">
                             <StackPanel>
-                                    <TextBlock Text="Можно ли мне внести свой модпак для игры на сервере?" FontSize="28"/>
+                                    <TextBlock Text="Можно ли мне внести свой модпак для игры на сервере?" FontSize="28" Name="TQ7"/>
                                     <TextBlock Text="К сожалению, нет. Не стоит растраиваться, ведь если ваша сборка заслуживает попадание в лаунчер, обратитесь в техническую поддержку, и предоставьте ссылку на вашу сборку." FontSize="20"/>
                                     <!--Добавить кнопку с поддержкой-->
                                 </StackPanel>
                         </Border>
                         <Border Name="q8" Height="100" Margin="0,0,0,5" MouseLeftButtonDown="q8_MouseLeftButtonDown">
                             <StackPanel>
-                                    <TextBlock Text="Я получил статус 'Заблокированный'. Помогите!" FontSize="28"/>
+                                    <TextBlock Text="Я получил статус 'Заблокированный'. Помогите!" FontSize="28" Name="TQ8"/>
                                     <TextBlock Text="Если вы получили бан на нашем сервере, и вы знаете, что вы ничего не нарушили, обратитесь в дискорд сообщество 'TheRest Developers'" FontSize="20"/>
                                 <!--Добавить кнопку для перехода на сервер TheRest Developers-->
                             </StackPanel>
                         </Border>
                         <Border Name="q9" Height="100" Margin="0,0,0,5" MouseLeftButtonDown="q9_MouseLeftButtonDown">
                             <StackPanel>
-                                    <TextBlock Text="Разрешены ли читы на сервере?" FontSize="28"/>
+                                    <TextBlock Text="Разрешены ли читы на сервере?" FontSize="28" Name="TQ9"/>
                                     <TextBlock Text="Нет! Любые виды читов категорически запрещены на сервере. Вам выдаётся вечный бан на сервере, а в случае обращения в поддежку, вы немедленно будете забанены!" FontSize="20"/>
                             </StackPanel>
                         </Border>
                         <Border Name="q10" Height="100" Margin="0,0,0,5" MouseLeftButtonDown="q10_MouseLeftButtonDown">
                             <StackPanel>
-                                    <TextBlock Text="Могу ли я повлиять на популярность сервера?" FontSize="28"/>
+                                    <TextBlock Text="Могу ли я повлиять на популярность сервера?" FontSize="28" Name="TQ10"/>
                                     <TextBlock Text="Мы приветствуем любого создателя контента! Если же вы завели какой нибудь канал или блог, дайте знать, и мы вам выдадим специальную роль в лаунчере и в дискорде, а также поставим специальный значок возле вашего ника на сервере!" FontSize="20"/>
                             </StackPanel>
                         </Border>
                             <Border Name="q11" Height="100" Margin="0,0,0,5" MouseLeftButtonDown="q11_MouseLeftButtonDown">
                                 <StackPanel>
-                                    <TextBlock Text="Я встретил читера!" FontSize="28"/>
+                                    <TextBlock Text="Я встретил читера!" FontSize="28" Name="TQ11"/>
                                     <TextBlock Text="Немедленно обратитесь в команду TheRest! Мы тщательно проверим игрока, и выдадим ему бан, а вам будет благодарность от всей команды TheRest!" FontSize="20"/>
                                     <!--Добавить кнопку для отправки жалобы-->
                                 </StackPanel>

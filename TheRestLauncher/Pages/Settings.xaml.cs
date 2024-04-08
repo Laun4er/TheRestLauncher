@@ -17,21 +17,27 @@ namespace TheRestLauncher.Pages
         {
             double H = q1.ActualHeight;
 
+            DoubleAnimation animation = new DoubleAnimation()
+            {
+                Duration = TimeSpan.FromSeconds(0.5)
+            };
             DoubleAnimation heightAnimation = new DoubleAnimation
             {
                 Duration = TimeSpan.FromSeconds(1),
                 EasingFunction = new CubicEase { EasingMode = EasingMode.EaseInOut }
             };
 
-            if (H == 100)
+            if (H == 100 && TQ1 == 28)
             {
                 heightAnimation.From = 100;
                 heightAnimation.To = 140;
+                animation.From = 20;
             }
-            else if (H == 140)
+            else if (H == 140 TQ1 == 28)
             {
                 heightAnimation.From = 140;
                 heightAnimation.To = 100;
+                animation.From = 28;
             }
             else
             {
