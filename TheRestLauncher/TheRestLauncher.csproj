@@ -27,6 +27,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\Laun4erHead.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include="Icon.ico" />
   </ItemGroup>
 
@@ -62,6 +66,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="MahApps.Metro" Version="2.4.10" />
     <PackageReference Include="XamlAnimatedGif" Version="2.2.0" />
   </ItemGroup>
 
@@ -83,6 +88,7 @@
     <Resource Include="Resources\Buttons\Window\minimize_hover.png" />
     <Resource Include="Resources\Buttons\Youtube.png" />
     <Resource Include="Resources\Icon.ico" />
+    <Resource Include="Resources\Laun4erHead.png" />
     <Resource Include="Resources\Logo.png" />
     <Resource Include="Resources\Buttons\News.png" />
     <Resource Include="Resources\Buttons\Settings.png" />

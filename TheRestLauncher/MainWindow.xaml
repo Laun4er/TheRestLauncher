@@ -144,7 +144,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="100"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="60"/>
+            <RowDefinition Height="135"/>
         </Grid.RowDefinitions>
 
         <Border Grid.RowSpan="3" Background="#222227"/>
@@ -157,7 +157,7 @@
                    VerticalAlignment="Top" />
 
         <Image Source="Resources/Logo.png" Name="TheRestLogo" Width="140" Height="50" VerticalAlignment="Center" HorizontalAlignment="Center" RenderOptions.BitmapScalingMode="NearestNeighbor" SnapsToDevicePixels="True" UseLayoutRounding="True"/>
-        <Image Source="Resources/LogoColored.png" Name="TheRestLogoColored" Opacity="0" Width="140" Height="50" VerticalAlignment="Center" HorizontalAlignment="Center" RenderOptions.BitmapScalingMode="NearestNeighbor" SnapsToDevicePixels="True" UseLayoutRounding="True">
+        <Image Source="Resources/LogoColored.png" Name="TheRestLogoColored" Opacity="0" Width="140" Height="50" VerticalAlignment="Center" HorizontalAlignment="Center" RenderOptions.BitmapScalingMode="NearestNeighbor" SnapsToDevicePixels="True" UseLayoutRounding="True" MouseLeftButtonDown="TheRestLogoColored_MouseLeftButtonDown">
             <Image.Style>
                 <Style TargetType="{x:Type Image}">
                     <Style.Triggers>
@@ -229,7 +229,14 @@
             </ListBox>
         </StackPanel>
  
-        <ListBox x:Name="ListBox2" Grid.Row="2" SelectionMode="Single" Foreground="#E5F1FF" FontSize="18" FontWeight="Bold" Background="Transparent" BorderThickness="0" Width="205" local:SelectorBehavior.ShouldSelectItemOnMouseUp="True" SelectionChanged="PageChanged" Padding="0">
+        <ListBox x:Name="ListBox2" Grid.Row="2" SelectionMode="Single" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.IsDeferredScrollingEnabled="False" ScrollViewer.CanContentScroll="False" Foreground="#E5F1FF" FontSize="18" FontWeight="Bold" Background="Transparent" BorderThickness="0" Width="205" local:SelectorBehavior.ShouldSelectItemOnMouseUp="True" SelectionChanged="PageChanged" Padding="0">
+            <ListBoxItem Margin="0,0,0,15" x:Name="Downloads">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center" Height="60" ScrollViewer.VerticalScrollBarVisibility="Disabled" >
+                    <Image Source="Resources/Buttons/Download.png" Width="38" Height="38" Margin="15,0,0,0" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
+                    <TextBlock Text="Загрузки" FontFamily="/Font/argentum/Regular" VerticalAlignment="Center" Margin="22,0"/>
+                </StackPanel>
+            </ListBoxItem>
+            
             <ListBoxItem Margin="0,0,0,15" x:Name="Settings">
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center" Height="60" ScrollViewer.VerticalScrollBarVisibility="Disabled" >
                     <Image Source="Resources/Buttons/Settings.png" Width="38" Height="38" Margin="15,0,0,0" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
@@ -242,8 +249,10 @@
         
         <StackPanel Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,30,15" VerticalAlignment="Bottom">
             <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
-                <TextBlock x:Name="User" Margin="0,0,10,0" FontSize="18" FontWeight="Bold" HorizontalAlignment="Right" Foreground="#E5F1FF"/>
-                <Rectangle Width="30" Height="30" Fill="#E5F1FF" SnapsToDevicePixels="True" UseLayoutRounding="True"/>
+                <TextBlock x:Name="User" Margin="0,0,10,0" FontSize="18" FontWeight="Bold" HorizontalAlignment="Right" Foreground="#E5F1FF" Text="Laun4er"/>
+                <Border Width="30" Height="30" Background="#E5F1FF">
+                    <Image Source="/Resources/Laun4erHead.png" Width="25" Height="25" VerticalAlignment="Center" HorizontalAlignment="Center" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
+                </Border>
             </StackPanel>
             <Button Content="Настройки аккаунта" FontFamily="/Font/argentum/Regular" BorderThickness="0" Foreground="#E5F1FF" FontSize="14" Name="ChangeNick" Click="ChangeNick_Click" IsHitTestVisible="True">
                 <Button.Style>

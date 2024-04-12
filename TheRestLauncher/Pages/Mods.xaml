@@ -19,24 +19,25 @@
                 </ResourceDictionary>
             </TabControl.Resources>
             <TabItem Header="Основные моды на сервере">
-                
-            </TabItem>
-            <TabItem Header="Загруженные моды">
-                <StackPanel x:Name="Extra">
-                    
-                </StackPanel>
-            </TabItem>
-            <TabItem Header="Ресурс-паки">
                 <StackPanel>
-                    <DockPanel>
-                        <Border Height="50">
-
-                        </Border>
-                    </DockPanel>
+                    <Border Height="50">
+                        <TextBlock Text="В разработке" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    </Border>
                 </StackPanel>
             </TabItem>
-            <TabItem Header="Миры">
-
+            <TabItem Header="Библиотека">
+                <StackPanel>
+                    <Border Height="50">
+                        <TextBlock Text="В разработке" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    </Border>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Магазин">
+                <StackPanel>
+                    <Border Height="50">
+                        <TextBlock Text="В разработке" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    </Border>
+                </StackPanel>
             </TabItem>
         </TabControl>
     </Grid>

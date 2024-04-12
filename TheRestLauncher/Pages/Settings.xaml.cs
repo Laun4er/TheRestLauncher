@@ -1,6 +1,6 @@
 ﻿using System;
+using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Media;
 using System.Windows.Media.Animation;
 
 namespace TheRestLauncher.Pages
@@ -17,27 +17,21 @@ namespace TheRestLauncher.Pages
         {
             double H = q1.ActualHeight;
 
-            DoubleAnimation animation = new DoubleAnimation()
-            {
-                Duration = TimeSpan.FromSeconds(0.5)
-            };
             DoubleAnimation heightAnimation = new DoubleAnimation
             {
                 Duration = TimeSpan.FromSeconds(1),
                 EasingFunction = new CubicEase { EasingMode = EasingMode.EaseInOut }
             };
 
-            if (H == 100 && TQ1 == 28)
+            if (H == 100)
             {
                 heightAnimation.From = 100;
-                heightAnimation.To = 140;
-                animation.From = 20;
+                heightAnimation.To = 130;
             }
-            else if (H == 140 TQ1 == 28)
+            else if (H == 130)
             {
-                heightAnimation.From = 140;
+                heightAnimation.From = 130;
                 heightAnimation.To = 100;
-                animation.From = 28;
             }
             else
             {
@@ -318,17 +312,17 @@ namespace TheRestLauncher.Pages
 
         private void Offer_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-
+            MessageBox.Show("Тест", "Предложка");
         }
 
         private void Complaint_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-
+            MessageBox.Show("Тест", "Жалоба");
         }
 
         private void Support_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-
+            MessageBox.Show("Тест", "Поддержка");
         }
     }
 }

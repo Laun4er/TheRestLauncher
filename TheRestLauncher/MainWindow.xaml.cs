@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Configuration;
-using System.IO;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
@@ -120,6 +118,11 @@ namespace TheRest
         private void ChangeNick_Click(object sender, RoutedEventArgs e)
         {
             PageFrame.Navigate(new Uri("/Pages/Settings.xaml", UriKind.Relative));
+        }
+
+        private void TheRestLogoColored_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            MessageBox.Show("Уникальный логотип TheRest", "TheRest");
         }
     }
     public static class SelectorBehavior

@@ -1,0 +1,28 @@
+﻿<Page x:Class="TheRestLauncher.Pages.Downloads"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TheRestLauncher.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Downloads" Background="#363840">
+
+    <Page.Resources>
+        <Style TargetType="Border">
+            <Setter Property="Background" Value="#222227"/>
+            <Setter Property="CornerRadius" Value="10"/>
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="Foreground" Value="#E5F1FF"/>
+        </Style>
+    </Page.Resources>
+
+    <Grid>
+        <StackPanel Name="ListDownloads" Margin="10,10,10,0">
+            <Border Height="50">
+                <TextBlock Text="В разработке" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+        </StackPanel>
+    </Grid>
+</Page>
