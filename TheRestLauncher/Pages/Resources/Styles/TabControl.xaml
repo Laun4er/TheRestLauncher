@@ -70,8 +70,9 @@
             </Trigger>
         </Style.Triggers>
     </Style>
-    <Style TargetType="Button" x:Key ="buttonWithout">
-        <Setter Property="Background" Value="#222227"/>
+    <Style TargetType="Button" x:Key ="Supports">
+        <!--стиль сапорт кнопки-->
+            <Setter Property="Background" Value="#222227"/>
         <Setter Property="Width" Value="150"/>
         <Setter Property="Foreground" Value="#E5F1FF"/>
         <Setter Property="Height" Value="40"/>

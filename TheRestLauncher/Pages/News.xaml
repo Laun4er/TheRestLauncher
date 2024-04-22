@@ -19,28 +19,23 @@
             </TabControl.Resources>
             <TabItem Header="Новости лаунчера">
                 <StackPanel>
-                    <DockPanel>
-                        <Border>
-                            <TextBlock Text="Обновление TheRest Launcher(6.12.2023)" Margin="10">
-                                <LineBreak/>
-                                <Run Name="WN"/>
-                            </TextBlock>
-                        </Border>
-                    </DockPanel>
+                    <Border Height="50">
+                        <TextBlock Text="В разработке" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    </Border>
                 </StackPanel>
             </TabItem>
             <TabItem Header="Новости сервера">
-                <StackPanel x:Name="spMessage">
-
+                <StackPanel>
+                    <Border Height="50">
+                        <TextBlock Text="В разработке" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    </Border>
                 </StackPanel>
             </TabItem>
             <TabItem Header="Новости игроков">
                 <StackPanel>
-                    <DockPanel>
-                        <Border Height="530">
-
-                        </Border>
-                    </DockPanel>
+                    <Border Height="50">
+                        <TextBlock Text="В разработке" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    </Border>
                 </StackPanel>
             </TabItem>
         </TabControl>
