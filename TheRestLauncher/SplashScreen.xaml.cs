@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Windows.Threading;
 using TheRest;
+using TheRestLauncher.Settings;
 
 namespace TheRestLauncher
 {
@@ -42,8 +43,17 @@ namespace TheRestLauncher
 
         public void OpenMainWindow(object sender, EventArgs e)
         {
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.Show();
+            string StartFirst = Launcher.Default.FirstStart;
+            if (StartFirst == "True")
+            {
+                MainWindow window = new MainWindow();
+                window.Show();
+            }
+            else
+            {
+                FirstStartLauncher launcher = new FirstStartLauncher();
+                launcher.Show();
+            }
             timer.Stop();
 
             Storyboard sb = this.FindResource("CloseSplash") as Storyboard;
@@ -51,6 +61,7 @@ namespace TheRestLauncher
         }
         public void CloseSplash(object sender, EventArgs e)
         {
+            
             this.Close();
         }
     }

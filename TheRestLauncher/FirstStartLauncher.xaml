@@ -1,0 +1,33 @@
+﻿<Window x:Class="TheRestLauncher.FirstStartLauncher"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TheRestLauncher"
+        mc:Ignorable="d"
+        Title="FirstStartLauncher" Height="450" Width="800"
+        Background="#363840"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize"
+        >
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="0" GlassFrameThickness="0"/>
+    </WindowChrome.WindowChrome>
+    <Window.Resources>
+        <Style TargetType="TextBlock" x:Key="Bold">
+            <Setter Property="FontFamily" Value="pack://application:,,,/Fonts/Argentium-semibold.TTF#Argentum Sans SemiBold"/>
+            <Setter Property="Foreground" Value="#E5F1FF"/>
+        </Style>
+        <Style TargetType="TextBlock" x:Key="Light">
+            <Setter Property="FontFamily" Value="pack://application:,,,/Fonts/ArgentumSans-Light.tts#Argentum Sans Light"/>
+            <Setter Property="Foreground" Value="#E5F1FF"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBlock Text="Встречайте, это TheRest Launcher" Style="{StaticResource Bold}" HorizontalAlignment="Center"/>
+        <TextBlock TextWrapping="Wrap" Style="{StaticResource Light}" Text="Пока что лаунчер находится в стадии альфа тестирования, и имеет только ознакомительный характер. Дальнейшая разработка, увы, прекращается. Если же вы хотите, чтобы лаунчер продолжал разрабатываться, дайте знать."/>
+            <Button Width="160" Height="30" HorizontalAlignment="Right" Content="Продолжить" Name="Next" Click="Next_Click"/>
+        </StackPanel>
+
+    </Grid>
+</Window>

@@ -5,5 +5,8 @@
     <Setting Name="Nickname" Type="System.String" Scope="User">
       <Value Profile="(Default)">Steve</Value>
     </Setting>
+    <Setting Name="FirstStart" Type="System.String" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

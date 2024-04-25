@@ -1,5 +1,7 @@
-﻿using System.Windows;
+﻿using System.Runtime.CompilerServices;
+using System.Windows;
 using TheRest;
+using TheRestLauncher.Settings;
 
 namespace TheRestLauncher
 {
@@ -7,8 +9,8 @@ namespace TheRestLauncher
     {
         private void Application_Startup(object sender, StartupEventArgs e)
         {
-            MainWindow window = new MainWindow();
-            window.Show();
+            SplashScreen screen = new SplashScreen();
+            screen.Show();
         }
     }
 }

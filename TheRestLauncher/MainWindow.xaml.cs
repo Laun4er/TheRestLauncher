@@ -4,14 +4,16 @@ using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Input;
 using System.Windows.Media;
-using TheRestLauncher;
 using TheRestLauncher.Pages;
 using TheRestLauncher.Settings;
 
 namespace TheRest
 {
+
+
     public partial class MainWindow : Window
     {
+        
         public string Property { get; set; }
         public MainWindow()
         {

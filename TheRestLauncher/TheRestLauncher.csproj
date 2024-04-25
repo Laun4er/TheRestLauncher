@@ -27,6 +27,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Fonts\Argentium-semibold.TTF" />
+    <None Remove="Fonts\ArgentumSans-Light.ttf" />
     <None Remove="Resources\Laun4erHead.png" />
   </ItemGroup>
 
@@ -39,6 +41,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Fonts\Argentium-semibold.TTF" />
+    <Resource Include="Fonts\ArgentumSans-Light.ttf" />
     <Resource Include="Pages\Resources\Buttons\Allow.png" />
     <Resource Include="Pages\Resources\Buttons\Deni.png" />
     <Resource Include="Resources\Buttons\Delete.png" />

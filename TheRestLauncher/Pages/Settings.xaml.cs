@@ -2,6 +2,7 @@
 using System.Windows;
 using System.Windows.Controls;
 using TheRest;
+using TheRestLauncher.Dev;
 using TheRestLauncher.Settings;
 
 namespace TheRestLauncher.Pages
@@ -9,6 +10,7 @@ namespace TheRestLauncher.Pages
 
     public partial class Settings : Page
     {
+
         public Settings()
         {
             InitializeComponent();
@@ -23,5 +25,7 @@ namespace TheRestLauncher.Pages
             main.UpdateUserName();
             setNick.Clear();
         }
+
+        
     }
 }
