@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Threading;
+﻿using System.Windows;
 using TheRest;
 
 namespace TheRestLauncher
@@ -15,8 +7,8 @@ namespace TheRestLauncher
     {
         private void Application_Startup(object sender, StartupEventArgs e)
         {
-            SplashScreen splashScreen = new SplashScreen();
-            splashScreen.Show();
+            MainWindow window = new MainWindow();
+            window.Show();
         }
     }
 }

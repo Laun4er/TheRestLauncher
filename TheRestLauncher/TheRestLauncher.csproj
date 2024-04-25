@@ -39,34 +39,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="mods\Basic icons\Alternate Current.png" />
-    <Resource Include="mods\Basic icons\Create.png" />
-    <Resource Include="mods\Basic icons\Fabric API.png" />
-    <Resource Include="mods\Basic icons\Farmer's Delight.png" />
-    <Resource Include="mods\Basic icons\Friend_Foes.png" />
-    <Resource Include="mods\Basic icons\NoChatReport.png" />
-    <Resource Include="mods\Basic icons\Philips Ruins.png" />
-    <Resource Include="mods\Basic icons\Plasmo Voice.png" />
-    <Resource Include="mods\Basic icons\Terralith.png" />
-    <Resource Include="mods\Basic icons\YUNG's API.png" />
-    <Resource Include="mods\Basic icons\YUNG's Better Desert Temple.png" />
-    <Resource Include="mods\Basic icons\YUNG's Better Doungeons.png" />
-    <Resource Include="mods\Basic icons\YUNG's Better End Island.png" />
-    <Resource Include="mods\Basic icons\YUNG's Better Jungle Temple.png" />
-    <Resource Include="mods\Basic icons\YUNG's Better Mineshafts.png" />
-    <Resource Include="mods\Basic icons\YUNG's Better Nether Fortresses.png" />
-    <Resource Include="mods\Basic icons\YUNG'S Better Stronghold.png" />
-    <Resource Include="mods\Basic icons\YUNG's Better Witch Huts.png" />
-    <Resource Include="mods\Basic icons\YUNG's Bridges.png" />
-    <Resource Include="mods\Basic icons\YUNG's Extras.png" />
-    <Resource Include="mods\Basic icons\YUNG.s Better Ocean Monument.png" />
     <Resource Include="Pages\Resources\Buttons\Allow.png" />
     <Resource Include="Pages\Resources\Buttons\Deni.png" />
     <Resource Include="Resources\Buttons\Delete.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="MahApps.Metro" Version="2.4.10" />
+    <PackageReference Include="CmlLib.Core" Version="3.3.10" />
+    <PackageReference Include="CmlLib.Core.Installer.Forge" Version="0.0.3" />
     <PackageReference Include="XamlAnimatedGif" Version="2.2.0" />
   </ItemGroup>
 

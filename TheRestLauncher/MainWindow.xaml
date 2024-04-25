@@ -14,7 +14,7 @@
 
 
     <WindowChrome.WindowChrome>
-        <WindowChrome CaptionHeight="0" GlassFrameThickness="0" CornerRadius="0"/>
+        <WindowChrome CaptionHeight="0" GlassFrameThickness="0"/>
     </WindowChrome.WindowChrome>
 
     <Window.Resources>
@@ -249,9 +249,9 @@
         
         <StackPanel Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,30,15" VerticalAlignment="Bottom">
             <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
-                <TextBlock x:Name="User" Margin="0,0,10,0" FontSize="18" FontWeight="Bold" HorizontalAlignment="Right" Foreground="#E5F1FF" Text="Laun4er"/>
+                <TextBlock x:Name="User" Margin="0,0,10,0" FontSize="18" FontWeight="Bold" HorizontalAlignment="Right" Foreground="#E5F1FF"/>
                 <Border Width="30" Height="30" Background="#E5F1FF">
-                    <Image Source="/Resources/Laun4erHead.png" Width="25" Height="25" VerticalAlignment="Center" HorizontalAlignment="Center" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
+                    <Image Width="25" Height="25" VerticalAlignment="Center" HorizontalAlignment="Center" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
                 </Border>
             </StackPanel>
             <Button Content="Настройки аккаунта" FontFamily="/Font/argentum/Regular" BorderThickness="0" Foreground="#E5F1FF" FontSize="14" Name="ChangeNick" Click="ChangeNick_Click" IsHitTestVisible="True">

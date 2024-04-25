@@ -4,16 +4,20 @@ using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Input;
 using System.Windows.Media;
+using TheRestLauncher;
 using TheRestLauncher.Pages;
+using TheRestLauncher.Settings;
 
 namespace TheRest
 {
     public partial class MainWindow : Window
     {
+        public string Property { get; set; }
         public MainWindow()
         {
             InitializeComponent();
             HappyBird();
+            User.Text = Launcher.Default.Nickname;
             PageFrame.Content = new Main();
         }
         private void HappyBird()
@@ -55,10 +59,15 @@ namespace TheRest
             }
             else
             {
-                SeaSon.Text = "TheRest: SEASON 1";
+                SeaSon.Text = "TheRest Launcher находится в активной разработке. Эта - ознакомительная версия.";
             }
         } //Пасхалка с днями рождения
 
+        public void UpdateUserName()
+        {
+            
+            User.Text = Property;
+        }
         private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             DragMove();
@@ -117,7 +126,9 @@ namespace TheRest
 
         private void ChangeNick_Click(object sender, RoutedEventArgs e)
         {
-            PageFrame.Navigate(new Uri("/Pages/Settings.xaml", UriKind.Relative));
+            PageFrame.Navigate(new Uri("/Pages/NickName.xaml", UriKind.Relative));
+            ListBox1.SelectedIndex = 0;
+            ListBox2.SelectedIndex = 1;
         }
 
         private void TheRestLogoColored_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
