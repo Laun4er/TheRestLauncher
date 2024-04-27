@@ -19,7 +19,7 @@
     </Page.Resources>
 
     <Grid>
-        <Border Height="20" Width="20" HorizontalAlignment="Left" VerticalAlignment="Bottom" MouseLeftButtonDown="Border_MouseLeftButtonDown" Cursor="Hand" Background="Transparent"/>
+        <Border Height="20" Width="20" HorizontalAlignment="Left" VerticalAlignment="Bottom" MouseLeftButtonDown="Border_MouseLeftButtonDown" Background="Transparent"/>
         <StackPanel Name="ListDownloads" Margin="10,10,10,0">
             <Border Height="50">
                 <TextBlock Text="В разработке" VerticalAlignment="Center" HorizontalAlignment="Center"/>

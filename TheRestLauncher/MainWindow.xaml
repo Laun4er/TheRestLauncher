@@ -14,7 +14,7 @@
 
 
     <WindowChrome.WindowChrome>
-        <WindowChrome CaptionHeight="0" GlassFrameThickness="0"/>
+        <WindowChrome CaptionHeight="0" GlassFrameThickness="1"/>
     </WindowChrome.WindowChrome>
 
     <Window.Resources>
@@ -50,7 +50,7 @@
                     <ControlTemplate TargetType="{x:Type ListBoxItem}">
 
                         <Grid x:Name="grid" Background="Transparent" Cursor="Hand">
-                            <Rectangle x:Name="overlay" Fill="#363840" HorizontalAlignment="Left" Width="0"/>
+                            <Border x:Name="overlay" Background="#363840" HorizontalAlignment="Left" Width="0"/>
                             <Border x:Name="border" Background="Transparent" Padding="0">
                                 <ContentPresenter/>
                             </Border>

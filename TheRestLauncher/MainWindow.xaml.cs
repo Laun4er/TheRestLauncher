@@ -9,8 +9,6 @@ using TheRestLauncher.Settings;
 
 namespace TheRest
 {
-
-
     public partial class MainWindow : Window
     {
         
