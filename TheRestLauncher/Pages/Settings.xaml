@@ -11,7 +11,7 @@
     
     <Grid>
         
-        <TabControl Margin="-2,-46,-2,-2" Grid.RowSpan="2">
+        <TabControl Margin="-2,-46,-2,-2" Grid.RowSpan="2" Name="setings">
             <TabControl.Resources>
                 <ResourceDictionary>
                     <ResourceDictionary.MergedDictionaries>
@@ -44,12 +44,18 @@
             <TabItem Header="Лаунчер">
                 
                 <StackPanel>
-                    <Border Height="50">
-                        <TextBlock Text="В разработке" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <Border>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="В разработке"/>
+                        </Grid>
                     </Border>
                 </StackPanel>
             </TabItem>
-            <TabItem Header="Клиент">
+            <TabItem Header="Minecraft">
                 <StackPanel>
                     <Border Height="50">
                         <TextBlock Text="В разработке" VerticalAlignment="Center" HorizontalAlignment="Center"/>

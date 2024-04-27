@@ -17,21 +17,14 @@
                     </ResourceDictionary.MergedDictionaries>
                 </ResourceDictionary>
             </TabControl.Resources>
-            <TabItem Header="Новости лаунчера">
-                <StackPanel>
-                    <Border Height="50">
-                        <TextBlock Text="В разработке" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <TabItem Header="Лаунчер">
+                <StackPanel >
+                    <Border>
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" Name="ContentLauncher" Margin="10"/>
                     </Border>
                 </StackPanel>
             </TabItem>
-            <TabItem Header="Новости сервера">
-                <StackPanel>
-                    <Border Height="50">
-                        <TextBlock Text="В разработке" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                    </Border>
-                </StackPanel>
-            </TabItem>
-            <TabItem Header="Новости игроков">
+            <TabItem Header="Сервер">
                 <StackPanel>
                     <Border Height="50">
                         <TextBlock Text="В разработке" VerticalAlignment="Center" HorizontalAlignment="Center"/>

@@ -12,6 +12,9 @@
         AllowsTransparency="True"
         WindowStartupLocation="CenterScreen"
         Background="Transparent">
+    
+
+    
     <Window.Resources>
         <Storyboard x:Key="ColorTransition">
             <DoubleAnimation Storyboard.TargetName="ColoredLogo" Storyboard.TargetProperty="Opacity" To="1" Duration="0:0:0.5" Completed="OpenMainWindow">

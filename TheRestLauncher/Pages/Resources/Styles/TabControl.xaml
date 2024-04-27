@@ -15,7 +15,7 @@
                 <ControlTemplate TargetType="TabItem">
                     <Grid Background="Transparent" Cursor="Hand" Margin="40, 0, -10, 0">
                         <Rectangle x:Name="overlay" Fill="#5CA4E7" VerticalAlignment="Bottom" Height="5" Width="0"  RenderOptions.BitmapScalingMode="NearestNeighbor" SnapsToDevicePixels="True" UseLayoutRounding="True"/>
-                        <TextBlock Text="{TemplateBinding Header}" Foreground="Transparent" FontSize="18" Margin="10" FontWeight="Normal" HorizontalAlignment="Center"/>
+                        <TextBlock Text="{TemplateBinding Header}" Foreground="Transparent" FontSize="18" Margin="10" Style="{StaticResource Bold}" HorizontalAlignment="Center"/>
                         <ContentPresenter x:Name="ContentSite"
                                           VerticalAlignment="Center"
                                           HorizontalAlignment="Center"
@@ -56,45 +56,5 @@
     <Style TargetType="TextBlock">
         <Setter Property="Foreground" Value="#E5F1FF"/>
     </Style>
-    <Style TargetType="Button">
-        <Setter Property="Background" Value="#363840"/>
-        <Setter Property="Width" Value="150"/>
-        <Setter Property="Foreground" Value="#E5F1FF"/>
-        <Setter Property="Height" Value="40"/>
-        <Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Border Background="{TemplateBinding Background}" CornerRadius="5">
-                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </Border>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
-        <Style.Triggers>
-            <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Background" Value="#6161FF"/>
-            </Trigger>
-        </Style.Triggers>
-    </Style>
-    <Style TargetType="Button" x:Key ="Supports">
-        <!--стиль сапорт кнопки-->
-            <Setter Property="Background" Value="#222227"/>
-        <Setter Property="Width" Value="150"/>
-        <Setter Property="Foreground" Value="#E5F1FF"/>
-        <Setter Property="Height" Value="40"/>
-        <Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Border Background="{TemplateBinding Background}" CornerRadius="5">
-                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </Border>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
-        <Style.Triggers>
-            <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Background" Value="#6161FF"/>
-            </Trigger>
-        </Style.Triggers>
-    </Style>
+    
 </ResourceDictionary>

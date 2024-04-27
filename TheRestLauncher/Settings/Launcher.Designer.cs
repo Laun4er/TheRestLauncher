@@ -46,5 +46,17 @@ namespace TheRestLauncher.Settings {
                 this["FirstStart"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public string ShowDevMode {
+            get {
+                return ((string)(this["ShowDevMode"]));
+            }
+            set {
+                this["ShowDevMode"] = value;
+            }
+        }
     }
 }

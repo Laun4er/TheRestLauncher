@@ -12,20 +12,11 @@
     <WindowChrome.WindowChrome>
         <WindowChrome CaptionHeight="0" GlassFrameThickness="0"/>
     </WindowChrome.WindowChrome>
-    <Window.Resources>
-        <Style TargetType="TextBlock" x:Key="Bold">
-            <Setter Property="FontFamily" Value="pack://application:,,,/Fonts/Argentium-semibold.TTF#Argentum Sans SemiBold"/>
-            <Setter Property="Foreground" Value="#E5F1FF"/>
-        </Style>
-        <Style TargetType="TextBlock" x:Key="Light">
-            <Setter Property="FontFamily" Value="pack://application:,,,/Fonts/ArgentumSans-Light.tts#Argentum Sans Light"/>
-            <Setter Property="Foreground" Value="#E5F1FF"/>
-        </Style>
-    </Window.Resources>
+    
     <Grid>
         <StackPanel Margin="10">
-            <TextBlock Text="Встречайте, это TheRest Launcher" Style="{StaticResource Bold}" HorizontalAlignment="Center"/>
-        <TextBlock TextWrapping="Wrap" Style="{StaticResource Light}" Text="Пока что лаунчер находится в стадии альфа тестирования, и имеет только ознакомительный характер. Дальнейшая разработка, увы, прекращается. Если же вы хотите, чтобы лаунчер продолжал разрабатываться, дайте знать."/>
+            <TextBlock Text="Обновление лаунчера за [дата]" FontSize="24" Style="{StaticResource Bold}" HorizontalAlignment="Center"/>
+            <TextBlock FontSize="18" Name="Content" Style="{StaticResource Light}"/>
             <Button Width="160" Height="30" HorizontalAlignment="Right" Content="Продолжить" Name="Next" Click="Next_Click"/>
         </StackPanel>
 

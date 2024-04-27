@@ -20,7 +20,21 @@ namespace TheRest
             User.Text = Launcher.Default.Nickname;
             PageFrame.Content = new Main();
         }
-        private void HappyBird()
+
+        public void DevModeShow()
+        {
+            if(Launcher.Default.ShowDevMode == "true")
+            {
+                DevMode.Visibility = Visibility.Visible;
+                DevMode.IsEnabled = true;
+            }
+            else
+            {
+                DevMode.Visibility = Visibility.Hidden;
+                DevMode.IsEnabled = false;
+            }
+        }
+        public void HappyBird()
         {
             if(DateTime.Now.Date == new DateTime(DateTime.Now.Year, 11, 5))
             {
@@ -65,7 +79,6 @@ namespace TheRest
 
         public void UpdateUserName()
         {
-            
             User.Text = Property;
         }
         private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
@@ -126,7 +139,6 @@ namespace TheRest
 
         private void ChangeNick_Click(object sender, RoutedEventArgs e)
         {
-            PageFrame.Navigate(new Uri("/Pages/NickName.xaml", UriKind.Relative));
             ListBox1.SelectedIndex = 0;
             ListBox2.SelectedIndex = 1;
         }

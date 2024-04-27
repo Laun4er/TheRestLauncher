@@ -1,5 +1,5 @@
 ﻿using System.Windows;
-using TheRest;
+using TheRestLauncher.Resources;
 using TheRestLauncher.Settings;
 
 namespace TheRestLauncher
@@ -9,14 +9,13 @@ namespace TheRestLauncher
         public FirstStartLauncher()
         {
             InitializeComponent();
+            Content.Text = Assets.What_s_New;
         }
 
         private void Next_Click(object sender, RoutedEventArgs e)
         {
             Launcher.Default.FirstStart = "True";
             Launcher.Default.Save();
-            MainWindow window = new MainWindow();
-            window.Show();
             this.Close();
         }
     }
