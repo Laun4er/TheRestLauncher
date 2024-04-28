@@ -2,8 +2,17 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TheRestLauncher.Settings" GeneratedClassName="StartMinecraft">
   <Profiles />
   <Settings>
-    <Setting Name="username" Type="System.String" Scope="Application">
-      <Value Profile="(Default)" />
+    <Setting Name="mWidth" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">854</Value>
+    </Setting>
+    <Setting Name="mHeight" Type="System.String" Scope="User">
+      <Value Profile="(Default)">480</Value>
+    </Setting>
+    <Setting Name="mFullScreen" Type="System.String" Scope="User">
+      <Value Profile="(Default)">false</Value>
+    </Setting>
+    <Setting Name="mRAM" Type="System.String" Scope="User">
+      <Value Profile="(Default)">4096</Value>
     </Setting>
   </Settings>
 </SettingsFile>

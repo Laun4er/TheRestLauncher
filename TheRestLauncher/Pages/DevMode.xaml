@@ -25,6 +25,10 @@
                 <TextBlock Name="firststart"/>
                 <TextBlock Name="showdevmode"/>
             </StackPanel>
+            <Button Width="200" Name="Checkminecraftset" Click="Checkminecraftset_Click" Content="Получить настройки майнкрафт"/>
+            <StackPanel>
+                
+            </StackPanel>
         </StackPanel>
     </Grid>
 </Page>

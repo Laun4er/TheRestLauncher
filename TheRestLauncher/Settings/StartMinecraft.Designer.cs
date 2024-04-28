@@ -25,10 +25,46 @@ namespace TheRestLauncher.Settings {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string username {
+        [global::System.Configuration.DefaultSettingValueAttribute("854")]
+        public string mWidth {
             get {
-                return ((string)(this["username"]));
+                return ((string)(this["mWidth"]));
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("480")]
+        public string mHeight {
+            get {
+                return ((string)(this["mHeight"]));
+            }
+            set {
+                this["mHeight"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("false")]
+        public string mFullScreen {
+            get {
+                return ((string)(this["mFullScreen"]));
+            }
+            set {
+                this["mFullScreen"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("4096")]
+        public string mRAM {
+            get {
+                return ((string)(this["mRAM"]));
+            }
+            set {
+                this["mRAM"] = value;
             }
         }
     }

@@ -2,7 +2,6 @@
 using System.Windows.Controls;
 using TheRest;
 using TheRestLauncher.Settings;
-using TheRestLauncher.MessageBoxes;
 
 namespace TheRestLauncher.Pages
 {
@@ -17,14 +16,18 @@ namespace TheRestLauncher.Pages
         {
             Launcher.Default.FirstStart = "False";
             Launcher.Default.Nickname = "Steve";
-            ResetAll reset = new ResetAll();
-            reset.Show();
+            Launcher.Default.Save();
         }
 
         private void checklauncher_Click(object sender, RoutedEventArgs e)
         {
             Nick.Text = "Никнейм:" + Launcher.Default.Nickname;
             firststart.Text = "Первый запуск:" + Launcher.Default.FirstStart;
+        }
+
+        private void Checkminecraftset_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

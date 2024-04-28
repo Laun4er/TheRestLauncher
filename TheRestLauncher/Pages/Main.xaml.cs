@@ -1,4 +1,6 @@
-﻿using System.Windows;
+﻿using System.IO;
+using System.Reflection.Metadata;
+using System.Windows;
 using System.Windows.Controls;
 using CmlLib.Core;
 using CmlLib.Core.Auth;
@@ -16,6 +18,8 @@ namespace TheRestLauncher.Pages
         }
         private async void PlayM(object sender, RoutedEventArgs e)
         {
+            
+
             string nickname = Launcher.Default.Nickname;
 
             var main = (MainWindow)Application.Current.MainWindow;
@@ -36,7 +40,10 @@ namespace TheRestLauncher.Pages
             var versionName = await forge.Install("1.20.1");
             var launchOption = new MLaunchOption
             {
-                MaximumRamMb = 4096,
+                MaximumRamMb = int.Parse(StartMinecraft.Default.mRAM),
+                ScreenHeight = int.Parse(StartMinecraft.Default.mHeight),
+                ScreenWidth = int.Parse(StartMinecraft.Default.mWidth),
+                FullScreen = bool.Parse(StartMinecraft.Default.mFullScreen),
                 Session = MSession.GetOfflineSession(nickname),
             };
             var process = await launcher.CreateProcessAsync(versionName, launchOption);

@@ -20,7 +20,6 @@ namespace TheRest
             User.Text = Launcher.Default.Nickname;
             PageFrame.Content = new Main();
         }
-
         public void DevModeShow()
         {
             if(Launcher.Default.ShowDevMode == "true")

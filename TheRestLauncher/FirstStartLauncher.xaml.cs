@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using TheRest;
 using TheRestLauncher.Resources;
 using TheRestLauncher.Settings;
 
@@ -16,6 +17,8 @@ namespace TheRestLauncher
         {
             Launcher.Default.FirstStart = "True";
             Launcher.Default.Save();
+            MainWindow window = new MainWindow();
+            window.Show();
             this.Close();
         }
     }
