@@ -4,6 +4,8 @@ using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using TheRestLauncher.Pages;
 using TheRestLauncher.Settings;
 
@@ -11,7 +13,6 @@ namespace TheRest
 {
     public partial class MainWindow : Window
     {
-        
         public string Property { get; set; }
         public MainWindow()
         {
@@ -19,19 +20,9 @@ namespace TheRest
             HappyBird();
             User.Text = Launcher.Default.Nickname;
             PageFrame.Content = new Main();
-        }
-        public void DevModeShow()
-        {
-            if(Launcher.Default.ShowDevMode == "true")
-            {
-                DevMode.Visibility = Visibility.Visible;
-                DevMode.IsEnabled = true;
-            }
-            else
-            {
-                DevMode.Visibility = Visibility.Hidden;
-                DevMode.IsEnabled = false;
-            }
+
+            DevMode dev = new DevMode();
+            dev.ImageChangerIvent += roleChange;
         }
         public void HappyBird()
         {
@@ -76,6 +67,10 @@ namespace TheRest
             }
         } //Пасхалка с днями рождения
 
+        private void roleChange(string imageKey)
+        {
+            
+        }
         public void UpdateUserName()
         {
             User.Text = Property;
@@ -139,7 +134,7 @@ namespace TheRest
         private void ChangeNick_Click(object sender, RoutedEventArgs e)
         {
             ListBox1.SelectedIndex = 0;
-            ListBox2.SelectedIndex = 1;
+            ListBox2.SelectedIndex = 0;
         }
 
         private void TheRestLogoColored_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)

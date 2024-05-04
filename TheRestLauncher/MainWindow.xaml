@@ -144,7 +144,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="100"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="135"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
         <Border Grid.RowSpan="3" Background="#222227"/>
@@ -228,8 +228,15 @@
                 </ListBoxItem>
             </ListBox>
         </StackPanel>
- 
-        <ListBox x:Name="ListBox2" Grid.Row="2" SelectionMode="Single" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.IsDeferredScrollingEnabled="False" ScrollViewer.CanContentScroll="False" Foreground="#E5F1FF" FontSize="18" FontWeight="Bold" Background="Transparent" BorderThickness="0" Width="205" local:SelectorBehavior.ShouldSelectItemOnMouseUp="True" SelectionChanged="PageChanged" Padding="0">
+
+        <ListBox x:Name="ListBox2" Grid.Row="2" VerticalAlignment="Bottom" SelectionMode="Single" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.IsDeferredScrollingEnabled="False" ScrollViewer.CanContentScroll="False" Foreground="#E5F1FF" FontSize="18" FontWeight="Bold" Background="Transparent" BorderThickness="0" Width="205" local:SelectorBehavior.ShouldSelectItemOnMouseUp="True" SelectionChanged="PageChanged" Padding="0">
+            <ListBoxItem Margin="0,0,0,15" x:Name="Profile">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center" Height="60" ScrollViewer.VerticalScrollBarVisibility="Disabled" >
+                    <Image Source="Resources/Buttons/Profile.png" Width="38" Height="38" Margin="15,0,0,0" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
+                    <TextBlock Text="Профиль"  VerticalAlignment="Center" Margin="22,0"/>
+                </StackPanel>
+            </ListBoxItem>
+
             <ListBoxItem Margin="0,0,0,15" x:Name="DevMode">
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center" Height="60" ScrollViewer.VerticalScrollBarVisibility="Disabled" >
                     <Image Source="Resources/Buttons/Dev.png" Width="38" Height="38" Margin="15,0,0,0" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
@@ -249,9 +256,10 @@
         
         <StackPanel Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,30,15" VerticalAlignment="Bottom">
             <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
+                <Image Name="iconRole" Width="25" Height="25" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
                 <TextBlock x:Name="User" Margin="0,0,10,0" FontSize="18" FontWeight="Bold" HorizontalAlignment="Right" Foreground="#E5F1FF"/>
                 <Border Width="30" Height="30" Background="#E5F1FF">
-                    <Image Width="25" Height="25" VerticalAlignment="Center" HorizontalAlignment="Center" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
+                    <Image Width="25" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
                 </Border>
             </StackPanel>
             <Button Content="Настройки аккаунта" FontFamily="/Font/argentum/Regular" BorderThickness="0" Foreground="#E5F1FF" FontSize="14" Name="ChangeNick" Click="ChangeNick_Click" IsHitTestVisible="True">

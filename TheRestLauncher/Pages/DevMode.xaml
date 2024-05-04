@@ -15,7 +15,14 @@
         </Grid.ColumnDefinitions>
         <StackPanel Margin="30,30,30,30" Grid.ColumnSpan="1">
             <TextBlock Text="Первостепенные задачи" Margin="0,0,0,10" FontSize="20" Style="{StaticResource Bold}"/>
-            <Button Width="160" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Content="Сброс" Name="RefreshAll" Click="RefreshAll_Click"/>
+            <Button Width="160" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Content="Сброс" Name="RefreshAll" Click="RefreshAll_Click" Margin="0,0,0,10"/>
+            <Button Name="role1" Width="160" Height="30" Content="Владелец" Margin="0,0,0,10" Click="role1_Click"/>
+            <Button Name="role2" Width="160" Height="30" Content="Координатор" Margin="0,0,0,10" Click="role2_Click"/>
+            <Button Name="role3" Width="160" Height="30" Content="Администратор" Margin="0,0,0,10" Click="role3_Click"/>
+            <Button Name="role4" Width="160" Height="30" Content="Консьерж" Margin="0,0,0,10" Click="role4_Click"/>
+            <Button Name="role5" Width="160" Height="30" Content="Редактор" Margin="0,0,0,10" Click="role5_Click"/>
+            <Button Name="role6" Width="160" Height="30" Content="Модератор" Margin="0,0,0,10" Click="role6_Click"/>
+            <Button Name="role7" Width="160" Height="30" Content="Бустер" Margin="0,0,0,10" Click="role7_Click"/>
         </StackPanel>
         <StackPanel Margin="30" Grid.Column="2">
             <TextBlock Text="Второстепенные задачи" Margin="0,0,0,10" FontSize="20" Style="{StaticResource Bold}" />
@@ -27,7 +34,11 @@
             </StackPanel>
             <Button Width="200" Name="Checkminecraftset" Click="Checkminecraftset_Click" Content="Получить настройки майнкрафт"/>
             <StackPanel>
-                
+                <TextBlock Name="textRam"/>
+                <TextBlock Name="textWidth"/>
+                <TextBlock Name="textHeight"/>
+                <TextBlock Name="textFull"/>
+                <TextBlock Name="Descript"/>
             </StackPanel>
         </StackPanel>
     </Grid>

@@ -40,10 +40,10 @@ namespace TheRestLauncher.Pages
             var versionName = await forge.Install("1.20.1");
             var launchOption = new MLaunchOption
             {
-                MaximumRamMb = int.Parse(StartMinecraft.Default.mRAM),
-                ScreenHeight = int.Parse(StartMinecraft.Default.mHeight),
-                ScreenWidth = int.Parse(StartMinecraft.Default.mWidth),
-                FullScreen = bool.Parse(StartMinecraft.Default.mFullScreen),
+                MaximumRamMb = StartMinecraft.Default.mRAM,
+                ScreenHeight = StartMinecraft.Default.mHeight,
+                ScreenWidth = StartMinecraft.Default.mWidth,
+                FullScreen = StartMinecraft.Default.mFullScreen,
                 Session = MSession.GetOfflineSession(nickname),
             };
             var process = await launcher.CreateProcessAsync(versionName, launchOption);

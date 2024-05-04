@@ -15,7 +15,7 @@ namespace TheRestLauncher
 
         private void Next_Click(object sender, RoutedEventArgs e)
         {
-            Launcher.Default.FirstStart = "True";
+            Launcher.Default.FirstStart = "False";
             Launcher.Default.Save();
             MainWindow window = new MainWindow();
             window.Show();

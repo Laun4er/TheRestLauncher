@@ -13,58 +13,73 @@ namespace TheRestLauncher.Settings {
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.9.0.0")]
-    internal sealed partial class StartMinecraft : global::System.Configuration.ApplicationSettingsBase {
+    internal sealed partial class User : global::System.Configuration.ApplicationSettingsBase {
         
-        private static StartMinecraft defaultInstance = ((StartMinecraft)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new StartMinecraft())));
+        private static User defaultInstance = ((User)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new User())));
         
-        public static StartMinecraft Default {
+        public static User Default {
             get {
                 return defaultInstance;
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("854")]
-        public int mWidth {
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string ID {
             get {
-                return ((int)(this["mWidth"]));
+                return ((string)(this["ID"]));
+            }
+            set {
+                this["ID"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("480")]
-        public int mHeight {
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Nickname {
             get {
-                return ((int)(this["mHeight"]));
+                return ((string)(this["Nickname"]));
             }
             set {
-                this["mHeight"] = value;
+                this["Nickname"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Password {
+            get {
+                return ((string)(this["Password"]));
+            }
+            set {
+                this["Password"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Role {
+            get {
+                return ((string)(this["Role"]));
+            }
+            set {
+                this["Role"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool mFullScreen {
+        public bool Banned {
             get {
-                return ((bool)(this["mFullScreen"]));
+                return ((bool)(this["Banned"]));
             }
             set {
-                this["mFullScreen"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("4096")]
-        public int mRAM {
-            get {
-                return ((int)(this["mRAM"]));
-            }
-            set {
-                this["mRAM"] = value;
+                this["Banned"] = value;
             }
         }
     }

@@ -27,14 +27,33 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="MessageBoxes\**" />
+    <EmbeddedResource Remove="MessageBoxes\**" />
+    <None Remove="MessageBoxes\**" />
+    <Page Remove="MessageBoxes\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Fonts\Argentium-semibold.TTF" />
     <None Remove="Fonts\ArgentumSans-Light.ttf" />
     <None Remove="Resources\Buttons\Dev.png" />
+    <None Remove="Resources\Buttons\Profile.png" />
     <None Remove="Resources\Laun4erHead.png" />
+    <None Remove="Resources\Roles\Admin.png" />
+    <None Remove="Resources\Roles\Booster.png" />
+    <None Remove="Resources\Roles\Concierge.png" />
+    <None Remove="Resources\Roles\Editor.png" />
+    <None Remove="Resources\Roles\Helper.png" />
+    <None Remove="Resources\Roles\Moderator.png" />
+    <None Remove="Resources\Roles\Owner.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="Icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Buttons\Profile.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -80,6 +99,13 @@
     <Resource Include="Resources\LogoColored.png" />
     <Resource Include="Resources\LogoStartupColored.png" />
     <Resource Include="Resources\LogoStartup.png" />
+    <Resource Include="Resources\Roles\Admin.png" />
+    <Resource Include="Resources\Roles\Booster.png" />
+    <Resource Include="Resources\Roles\Concierge.png" />
+    <Resource Include="Resources\Roles\Editor.png" />
+    <Resource Include="Resources\Roles\Helper.png" />
+    <Resource Include="Resources\Roles\Moderator.png" />
+    <Resource Include="Resources\Roles\Owner.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -98,11 +124,16 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>StartMinecraft.settings</DependentUpon>
     </Compile>
+    <Compile Update="Settings\User.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>User.settings</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Update="Resources\Assets.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Assets.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
@@ -116,10 +147,10 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>StartMinecraft.Designer.cs</LastGenOutput>
     </None>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="MessageBoxes\" />
+    <None Update="Settings\User.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>User.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
 
 </Project>
