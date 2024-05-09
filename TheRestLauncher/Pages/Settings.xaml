@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:TheRestLauncher.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="600" d:DesignWidth="1000"
-      Title="Settings" Background="#363840">
+      Title="Настройки" Background="#363840">
     
     
     <Grid>
@@ -20,27 +20,7 @@
                 </ResourceDictionary>
             </TabControl.Resources>
             <TabItem Header="Аккаунт">
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Border CornerRadius="20" Margin="15">
-                        <Grid>
-                            <StackPanel>
-                                <TextBlock Text="Смена ника" HorizontalAlignment="Center"/>
-                                <Border Height="30" VerticalAlignment="Top" Margin="10,30" Background="#363840" >
-                                    <TextBox Style="{StaticResource Inborder}" MaxLength="16" Name="setNick"/>
-                            </Border>
-                            <Button Height="30" HorizontalAlignment="Right" Content="Применить" Name="Set" Click="Set_Click"/>
-                            </StackPanel>
-                        </Grid>
-                    </Border>
-                    <Border Grid.Column="1" CornerRadius="20" Margin="15">
-                        <TextBlock Text="Ваш скин" HorizontalAlignment="Center" Height="30" VerticalAlignment="Top" Margin="0,10"/>
-                    </Border>
-                </Grid>
-            </TabItem>
+               </TabItem>
             <TabItem Header="Лаунчер">
                 
                 <StackPanel>

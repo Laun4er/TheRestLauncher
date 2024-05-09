@@ -1,8 +1,4 @@
-﻿using System.Configuration;
-using System.Windows;
-using System.Windows.Controls;
-using TheRest;
-using TheRestLauncher.Settings;
+﻿using System.Windows.Controls;
 
 namespace TheRestLauncher.Pages
 {
@@ -14,14 +10,5 @@ namespace TheRestLauncher.Pages
         {
             InitializeComponent();
         }
-        private void Set_Click(object sender, System.Windows.RoutedEventArgs e)
-        {
-            Launcher.Default.Nickname = setNick.Text;
-            Launcher.Default.Save();
-            var main = (MainWindow)Application.Current.MainWindow;
-            main.Property = setNick.Text;
-            main.UpdateUserName();
-            setNick.Clear();
-        }
-    }
+     }
 }

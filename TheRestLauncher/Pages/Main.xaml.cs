@@ -1,25 +1,33 @@
-﻿using System.IO;
+﻿using System.Diagnostics;
+using System.IO;
 using System.Reflection.Metadata;
 using System.Windows;
 using System.Windows.Controls;
 using CmlLib.Core;
 using CmlLib.Core.Auth;
 using CmlLib.Core.Installer.Forge;
+using DiscordRPC;
 using TheRest;
+using TheRestLauncher.Classes;
 using TheRestLauncher.Settings;
 
 namespace TheRestLauncher.Pages
 {
     public partial class Main : Page
     {
+        private Discord_Rich_Presence DRPC;
         public Main()
         {
             InitializeComponent();
+            
+        }
+
+        private void Test(object sender, RoutedEventArgs e)
+        {
+            DRPC.UpdatePresence("Скачиваю Minecraft");
         }
         private async void PlayM(object sender, RoutedEventArgs e)
-        {
-            
-
+        {          
             string nickname = Launcher.Default.Nickname;
 
             var main = (MainWindow)Application.Current.MainWindow;

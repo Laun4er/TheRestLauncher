@@ -49,13 +49,13 @@ namespace TheRestLauncher.Settings {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public string ShowDevMode {
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool RPC {
             get {
-                return ((string)(this["ShowDevMode"]));
+                return ((bool)(this["RPC"]));
             }
             set {
-                this["ShowDevMode"] = value;
+                this["RPC"] = value;
             }
         }
     }

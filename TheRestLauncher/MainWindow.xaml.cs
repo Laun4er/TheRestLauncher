@@ -1,11 +1,14 @@
-﻿using System;
+﻿using DiscordRPC;
+using System;
+using System.Diagnostics;
+using System.DirectoryServices;
+using System.Reflection.Metadata.Ecma335;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
+using TheRestLauncher.Classes;
 using TheRestLauncher.Pages;
 using TheRestLauncher.Settings;
 
@@ -13,16 +16,15 @@ namespace TheRest
 {
     public partial class MainWindow : Window
     {
-        public string Property { get; set; }
+        private Discord_Rich_Presence DRPC;
         public MainWindow()
         {
             InitializeComponent();
+            DRPC = new Discord_Rich_Presence("1237463189722103838");
+            DRPC.UpdatePresence("Главная");
             HappyBird();
             User.Text = Launcher.Default.Nickname;
             PageFrame.Content = new Main();
-
-            DevMode dev = new DevMode();
-            dev.ImageChangerIvent += roleChange;
         }
         public void HappyBird()
         {
@@ -41,40 +43,21 @@ namespace TheRest
                 SeaSon.Text = "С днём рождения, izumrudic01🎂";
                 return;
             }
-            if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 8, 26))
-            {
-                SeaSon.Text = "С днём рождения, DrN_89🎂";
-                return;
-            }
-            if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 9, 18))
+          if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 9, 18))
             {
                 SeaSon.Text = "С днём рождения, Ivantuz🎂";
                 return;
             }
-            if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 11, 25))
-            {
-                SeaSon.Text = "С днём рождения, Matvey_Bad🎂";
-                return;
-            }
-            if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 6, 8))
+           if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 6, 8))
             {
                 SeaSon.Text = "С днём рождения, Muyklaaa:3🎂";
                 return;
             }
             else
             {
-                SeaSon.Text = "TheRest Launcher находится в активной разработке. Эта - ознакомительная версия.";
+                SeaSon.Text = "TheRest: SEASON 2";
             }
         } //Пасхалка с днями рождения
-
-        private void roleChange(string imageKey)
-        {
-            
-        }
-        public void UpdateUserName()
-        {
-            User.Text = Property;
-        }
         private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             DragMove();
@@ -126,10 +109,18 @@ namespace TheRest
                             break;
                     }
                     Type PageType = Type.GetType($"TheRestLauncher.Pages.{selectedListBoxItem.Name}");
-                    PageFrame.Content = Activator.CreateInstance(PageType);
+                    var pageInstance = Activator.CreateInstance(PageType);
+                    PageFrame.Content = pageInstance;
+
+                    // Предполагается, что у вашего класса страницы есть свойство Title
+                    if (pageInstance is Page page && page.Title != null)
+                    {
+                        DRPC.UpdatePresence(page.Title);
+                    }
                 }
             }
         }
+
 
         private void ChangeNick_Click(object sender, RoutedEventArgs e)
         {
