@@ -2,7 +2,7 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <Style TargetType="TextBox" x:Key="Inborder">
         <Setter Property="Foreground" Value="#E5F1FF"/>
-        <Setter Property="Margin" Value="3"/>
+        <Setter Property="Margin" Value="2"/>
         <Setter Property="Background" Value="Transparent"/>
         <Setter Property="BorderThickness" Value="0"/>
     </Style>
@@ -15,7 +15,7 @@
                 <ControlTemplate TargetType="TabItem">
                     <Grid Background="Transparent" Cursor="Hand" Margin="40, 0, -10, 0">
                         <Rectangle x:Name="overlay" Fill="#5CA4E7" VerticalAlignment="Bottom" Height="5" Width="0"  RenderOptions.BitmapScalingMode="NearestNeighbor" SnapsToDevicePixels="True" UseLayoutRounding="True"/>
-                        <TextBlock Text="{TemplateBinding Header}" Foreground="Transparent" FontSize="18" Margin="10" Style="{StaticResource Bold}" HorizontalAlignment="Center"/>
+                        <TextBlock Text="{TemplateBinding Header}" Foreground="Transparent" FontSize="18" Margin="11" Style="{StaticResource Bold}" HorizontalAlignment="Center"/>
                         <ContentPresenter x:Name="ContentSite"
                                           VerticalAlignment="Center"
                                           HorizontalAlignment="Center"

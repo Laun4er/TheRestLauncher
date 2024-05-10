@@ -19,20 +19,64 @@
                     </ResourceDictionary.MergedDictionaries>
                 </ResourceDictionary>
             </TabControl.Resources>
-            <TabItem Header="Аккаунт">
-               </TabItem>
             <TabItem Header="Лаунчер">
-                
-                <StackPanel>
-                    <Border>
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
-                            </Grid.ColumnDefinitions>
-                            <TextBlock Text="В разработке"/>
-                        </Grid>
+                <StackPanel ScrollViewer.CanContentScroll="True">
+                    <Border Margin="0,0,0,10"> 
+                        <StackPanel>
+                            <TextBlock Text="Основные" FontFamily="Argentum Sans SemiBold" Margin="10,0,0,10" FontSize="25"/>
+                            <TextBlock FontFamily="Argentum Sans Light" >
+                                <Run Text="Обновление лаунчера"/>
+                                <LineBreak/>
+                                <Run Text="Путь до скачивания Minecraft"/>
+                                <LineBreak/>
+                                <Run Text="Использовать Discord Rich Presence"/>
+                            </TextBlock>
+                        </StackPanel>
                     </Border>
+                    <Border Margin="0,0,0,10">
+                        <StackPanel>
+                            <TextBlock Text="Отображение" FontFamily="Argentum Sans SemiBold" Margin="10,0,0,10" FontSize="25"/>
+                            <TextBlock FontFamily="Argentum Sans Light">
+                                <Run Text="Цветовая палитра (Светлая/Тёмная"/>
+                                <LineBreak/>
+                                <Run Text="Использование системной рамки окна"/>
+                                <LineBreak/>
+                                <Run Text="Сворачивать лаунчер после запуска Minecraft"/>
+                                <LineBreak/>
+                                <Run Text="Открывать страницу при запуске лаунчера (Главная, Новости, Библиотека)"/>
+                            </TextBlock>
+                        </StackPanel>
+                    </Border>
+                    <Border Margin="0,0,0,10">
+                        <StackPanel>
+                            <TextBlock Text="Бета версии" FontFamily="Argentum Sans SemiBold" FontSize="25" Margin="10,0,0,10"/>
+                            <TextBlock FontFamily="Argentum Sans Light">
+                                <Run Text="Получить бета версию лаунчера (Ввести код доступа)"/>
+                            </TextBlock>
+                        </StackPanel>
+                    </Border>
+                    <Border Margin="0,0,0,10">
+                        <StackPanel>
+                            <TextBlock Text="Телеметрия" FontFamily="Argentum Sans SemiBold" Margin="10,0,0,10" FontSize="25"/>
+                            <TextBlock FontFamily="Argentum Sans Light">
+                                    <Run Text="Разрешить отправку необязательных данных"/>
+                                <LineBreak/>
+                                <Run Text="Разрешить отправку аналитику лаунчера"/>
+                            </TextBlock>
+                        </StackPanel>
+                    </Border>
+                    <Border>
+                        <StackPanel>
+                            <TextBlock Text="Информация" FontFamily="Argentum Sans SemiBold" Margin="10,0,0,10" FontSize="25"/>
+                            <TextBlock FontFamily="Argentum Sans Light">
+        <Run Text="Версия лаунчера: 0.0.2"/>
+                                <LineBreak/>
+    <Run Text="Дата установки лаунчера:"/>
+                                <LineBreak/>
+                                <Run Text="Разработчик: Laun4er"/>
+                            </TextBlock>
+                        </StackPanel>
+</Border>
                 </StackPanel>
             </TabItem>
             <TabItem Header="Minecraft">
