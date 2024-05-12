@@ -1,6 +1,5 @@
 ﻿using DiscordRPC;
 using System;
-using System.Diagnostics;
 
 namespace TheRestLauncher.Classes
 {
@@ -24,7 +23,7 @@ namespace TheRestLauncher.Classes
                 Timestamps = timestamps,
                 Assets = new Assets()
                 {
-                    LargeImageKey = "icon",
+                    LargeImageKey = "test"
                 }
             });
         }

@@ -6,10 +6,11 @@
       xmlns:local="clr-namespace:TheRestLauncher.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="600" d:DesignWidth="1000"
-      Title="Настройки" Background="#363840">
-    
-    
-    <Grid>
+      Title="Параметры игры" Background="#363840">
+    <!--Настройки-->
+
+
+        <Grid>
         
         <TabControl Margin="-2,-46,-2,-2" Grid.RowSpan="2" Name="setings">
             <TabControl.Resources>

@@ -36,7 +36,6 @@
   <ItemGroup>
     <None Remove="Fonts\Argentium-semibold.TTF" />
     <None Remove="Fonts\ArgentumSans-Light.ttf" />
-    <None Remove="Resources\Buttons\Dev.png" />
     <None Remove="Resources\Buttons\Profile.png" />
     <None Remove="Resources\Laun4erHead.png" />
     <None Remove="Resources\Roles\Admin.png" />
@@ -63,35 +62,30 @@
   <ItemGroup>
     <Resource Include="Fonts\Argentium-semibold.TTF" />
     <Resource Include="Fonts\ArgentumSans-Light.ttf" />
-    <Resource Include="Pages\Resources\Buttons\Allow.png" />
-    <Resource Include="Pages\Resources\Buttons\Deni.png" />
     <Resource Include="Resources\Buttons\Delete.png" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="CmlLib.Core" Version="3.3.10" />
     <PackageReference Include="CmlLib.Core.Installer.Forge" Version="0.0.3" />
+    <PackageReference Include="Discord.Net" Version="3.14.1" />
     <PackageReference Include="DiscordRichPresence" Version="1.2.1.24" />
-    <PackageReference Include="XamlAnimatedGif" Version="2.2.0" />
+    <PackageReference Include="XamlAnimatedGif" Version="2.3.0" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Pages\Resources\TheRestBG.png" />
-    <Resource Include="Resources\Buttons\Dev.png" />
     <Resource Include="Resources\Buttons\Mods.png" />
     <Resource Include="Pages\Resources\Buttons\Play.png" />
-    <Resource Include="Resources\Buttons\Home.png" />
+    <Resource Include="Resources\Buttons\Main.png" />
     <Resource Include="Pages\Resources\Buttons\PlayClick.gif" />
     <Resource Include="Pages\Resources\Buttons\PlayHover.gif" />
-    <Resource Include="Resources\Buttons\TikTok.png" />
-    <Resource Include="Resources\Buttons\VK.png" />
     <Resource Include="Resources\Buttons\Window\close.png" />
     <Resource Include="Resources\Buttons\Window\close_hover.png" />
     <Resource Include="Resources\Buttons\Window\maximize.png" />
     <Resource Include="Resources\Buttons\Window\maximize_hover.png" />
     <Resource Include="Resources\Buttons\Window\minimize.png" />
     <Resource Include="Resources\Buttons\Window\minimize_hover.png" />
-    <Resource Include="Resources\Buttons\Youtube.png" />
     <Resource Include="Resources\Icon.ico" />
     <Resource Include="Resources\Laun4erHead.png" />
     <Resource Include="Resources\Logo.png" />

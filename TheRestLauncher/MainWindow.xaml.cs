@@ -20,8 +20,8 @@ namespace TheRest
         public MainWindow()
         {
             InitializeComponent();
-            DRPC = new Discord_Rich_Presence("1237463189722103838");
-            DRPC.UpdatePresence("Главная");
+            DRPC = new Discord_Rich_Presence("1237463189722103838"); //Заменить на новый
+            DRPC.UpdatePresence("Игровое меню");
             HappyBird();
             User.Text = Launcher.Default.Nickname;
             PageFrame.Content = new Main();

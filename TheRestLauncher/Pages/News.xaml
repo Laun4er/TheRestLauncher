@@ -6,7 +6,8 @@
       xmlns:local="clr-namespace:TheRestLauncher.Pages" 
       mc:Ignorable="d"
       d:DesignHeight="600" d:DesignWidth="1000"
-      Title="Новости" Background="#363840">
+      Title="Выбор сложности" Background="#363840">
+    <!--Новости-->
 
     <Grid>
         <TabControl>

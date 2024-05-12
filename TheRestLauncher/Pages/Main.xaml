@@ -7,7 +7,8 @@
     xmlns:gif="https://github.com/XamlAnimatedGif/XamlAnimatedGif"
     mc:Ignorable="d" 
     d:DesignHeight="450" d:DesignWidth="800"
-    Title="Главная">
+    Title="Игровое меню">
+    <!--Главная-->
 
     <Page.Resources>
         <Style TargetType="{x:Type ProgressBar}">
