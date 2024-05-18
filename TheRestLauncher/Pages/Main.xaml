@@ -36,7 +36,7 @@
                          Background="#E5F1FF " BorderThickness="0" Foreground="#0071C3">
                 
             </ProgressBar>
-            <Button Style="{x:Null}" x:Name="Start" HorizontalAlignment="Center" Padding="0" Margin="0,-18,0,0" Background="{x:Null}" Foreground="Transparent" BorderThickness="0" UseLayoutRounding="True" SnapsToDevicePixels="True" Click="Test">
+            <Button Style="{x:Null}" x:Name="Start" HorizontalAlignment="Center" Padding="0" Margin="0,-18,0,0" Background="{x:Null}" Foreground="Transparent" BorderThickness="0" UseLayoutRounding="True" SnapsToDevicePixels="True" Click="PlayM">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <StackPanel>

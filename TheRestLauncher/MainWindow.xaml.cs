@@ -1,5 +1,6 @@
 ﻿using DiscordRPC;
 using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.DirectoryServices;
 using System.Reflection.Metadata.Ecma335;
@@ -16,6 +17,8 @@ namespace TheRest
 {
     public partial class MainWindow : Window
     {
+        private Dictionary<string, Page> pages = new Dictionary<string, Page>();
+
         private Discord_Rich_Presence DRPC;
         public MainWindow()
         {
@@ -24,7 +27,14 @@ namespace TheRest
             DRPC.UpdatePresence("Игровое меню");
             HappyBird();
             User.Text = Launcher.Default.Nickname;
-            PageFrame.Content = new Main();
+
+            pages.Add("Main", new Main());
+            pages.Add("News", new News());
+            pages.Add("mods", new Mods());
+            pages.Add("Profile", new Profile());
+            pages.Add("Settings", new Settings());
+
+            PageFrame.Content = pages["Main"];
         }
         public void HappyBird()
         {
@@ -108,11 +118,8 @@ namespace TheRest
                             ListBox1.SelectedIndex = -1;
                             break;
                     }
-                    Type PageType = Type.GetType($"TheRestLauncher.Pages.{selectedListBoxItem.Name}");
-                    var pageInstance = Activator.CreateInstance(PageType);
+                    Page pageInstance = pages[selectedListBoxItem.Name];
                     PageFrame.Content = pageInstance;
-
-                    // Предполагается, что у вашего класса страницы есть свойство Title
                     if (pageInstance is Page page && page.Title != null)
                     {
                         DRPC.UpdatePresence(page.Title);
