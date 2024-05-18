@@ -1,10 +1,12 @@
 ﻿using DiscordRPC;
 using System;
+using TheRestLauncher.Settings;
 
 namespace TheRestLauncher.Classes
 {
      public class Discord_Rich_Presence
     {
+        private bool DRPCenable;
         private DiscordRpcClient client;
         private Timestamps timestamps;
 
@@ -13,19 +15,46 @@ namespace TheRestLauncher.Classes
             client = new DiscordRpcClient(Rich);
             timestamps = new Timestamps(DateTime.UtcNow);
             client.Initialize();
+            DRPCenable = Launcher.Default.RPC;
+        }
+
+        public static Discord_Rich_Presence instance
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    instance = new Discord_Rich_Presence("1237463189722103838");
+                }
+                return instance;
+            }
         }
 
         public void UpdatePresence(string pageTitle)
         {
-            client.SetPresence(new RichPresence()
+            if(DRPCenable)
             {
-                Details = pageTitle,
-                Timestamps = timestamps,
-                Assets = new Assets()
+                client.SetPresence(new RichPresence()
                 {
-                    LargeImageKey = "test"
-                }
-            });
+                    Details = pageTitle,
+                    Timestamps = timestamps,
+                    Assets = new Assets()
+                    {
+                        LargeImageKey = "test"
+                    }
+                });
+            }
+            else
+            {
+                client.ClearPresence();
+            }    
+        }
+        public void tongle()
+        {
+            DRPCenable = !DRPCenable;
+
+            Launcher.Default.RPC = DRPCenable;
+            Launcher.Default.Save();
         }
     }
 }

@@ -21,17 +21,14 @@
                 </ResourceDictionary>
             </TabControl.Resources>
             <TabItem Header="Лаунчер">
-                <StackPanel ScrollViewer.CanContentScroll="True">
+                <StackPanel>
                     <Border Margin="0,0,0,10"> 
                         <StackPanel>
                             <TextBlock Text="Основные" FontFamily="Argentum Sans SemiBold" Margin="10,0,0,10" FontSize="25"/>
-                            <TextBlock FontFamily="Argentum Sans Light" >
-                                <Run Text="Обновление лаунчера"/>
-                                <LineBreak/>
-                                <Run Text="Путь до скачивания Minecraft"/>
-                                <LineBreak/>
-                                <Run Text="Использовать Discord Rich Presence"/>
-                            </TextBlock>
+                            <DockPanel>
+                                <TextBlock Text="Использовать Discord Rich Presence"/>
+                                <Button Width="60" Height="40" HorizontalAlignment="Right" Style="{StaticResource InBorder}" Content="Да" Name="enableRPC" Click="enableRPC_Click"/>
+                            </DockPanel>
                         </StackPanel>
                     </Border>
                     <Border Margin="0,0,0,10">
