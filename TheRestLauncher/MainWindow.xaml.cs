@@ -30,7 +30,7 @@ namespace TheRest
 
             pages.Add("Main", new Main());
             pages.Add("News", new News());
-            pages.Add("mods", new Mods());
+            pages.Add("Mods", new Mods());
             pages.Add("Profile", new Profile());
             pages.Add("Settings", new Settings());
 
@@ -120,6 +120,10 @@ namespace TheRest
                     }
                     Page pageInstance = pages[selectedListBoxItem.Name];
                     PageFrame.Content = pageInstance;
+                    foreach (var tabControl in FindVisualChildren<TabControl>(pageInstance))
+                    {
+                        tabControl.SelectedIndex = 0;
+                    }
                     if (pageInstance is Page page && page.Title != null)
                     {
                         DRPC.UpdatePresence(page.Title);
@@ -127,7 +131,25 @@ namespace TheRest
                 }
             }
         }
+        private IEnumerable<T> FindVisualChildren<T>(DependencyObject depObj) where T : DependencyObject
+        {
+            if (depObj != null)
+            {
+                for (int i = 0; i < VisualTreeHelper.GetChildrenCount(depObj); i++)
+                {
+                    DependencyObject child = VisualTreeHelper.GetChild(depObj, i);
+                    if (child != null && child is T)
+                    {
+                        yield return (T)child;
+                    }
 
+                    foreach (T childOfChild in FindVisualChildren<T>(child))
+                    {
+                        yield return childOfChild;
+                    }
+                }
+            }
+        }
 
         private void ChangeNick_Click(object sender, RoutedEventArgs e)
         {
