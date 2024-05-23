@@ -17,7 +17,7 @@ namespace TheRestLauncher.Pages
 
         private void enableRPC_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-            DRPC.tongle();
+            DRPC.toggle();
         }
     }
 }

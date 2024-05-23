@@ -4,11 +4,12 @@ using TheRestLauncher.Settings;
 
 namespace TheRestLauncher.Classes
 {
-     public class Discord_Rich_Presence
+    public class Discord_Rich_Presence
     {
         private bool DRPCenable;
         private DiscordRpcClient client;
         private Timestamps timestamps;
+        private static Discord_Rich_Presence _instance;
 
         public Discord_Rich_Presence(string Rich)
         {
@@ -18,21 +19,21 @@ namespace TheRestLauncher.Classes
             DRPCenable = Launcher.Default.RPC;
         }
 
-        public static Discord_Rich_Presence instance
+        public static Discord_Rich_Presence Instance
         {
             get
             {
-                if (instance == null)
+                if (_instance == null)
                 {
-                    instance = new Discord_Rich_Presence("1237463189722103838");
+                    _instance = new Discord_Rich_Presence("307584387002662913");
                 }
-                return instance;
+                return _instance;
             }
         }
 
         public void UpdatePresence(string pageTitle)
         {
-            if(DRPCenable)
+            if (DRPCenable)
             {
                 client.SetPresence(new RichPresence()
                 {
@@ -47,9 +48,10 @@ namespace TheRestLauncher.Classes
             else
             {
                 client.ClearPresence();
-            }    
+            }
         }
-        public void tongle()
+
+        public void toggle()
         {
             DRPCenable = !DRPCenable;
 

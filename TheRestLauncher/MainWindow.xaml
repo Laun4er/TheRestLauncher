@@ -207,7 +207,7 @@
 
         <StackPanel Grid.Column="0" Grid.Row="1" VerticalAlignment="Top">
 
-            <ListBox x:Name="ListBox1" SelectionMode="Single" SelectedIndex="0" Foreground="#E5F1FF" FontSize="18" FontWeight="Bold" Background="Transparent" BorderThickness="0" Width="205" local:SelectorBehavior.ShouldSelectItemOnMouseUp="True" SelectionChanged="PageChanged" Padding="0,30,0,0">
+            <ListBox x:Name="ListBox1" SelectionMode="Single" SelectedIndex="0" Foreground="#E5F1FF" FontSize="18" FontWeight="Bold" Background="Transparent" BorderThickness="0" Width="205" SelectionChanged="PageChanged" Padding="0,30,0,0">
                 <ListBoxItem Margin="0,0,0,15" x:Name="Main">
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center" Height="60">
                         <Image Source="Resources/Buttons/Main.png"  Width="38" Height="38" Margin="15,0,0,0" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
@@ -229,7 +229,7 @@
             </ListBox>
         </StackPanel>
 
-        <ListBox x:Name="ListBox2" Grid.Row="2" VerticalAlignment="Bottom" SelectionMode="Single" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.IsDeferredScrollingEnabled="False" ScrollViewer.CanContentScroll="False" Foreground="#E5F1FF" FontSize="18" FontWeight="Bold" Background="Transparent" BorderThickness="0" Width="205" local:SelectorBehavior.ShouldSelectItemOnMouseUp="True" SelectionChanged="PageChanged" Padding="0">
+        <ListBox x:Name="ListBox2" Grid.Row="2" VerticalAlignment="Bottom" SelectionMode="Single" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.IsDeferredScrollingEnabled="False" ScrollViewer.CanContentScroll="False" Foreground="#E5F1FF" FontSize="18" FontWeight="Bold" Background="Transparent" BorderThickness="0" Width="205" SelectionChanged="PageChanged" Padding="0">
             <ListBoxItem Margin="0,0,0,15" x:Name="Profile">
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center" Height="60" ScrollViewer.VerticalScrollBarVisibility="Disabled" >
                     <Image Source="Resources/Buttons/Profile.png" Width="38" Height="38" Margin="15,0,0,0" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
