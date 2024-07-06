@@ -18,14 +18,13 @@ namespace TheRest
     public partial class MainWindow : Window
     {
         private Dictionary<string, Page> pages = new Dictionary<string, Page>();
-
-        private Discord_Rich_Presence DRPC;
         public MainWindow()
         {
             InitializeComponent();
-            DRPC = new Discord_Rich_Presence("1237463189722103838"); //Заменить на новый
-            DRPC.UpdatePresence("Игровое меню");
-            HappyBird();
+
+            BirthdayGreeting birthdayGreeting = new BirthdayGreeting(SeaSon);
+            birthdayGreeting.HappyBird();
+
             User.Text = Launcher.Default.Nickname;
 
             pages.Add("Main", new Main());
@@ -36,38 +35,7 @@ namespace TheRest
 
             PageFrame.Content = pages["Main"];
         }
-        public void HappyBird()
-        {
-            if(DateTime.Now.Date == new DateTime(DateTime.Now.Year, 11, 5))
-            {
-                SeaSon.Text = "С днём рождения, Karvane🎂";
-                return;
-            }
-            if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 12, 17))
-            {
-                SeaSon.Text = "С днём рождения, Laun4er🎂";
-                return;
-            }
-            if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 4, 1))
-            {
-                SeaSon.Text = "С днём рождения, izumrudic01🎂";
-                return;
-            }
-          if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 9, 18))
-            {
-                SeaSon.Text = "С днём рождения, Ivantuz🎂";
-                return;
-            }
-           if (DateTime.Now.Date == new DateTime(DateTime.Now.Year, 6, 8))
-            {
-                SeaSon.Text = "С днём рождения, Muyklaaa:3🎂";
-                return;
-            }
-            else
-            {
-                SeaSon.Text = "TheRest: SEASON 2";
-            }
-        } //Пасхалка с днями рождения
+        
         private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             DragMove();
@@ -123,10 +91,6 @@ namespace TheRest
                     foreach (var tabControl in FindVisualChildren<TabControl>(pageInstance))
                     {
                         tabControl.SelectedIndex = 0;
-                    }
-                    if (pageInstance is Page page && page.Title != null)
-                    {
-                        DRPC.UpdatePresence(page.Title);
                     }
                 }
             }

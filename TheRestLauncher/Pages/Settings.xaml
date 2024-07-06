@@ -6,12 +6,11 @@
       xmlns:local="clr-namespace:TheRestLauncher.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="600" d:DesignWidth="1000"
-      Title="Параметры игры" Background="#363840">
-    <!--Настройки-->
+      Title="Настройки" Background="#363840"
+      FocusManager.FocusedElement="{Binding ElementName=SomeOtherElement}">
 
+    <Grid>
 
-        <Grid>
-        
         <TabControl Margin="-2,-46,-2,-2" Grid.RowSpan="2" Name="setings">
             <TabControl.Resources>
                 <ResourceDictionary>
@@ -21,66 +20,39 @@
                 </ResourceDictionary>
             </TabControl.Resources>
             <TabItem Header="Лаунчер">
-                <StackPanel>
-                    <Border Margin="0,0,0,10"> 
-                        <StackPanel>
-                            <TextBlock Text="Основные" FontFamily="Argentum Sans SemiBold" Margin="10,0,0,10" FontSize="25"/>
-                            <DockPanel>
-                                <TextBlock Text="Использовать Discord Rich Presence"/>
-                                <Button Width="60" Height="40" HorizontalAlignment="Right" Style="{StaticResource InBorder}" Content="Да" Name="enableRPC" Click="enableRPC_Click"/>
-                            </DockPanel>
-                        </StackPanel>
-                    </Border>
-                    <Border Margin="0,0,0,10">
-                        <StackPanel>
-                            <TextBlock Text="Отображение" FontFamily="Argentum Sans SemiBold" Margin="10,0,0,10" FontSize="25"/>
-                            <TextBlock FontFamily="Argentum Sans Light">
-                                <Run Text="Цветовая палитра (Светлая/Тёмная"/>
-                                <LineBreak/>
-                                <Run Text="Использование системной рамки окна"/>
-                                <LineBreak/>
-                                <Run Text="Сворачивать лаунчер после запуска Minecraft"/>
-                                <LineBreak/>
-                                <Run Text="Открывать страницу при запуске лаунчера (Главная, Новости, Библиотека)"/>
-                            </TextBlock>
-                        </StackPanel>
-                    </Border>
-                    <Border Margin="0,0,0,10">
-                        <StackPanel>
-                            <TextBlock Text="Бета версии" FontFamily="Argentum Sans SemiBold" FontSize="25" Margin="10,0,0,10"/>
-                            <TextBlock FontFamily="Argentum Sans Light">
-                                <Run Text="Получить бета версию лаунчера (Ввести код доступа)"/>
-                            </TextBlock>
-                        </StackPanel>
-                    </Border>
-                    <Border Margin="0,0,0,10">
-                        <StackPanel>
-                            <TextBlock Text="Телеметрия" FontFamily="Argentum Sans SemiBold" Margin="10,0,0,10" FontSize="25"/>
-                            <TextBlock FontFamily="Argentum Sans Light">
-                                    <Run Text="Разрешить отправку необязательных данных"/>
-                                <LineBreak/>
-                                <Run Text="Разрешить отправку аналитику лаунчера"/>
-                            </TextBlock>
-                        </StackPanel>
-                    </Border>
-                    <Border>
-                        <StackPanel>
-                            <TextBlock Text="Информация" FontFamily="Argentum Sans SemiBold" Margin="10,0,0,10" FontSize="25"/>
-                            <TextBlock FontFamily="Argentum Sans Light">
-        <Run Text="Версия лаунчера: 0.0.2"/>
-                                <LineBreak/>
-    <Run Text="Дата установки лаунчера:"/>
-                                <LineBreak/>
-                                <Run Text="Разработчик: Laun4er"/>
-                            </TextBlock>
-                        </StackPanel>
-</Border>
-                </StackPanel>
+
             </TabItem>
             <TabItem Header="Minecraft">
                 <StackPanel>
-                    <Border Height="50">
-                        <TextBlock Text="В разработке" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <Border>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <StackPanel Grid.Column="0" Grid.ColumnSpan="2" Margin="30,0,30,0" VerticalAlignment="Center">
+                                <TextBlock Text="Параметры окна" Margin="0,0,0,5"/>
+                                <DockPanel Margin="0,0,0,5">
+                                    <TextBox Width="150" Height="45" HorizontalAlignment="Left" x:Name="WinWidth" LostFocus="WinWidth_LostFocus"/>
+                                    <Label>X</Label>
+                                    <TextBox Width="150" Height="45" HorizontalAlignment="Left" x:Name="WinHeight" LostFocus="WinHeight_LostFocus"/>
+                                </DockPanel>
+                                <DockPanel>
+                                    <CheckBox Width="30" Height="30" x:Name="WinFull" Checked="WinFull_Checked" Unchecked="WinFull_Unchecked"/>
+                                    <Label>Полноэкранный режим</Label>
+                                </DockPanel>
+                                <Label Margin="0,0,0,5">Выделение ОЗУ</Label>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="10*"/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Slider x:Name="RAMchanged" ValueChanged="RAMchanged_ValueChanged" LostFocus="RAMchanged_LostFocus"/>
+                                    <TextBox x:Name="TextBoxRam" Grid.Column="1" TextChanged="TextBoxRam_TextChanged"/>
+                                </Grid>
+                            </StackPanel>
+                        </Grid>
                     </Border>
                 </StackPanel>
             </TabItem>

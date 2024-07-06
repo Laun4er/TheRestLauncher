@@ -12,59 +12,62 @@ namespace TheRestLauncher.Settings {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.9.0.0")]
-    internal sealed partial class StartMinecraft : global::System.Configuration.ApplicationSettingsBase {
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.10.0.0")]
+    internal sealed partial class Minecraft : global::System.Configuration.ApplicationSettingsBase {
         
-        private static StartMinecraft defaultInstance = ((StartMinecraft)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new StartMinecraft())));
+        private static Minecraft defaultInstance = ((Minecraft)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Minecraft())));
         
-        public static StartMinecraft Default {
+        public static Minecraft Default {
             get {
                 return defaultInstance;
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("854")]
-        public int mWidth {
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int WinWidth {
             get {
-                return ((int)(this["mWidth"]));
+                return ((int)(this["WinWidth"]));
+            }
+            set {
+                this["WinWidth"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("480")]
-        public int mHeight {
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int WinHeigh {
             get {
-                return ((int)(this["mHeight"]));
+                return ((int)(this["WinHeigh"]));
             }
             set {
-                this["mHeight"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool mFullScreen {
-            get {
-                return ((bool)(this["mFullScreen"]));
-            }
-            set {
-                this["mFullScreen"] = value;
+                this["WinHeigh"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("4096")]
-        public int mRAM {
+        public int WinRAM {
             get {
-                return ((int)(this["mRAM"]));
+                return ((int)(this["WinRAM"]));
             }
             set {
-                this["mRAM"] = value;
+                this["WinRAM"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool WinFull {
+            get {
+                return ((bool)(this["WinFull"]));
+            }
+            set {
+                this["WinFull"] = value;
             }
         }
     }

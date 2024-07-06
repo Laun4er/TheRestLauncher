@@ -7,14 +7,7 @@
     xmlns:gif="https://github.com/XamlAnimatedGif/XamlAnimatedGif"
     mc:Ignorable="d" 
     d:DesignHeight="450" d:DesignWidth="800"
-    Title="Игровое меню">
-    <!--Главная-->
-
-    <Page.Resources>
-        <Style TargetType="{x:Type ProgressBar}">
-            
-        </Style>
-    </Page.Resources>
+    Title="Главная">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -25,18 +18,20 @@
         <Image Source="Resources/TheRestBG.png" VerticalAlignment="Center" HorizontalAlignment="Center" Name="TheRestBG" RenderOptions.BitmapScalingMode="NearestNeighbor" Stretch="UniformToFill" Grid.Column="1"/>
         <TextBlock Grid.Row="1" Grid.Column="1" 
                    HorizontalAlignment="Right" VerticalAlignment="Bottom" 
-                   Text="0.0.2" Foreground="#E5F1FF" FontSize="15" FontWeight="Bold"/>
-        <TextBlock Grid.Row="1" Grid.Column="1"
+                   Text="1.0" Foreground="#E5F1FF" FontSize="15" FontWeight="Bold"/>
+        <TextBlock Grid.Row="1" Grid.Column="1" x:Name="fileDownload"
                    HorizontalAlignment="Left" VerticalAlignment="Bottom"
-                   Text="В процессе разработки" Foreground="#E5F1FF" FontSize="15" FontWeight="Bold"/>
+                   Foreground="#E5F1FF" FontSize="15" FontWeight="Bold"/>
 
         <StackPanel Grid.Row="1" Grid.ColumnSpan="2">
-           
-            <ProgressBar Margin="45, -18" Visibility="Hidden" x:Name="progressDown"
-                         Background="#E5F1FF " BorderThickness="0" Foreground="#0071C3">
-                
-            </ProgressBar>
-            <Button Style="{x:Null}" x:Name="Start" HorizontalAlignment="Center" Padding="0" Margin="0,-18,0,0" Background="{x:Null}" Foreground="Transparent" BorderThickness="0" UseLayoutRounding="True" SnapsToDevicePixels="True" Click="PlayM">
+            <DockPanel>
+                <Label x:Name="Percentage"></Label>
+                <ProgressBar Margin="45, -18" Visibility="Hidden" x:Name="progressDown"
+             Background="#E5F1FF " BorderThickness="0" Foreground="#0071C3">
+                </ProgressBar>
+            </DockPanel>
+            
+            <Button Style="{x:Null}" x:Name="StartM" HorizontalAlignment="Center" Padding="0" Margin="0,-18,0,0" Background="{x:Null}" Foreground="Transparent" BorderThickness="0" UseLayoutRounding="True" SnapsToDevicePixels="True" Click="Start_Click">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <StackPanel>

@@ -6,9 +6,7 @@
       xmlns:local="clr-namespace:TheRestLauncher.Pages" 
       mc:Ignorable="d"
       d:DesignHeight="600" d:DesignWidth="1000"
-      Title="Выбор сложности" Background="#363840">
-    <!--Новости-->
-
+      Title="Новости" Background="#363840">
     <Grid>
         <TabControl>
             <TabControl.Resources>
@@ -27,8 +25,8 @@
             </TabItem>
             <TabItem Header="Сервер">
                 <StackPanel>
-                    <Border Height="50">
-                        <TextBlock Text="В разработке" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <Border Height="50" x:Name="LastNews">
+                        
                     </Border>
                 </StackPanel>
             </TabItem>

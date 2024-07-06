@@ -114,10 +114,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Launcher.settings</DependentUpon>
     </Compile>
-    <Compile Update="Settings\StartMinecraft.Designer.cs">
+    <Compile Update="Settings\Minecraft.Designer.cs">
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <AutoGen>True</AutoGen>
-      <DependentUpon>StartMinecraft.settings</DependentUpon>
+      <DependentUpon>Minecraft.settings</DependentUpon>
     </Compile>
     <Compile Update="Settings\User.Designer.cs">
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
@@ -138,9 +138,9 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Launcher.Designer.cs</LastGenOutput>
     </None>
-    <None Update="Settings\StartMinecraft.settings">
+    <None Update="Settings\Minecraft.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>StartMinecraft.Designer.cs</LastGenOutput>
+      <LastGenOutput>Minecraft.Designer.cs</LastGenOutput>
     </None>
     <None Update="Settings\User.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -9,9 +9,7 @@ namespace TheRestLauncher.Pages
 
         public News()
         {
-            InitializeComponent();
-            ContentLauncher.Text = Assets.What_s_New;
-        }
+            InitializeComponent();        }
     }
 }
     
